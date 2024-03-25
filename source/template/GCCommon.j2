@@ -7,7 +7,11 @@ skinparam PackageTitleAlignment Left
 !endfunction
 
 !function $GCGroupImg($service)
-!return %call_user_func("$" + $service + "IMG", "0.7")
+  !return %call_user_func("$" + $service + "IMG", "0.7")
+!endfunction
+
+!function $GCPerticipantImg($service)
+  !return %call_user_func("$" + $service + "IMG", "1.5")
 !endfunction
 
 
@@ -31,11 +35,11 @@ skinparam PackageTitleAlignment Left
 
 
 !procedure GCParticipant(p_alias, p_label, p_sprite, p_stereo)
-    participant "p_label\n$GCImg(p_sprite)" as p_alias <<p_stereo>>
+    participant "p_label\n$GCPerticipantImg(p_sprite)" as p_alias <<p_stereo>>
 !endprocedure
 
 !procedure GCParticipant(p_alias, p_label, p_descr, p_sprite, p_stereo)
-    participant "p_label\n$GCImg(p_sprite)\np_descr" as p_alias <<p_stereo>>
+    participant "p_label\n$GCPerticipantImg(p_sprite)\np_descr" as p_alias <<p_stereo>>
 !endprocedure
 
 

@@ -1,60 +1,59 @@
-# AWS Icons for Plantuml
-
-```plantuml
-!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v18.0/dist
-!include AWSPuml/AWSCommon.puml
-!include AWSPuml/Groups/AWSCloud.puml
-!include AWSPuml/Analytics/Redshift.puml
-
-left to right direction
-AWSCloudGroup(cloud) {
-    Redshift(Redshift, aaa,  aaa , aaa)
-    aa --> Redshift
-}
-
-```
-
-
 # Google Cloud Icons for Plantuml
 
-```plantuml
-
-!define GCPuml ../dist
-!include GCPuml/GCCommon.puml
-!include GCPuml/SecretManager.puml
-
-SecretManager(SecretManagerWithDesc, aaa, aaa)
-SecretManager(SecretManagerWithoutDesc, aaa)
-
-SecretManagerWithDesc -> SecretManagerWithoutDesc
-
-```
+## Component Diagram
 
 ```plantuml
 
-!define GCPuml ../dist
+!define GCPuml https://raw.githubusercontent.com/LowSE01/google-cloud-icons-for-plantuml/development/dist
+
 !include GCPuml/GCCommon.puml
-!include GCPuml/SecretManager.puml
 
-SecretManagerParticipant(SecretManagerWithDesc, aaa, aaa)
-SecretManagerParticipant(SecretManagerWithoutDesc, aaa)
-
-SecretManagerWithDesc -> SecretManagerWithoutDesc
-
-```
-
-```plantuml
-!define GCPuml ../dist
-!include GCPuml/GCCommon.puml
-!include GCPuml/VirtualPrivateCloud.puml
 !include GCPuml/Bigquery.puml
+!include GCPuml/CloudRun.puml
+!include GCPuml/CloudStorage.puml
 !include GCPuml/SecretManager.puml
 
-left to right direction
+Bigquery(BigQuery, bq)
+CloudRun(CloudRun, job)
+CloudStorage(CloudStorage, gcs)
+SecretManager(SecretManager, secrets)
 
-VirtualPrivateCloudGroup(vpc, Google Cloud) {
-    Bigquery(BigQuery, aaa)
-    SecretManager(SecretManager, aaa)
-    SecretManager --> BigQuery
-}
+CloudRun .d.> BigQuery
+CloudRun .d.> CloudStorage
+CloudRun .r.> SecretManager
+CloudStorage -r-> BigQuery
+
+```
+
+## Sequence Diagram
+
+```plantuml
+
+!define GCPuml ../dist
+!include GCPuml/GCCommon.puml
+
+!include GCPuml/Bigquery.puml
+!include GCPuml/CloudRun.puml
+!include GCPuml/CloudStorage.puml
+!include GCPuml/SecretManager.puml
+
+CloudRunParticipant(CloudRun, aaa)
+SecretManagerParticipant(SecretManager, aaa)
+CloudStorageParticipant(CloudStorage, gcs)
+BigqueryParticipant(BigQuery, bq)
+
+CloudRun -> SecretManager: get
+Activate CloudRun
+CloudRun <-- SecretManager
+
+CloudRun -> CloudStorage: read
+CloudRun <-- CloudStorage
+
+CloudRun -> BigQuery: write
+Activate BigQuery
+CloudRun <-- BigQuery
+Deactivate BigQuery
+
+Deactivate CloudRun
+
 ```
