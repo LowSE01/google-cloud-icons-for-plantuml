@@ -1,0 +1,27 @@
+!function ${{ pascal }}IMG($scale) 
+    !return "<img data:image/png;base64,{{ base64 }}{scale="+$scale+"}>"
+!endfunction
+
+!procedure {{ pascal }}(e_alias, e_label, e_techn) 
+    GCEntity(e_alias, e_label, e_techn, {{ pascal }}, {{ pascal }}) 
+!endprocedure
+
+!procedure {{ pascal }}(e_alias, e_label, e_techn, e_descr) 
+    GCEntity(e_alias, e_label, e_techn, e_descr, {{ pascal }}, {{ pascal }}) 
+!endprocedure
+
+!procedure {{ pascal }}Participant(p_alias, p_label, p_techn) 
+    GCParticipant(p_alias, p_label, p_techn, {{ pascal }}, {{ pascal }}) 
+!endprocedure
+
+!procedure {{ pascal }}Participant(p_alias, p_label, p_techn, p_descr) 
+    GCParticipant(p_alias, p_label, p_techn, p_descr, {{ pascal }}, {{ pascal }}) 
+!endprocedure
+
+!procedure {{ pascal }}Group(g_alias, g_label="{{ g_label }}") 
+    $GCDefineGroup(g_alias, g_label, {{ pascal }}, {{ pascal }}Group)
+!endprocedure
+
+!procedure {{ pascal }}Group(g_alias, g_label="{{ g_label }}") 
+    $GCDefineGroup(g_alias, g_label, {{ pascal }}, {{ pascal }}Group)
+!endprocedure

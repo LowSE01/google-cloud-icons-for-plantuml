@@ -1,0 +1,40 @@
+skinparam defaultTextAlignment Center
+skinparam PackageTitleAlignment Left
+
+
+!function $GCImg($service)
+    !return %call_user_func("$" + $service + "IMG", "0.1")
+!endfunction
+
+!function $GCGroupImg($service)
+!return %call_user_func("$" + $service + "IMG", "0.03")
+!endfunction
+
+
+!procedure GCEntity(e_alias, e_label, e_techn, e_descr, e_sprite, e_stereo)
+    rectangle "==e_label\n$GCImg(e_sprite)\ne_descr" <<e_stereo>> as e_alias
+!endprocedure
+
+!procedure GCEntity(e_alias, e_label, e_techn, e_sprite, e_stereo)
+    rectangle "==e_label\n$GCImg(e_sprite)" <<e_stereo>> as e_alias
+!endprocedure
+
+
+!procedure GCParticipant(p_alias, p_label, p_techn, p_sprite, p_stereo)
+    participant "p_label\n$GCImg(p_sprite)" as p_alias <<p_stereo>>
+!endprocedure
+
+!procedure GCParticipant(p_alias, p_label, p_techn, p_descr, p_sprite, p_stereo)
+    participant "p_label\n$GCImg(p_sprite)\np_descr" as p_alias <<p_stereo>>
+!endprocedure
+
+
+!function $GCDefineGroup($alias, $label, $stereo)
+    !$ret = 'rectangle "' + $label + '" as ' + $alias + ' <<' + $stereo + '>>'
+    !return $ret
+!endfunction
+
+!function $GCDefineGroup($alias, $label, $sprite, $stereo)
+    !$ret = 'rectangle "' + $GCGroupImg($sprite) + '  ' + $label + '" as ' + $alias + ' <<' + $stereo + '>>'
+    !return $ret
+!endfunction
