@@ -1,0 +1,34 @@
+!function $WebSecurityScannerIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM0Mjg1ZjQ7fS5jbHMtMntmaWxsOiM2NjlkZjY7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5JY29uXzI0cHhfU2VjdXJpdHlTY2FubmVyX0NvbG9yPC90aXRsZT48ZyBkYXRhLW5hbWU9IlByb2R1Y3QgSWNvbnMiPjxjaXJjbGUgY2xhc3M9ImNscy0xIiBjeD0iMTEuNDQiIGN5PSIxMS41IiByPSIyLjk3Ii8+PGNpcmNsZSBjbGFzcz0iY2xzLTIiIGN4PSI0LjAyIiBjeT0iMTAuNzkiIHI9IjIuMDIiLz48Y2lyY2xlIGNsYXNzPSJjbHMtMiIgY3g9IjE0LjUyIiBjeT0iMTguNjIiIHI9IjIuMDIiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0xOS41Nyw0LjJBMi40MywyLjQzLDAsMSwwLDIyLDYuNjMsMi40MywyLjQzLDAsMCwwLDE5LjU3LDQuMlptMCwzLjhhMS4zNywxLjM3LDAsMSwxLDEuMzYtMS4zN2gwQTEuMzcsMS4zNywwLDAsMSwxOS41Nyw4WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTE4LjIsNi42OGE4LjI5LDguMjksMCwwLDAtNS4wNi0zLjMyTDEyLjg2LDQuN2E2Ljk1LDYuOTUsMCwxLDEtOC4yMiw1LjM4QTYuODgsNi44OCwwLDAsMSw2LjUxLDYuNjFsLTEtMUE4LjMxLDguMzEsMCwxLDAsMTguODksNy44MSwxLjM2LDEuMzYsMCwwLDEsMTguMiw2LjY4WiIvPjwvZz48L3N2Zz4={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure WebSecurityScanner(e_alias, e_label)
+    GCEntity(e_alias, e_label, WebSecurityScanner, WebSecurityScanner)
+!endprocedure
+
+!procedure WebSecurityScanner(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, WebSecurityScanner, WebSecurityScanner)
+!endprocedure
+
+$GCDefineEntityStyle(WebSecurityScanner)
+
+
+!procedure WebSecurityScannerParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, WebSecurityScanner, WebSecurityScanner)
+!endprocedure
+
+!procedure WebSecurityScannerParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, WebSecurityScanner, WebSecurityScanner)
+!endprocedure
+
+
+!procedure WebSecurityScannerGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, WebSecurityScanner, WebSecurityScannerGroup)
+!endprocedure
+
+!procedure WebSecurityScannerGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, WebSecurityScanner, WebSecurityScannerGroup)
+!endprocedure
+
+$GCDefineGroupStyle(WebSecurityScannerGroup)

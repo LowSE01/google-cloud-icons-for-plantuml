@@ -1,0 +1,34 @@
+!function $RuntimeConfigIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiNhZWNiZmE7fS5jbHMtMntmaWxsOiM0Mjg1ZjQ7fS5jbHMtM3tmaWxsOm5vbmU7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5JY29uXzI0cHhfUnVudGltZUNvbmZpZ19Db2xvcjwvdGl0bGU+PGcgZGF0YS1uYW1lPSJQcm9kdWN0IEljb25zIj48cG9seWdvbiBpZD0iRmlsbC0xMSIgY2xhc3M9ImNscy0xIiBwb2ludHM9IjIgOCA4IDggOCAyIDIgMiAyIDgiLz48cmVjdCBjbGFzcz0iY2xzLTIiIHg9IjciIHk9IjQiIHdpZHRoPSIxMyIgaGVpZ2h0PSIyIi8+PHJlY3QgY2xhc3M9ImNscy0zIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiLz48cG9seWdvbiBpZD0iRmlsbC00IiBjbGFzcz0iY2xzLTEiIHBvaW50cz0iMTUgMTMgMyAxMyAzIDEwIDE1IDEwIDE1IDEzIi8+PHBvbHlnb24gaWQ9IkZpbGwtNC1Db3B5LTIiIGNsYXNzPSJjbHMtMSIgcG9pbnRzPSIxMyAyMCAzIDIwIDMgMTYgMTMgMTYgMTMgMjAiLz48cG9seWdvbiBpZD0iRmlsbC0xNSIgY2xhc3M9ImNscy0yIiBwb2ludHM9IjUgOCA4IDggOCAyIDUgMiA1IDgiLz48cG9seWdvbiBpZD0iRmlsbC0xMS0yIiBkYXRhLW5hbWU9IkZpbGwtMTEiIGNsYXNzPSJjbHMtMSIgcG9pbnRzPSIxNiAyMiAyMiAyMiAyMiAxNiAxNiAxNiAxNiAyMiIvPjxwb2x5Z29uIGlkPSJGaWxsLTE1LTIiIGRhdGEtbmFtZT0iRmlsbC0xNSIgY2xhc3M9ImNscy0yIiBwb2ludHM9IjE5IDIyIDIyIDIyIDIyIDE2IDE5IDE2IDE5IDIyIi8+PHJlY3QgY2xhc3M9ImNscy0yIiB4PSIxOCIgeT0iNCIgd2lkdGg9IjIiIGhlaWdodD0iMTIiLz48L2c+PC9zdmc+{scale="+$scale+"}>"
+!endfunction
+
+
+!procedure RuntimeConfig(e_alias, e_label)
+    GCEntity(e_alias, e_label, RuntimeConfig, RuntimeConfig)
+!endprocedure
+
+!procedure RuntimeConfig(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, RuntimeConfig, RuntimeConfig)
+!endprocedure
+
+$GCDefineEntityStyle(RuntimeConfig)
+
+
+!procedure RuntimeConfigParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, RuntimeConfig, RuntimeConfig)
+!endprocedure
+
+!procedure RuntimeConfigParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, RuntimeConfig, RuntimeConfig)
+!endprocedure
+
+
+!procedure RuntimeConfigGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, RuntimeConfig, RuntimeConfigGroup)
+!endprocedure
+
+!procedure RuntimeConfigGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, RuntimeConfig, RuntimeConfigGroup)
+!endprocedure
+
+$GCDefineGroupStyle(RuntimeConfigGroup)

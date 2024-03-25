@@ -1,0 +1,34 @@
+!function $CloudInterconnectIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM0Mjg1ZjQ7fS5jbHMtMSwuY2xzLTIsLmNscy0ze2ZpbGwtcnVsZTpldmVub2RkO30uY2xzLTJ7ZmlsbDojYWVjYmZhO30uY2xzLTN7ZmlsbDojNjY5ZGY2O308L3N0eWxlPjwvZGVmcz48dGl0bGU+SWNvbl8yNHB4X0ludGVyY29ubmVjdF9Db2xvcjwvdGl0bGU+PGcgZGF0YS1uYW1lPSJQcm9kdWN0IEljb25zIj48ZyA+PHBvbHlnb24gaWQ9IkZpbGwtMyIgY2xhc3M9ImNscy0xIiBwb2ludHM9IjIgMTMgNiAxMyA2IDExIDIgMTEgMiAxMyIvPjxwb2x5Z29uIGlkPSJGaWxsLTYiIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxNSAxNyA1IDE3IDUgNyAxNSA3IDE1IDE3Ii8+PHBvbHlnb24gaWQ9IkZpbGwtMSIgY2xhc3M9ImNscy0xIiBwb2ludHM9IjE3LjMzIDEzIDIyIDEzIDIyIDExIDE3LjMzIDExIDE3LjMzIDEzIi8+PHBvbHlnb24gY2xhc3M9ImNscy0zIiBwb2ludHM9IjggMyA4IDUgMTcgNSAxNyAxOSA4IDE5IDggMjEgMTkgMjEgMTkgMTkgMTkgNSAxOSAzIDggMyIvPjxwb2x5Z29uIGlkPSJGaWxsLTciIGNsYXNzPSJjbHMtMyIgcG9pbnRzPSIxNSAxNyAxMCAxNyAxMCA3IDE1IDcgMTUgMTciLz48L2c+PC9nPjwvc3ZnPg=={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure CloudInterconnect(e_alias, e_label)
+    GCEntity(e_alias, e_label, CloudInterconnect, CloudInterconnect)
+!endprocedure
+
+!procedure CloudInterconnect(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, CloudInterconnect, CloudInterconnect)
+!endprocedure
+
+$GCDefineEntityStyle(CloudInterconnect)
+
+
+!procedure CloudInterconnectParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, CloudInterconnect, CloudInterconnect)
+!endprocedure
+
+!procedure CloudInterconnectParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, CloudInterconnect, CloudInterconnect)
+!endprocedure
+
+
+!procedure CloudInterconnectGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudInterconnect, CloudInterconnectGroup)
+!endprocedure
+
+!procedure CloudInterconnectGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudInterconnect, CloudInterconnectGroup)
+!endprocedure
+
+$GCDefineGroupStyle(CloudInterconnectGroup)

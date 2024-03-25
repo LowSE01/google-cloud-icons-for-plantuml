@@ -1,0 +1,34 @@
+!function $AutomlTablesIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM0Mjg1ZjQ7fS5jbHMtMntmaWxsOiM2NjlkZjY7fS5jbHMtM3tmaWxsOiNhZWNiZmE7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5JY29uXzI0cHhfQXV0b01MVGFibGVzX0NvbG9yPC90aXRsZT48ZyBkYXRhLW5hbWU9IlByb2R1Y3QgSWNvbnMiPjxsaW5lIGNsYXNzPSJjbHMtMSIgeDE9IjE5Ljc0IiB5MT0iMTAuMjMiIHgyPSIyMC4wNSIgeTI9IjkuNjgiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik02LjgyLDE5LjQ2bC45NSwxLjY1aDkuNDlMMjIsMTIuODksMjAuMSw5LjZsLTQuNzQsOC4yMUg3Ljc3WiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTE3LjE4LDQuNTRsLS45NS0xLjY1SDYuNzRMMiwxMS4xMSwzLjksMTQuNCw4LjY0LDYuMTloNy41OVoiLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMTMuNjEgMTMuMzIgMTUuMDQgMTQuMjMgMTUuMDQgOS45OSAxMS42NSA3Ljk4IDExLjY1IDkuOTQgMTMuNjEgMTEuMSAxMy42MSAxMy4zMiIvPjxwYXRoIGNsYXNzPSJjbHMtMyIgZD0iTTEyLjY4LDE2VjExLjc4bC0zLjM5LTJ2NC4wOFoiLz48L2c+PC9zdmc+{scale="+$scale+"}>"
+!endfunction
+
+
+!procedure AutomlTables(e_alias, e_label)
+    GCEntity(e_alias, e_label, AutomlTables, AutomlTables)
+!endprocedure
+
+!procedure AutomlTables(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, AutomlTables, AutomlTables)
+!endprocedure
+
+$GCDefineEntityStyle(AutomlTables)
+
+
+!procedure AutomlTablesParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, AutomlTables, AutomlTables)
+!endprocedure
+
+!procedure AutomlTablesParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, AutomlTables, AutomlTables)
+!endprocedure
+
+
+!procedure AutomlTablesGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, AutomlTables, AutomlTablesGroup)
+!endprocedure
+
+!procedure AutomlTablesGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, AutomlTables, AutomlTablesGroup)
+!endprocedure
+
+$GCDefineGroupStyle(AutomlTablesGroup)

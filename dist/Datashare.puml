@@ -1,0 +1,34 @@
+!function $DatashareIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+CjxwYXRoIGZpbGw9IiM0Mjg1ZjQiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTE5LjQ1LDE4LjQ3YTEuMTIsMS4xMiwwLDEsMSwxLjE1LTEuMDksMS4xMywxLjEzLDAsMCwxLTEuMTUsMS4wOVptMCwxQTIuMDgsMi4wOCwwLDEsMCwxOCwxOC44NGEyLjA4LDIuMDgsMCwwLDAsMS40Ny42MVoiLz4KPHBhdGggZmlsbD0iIzQyODVmNCIgZD0iTTE5LjQ2LDQuMzNBMi4wNywyLjA3LDAsMCwwLDE4LDcuODdhMiwyLDAsMCwwLDEuNDcuNmgwYTIuMDgsMi4wOCwwLDEsMCwwLTQuMTVabS44LDIuODZhMS4wOCwxLjA4LDAsMCwxLS44MS4zMUExLjExLDEuMTEsMCwxLDEsMjAuNiw2LjQyLDEuMTQsMS4xNCwwLDAsMSwyMC4yNiw3LjE5WiIvPgo8cGF0aCBmaWxsPSIjNDI4NWY0IiBkPSJNMTUuOSwxMGgtLjA1di45NWguMDdhMS4xMSwxLjExLDAsMCwxLDAsMi4yMmgtLjA3djFoLjA3YTIuMDgsMi4wOCwwLDEsMCwwLTQuMTVaIi8+CjxwYXRoIGZpbGw9IiM0Mjg1ZjQiIGQ9Ik0xMS4zMiwyQzYuNDMsMiwyLjQ2LDQsMi40Niw2LjRzNCw0LjQxLDguODYsNC40MWguMVYyWiIvPgo8cGF0aCBmaWxsPSIjNDI4NWY0IiBkPSJNMTEuMzIsMTIuNTJhMTQsMTQsMCwwLDEtNi4yNy0xLjI1QTQuNDUsNC40NSwwLDAsMSwyLjYxLDguODlIMi40NlYxMmgwYzAsMi40Myw0LDQuNCw4Ljg2LDQuNGguMXYtMy45WiIvPgo8cGF0aCBmaWxsPSIjNDI4NWY0IiBkPSJNMTEuMzIsMTguMWExNCwxNCwwLDAsMS02LjI3LTEuMjQsNC40NSw0LjQ1LDAsMCwxLTIuNDQtMi4zOEgyLjQ2VjE3LjZoMGMwLDIuNDMsNCw0LjQsOC44Niw0LjRoLjFWMTguMVoiLz4KPHJlY3QgZmlsbD0iIzY2OWRmNiIgeD0iMTMuNjQiIHk9IjIiIHdpZHRoPSIyLjIyIiBoZWlnaHQ9IjIwIi8+Cjwvc3ZnPg=={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure Datashare(e_alias, e_label)
+    GCEntity(e_alias, e_label, Datashare, Datashare)
+!endprocedure
+
+!procedure Datashare(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, Datashare, Datashare)
+!endprocedure
+
+$GCDefineEntityStyle(Datashare)
+
+
+!procedure DatashareParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, Datashare, Datashare)
+!endprocedure
+
+!procedure DatashareParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, Datashare, Datashare)
+!endprocedure
+
+
+!procedure DatashareGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, Datashare, DatashareGroup)
+!endprocedure
+
+!procedure DatashareGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, Datashare, DatashareGroup)
+!endprocedure
+
+$GCDefineGroupStyle(DatashareGroup)

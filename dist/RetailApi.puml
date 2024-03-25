@@ -1,0 +1,34 @@
+!function $RetailApiIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyBpZD0iQXJ0d29yayIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0xMiwxMC40OFY2LjA3YS4zOC4zOCwwLDAsMC0uMzgtLjM4aC0xLjVhLjM3LjM3LDAsMCwwLS4zNy4zOFY4LjJsMSwyLjI4WiIgc3R5bGU9ImZpbGw6I2FlY2JmYSIvPjxwYXRoIGQ9Ik04Ljg1LDE3LjUxYTEuODgsMS44OCwwLDEsMCwxLjg3LDEuODdBMS44OCwxLjg4LDAsMCwwLDguODUsMTcuNTFabTkuMjgsMEExLjg4LDEuODgsMCwxLDAsMjAsMTkuMzgsMS44NywxLjg3LDAsMCwwLDE4LjEzLDE3LjUxWk0xNC45Miw1LjA3YS4zOC4zOCwwLDAsMC0uMzgtLjM4SDEzYS4zNy4zNywwLDAsMC0uMzcuMzh2NS40MWgyLjI1WiIgc3R5bGU9ImZpbGw6IzY2OWRmNiIvPjxwYXRoIGQ9Ik0xMC4yOSwxMi43Myw5LjE5LDE1SDIwYS43NS43NSwwLDAsMSwwLDEuNUg5LjE5YTEuNDksMS40OSwwLDAsMS0xLjI3LS43LDEuNDcsMS40NywwLDAsMS0uMDgtMS40NUw5LDEyLDUuNDQsNC4yNEgzLjI4YS43NS43NSwwLDEsMSwwLTEuNUg1LjkzYS43NS43NSwwLDAsMSwuNjguNDRsMy42OSw4LjA1aDYuNTNsMy4yNC01Ljc3YS43NS43NSwwLDEsMSwxLjMxLjczTDE4LjEzLDEyYTEuNDksMS40OSwwLDAsMS0xLjMuNzdabTcuNTYtNC44NVYzLjE0YS4zNy4zNywwLDAsMC0uMzgtLjM3SDE2YS4zNi4zNiwwLDAsMC0uMzcuMzd2Ny4zNGguNzlaIiBzdHlsZT0iZmlsbDojNDI4NWY0Ii8+PC9zdmc+{scale="+$scale+"}>"
+!endfunction
+
+
+!procedure RetailApi(e_alias, e_label)
+    GCEntity(e_alias, e_label, RetailApi, RetailApi)
+!endprocedure
+
+!procedure RetailApi(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, RetailApi, RetailApi)
+!endprocedure
+
+$GCDefineEntityStyle(RetailApi)
+
+
+!procedure RetailApiParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, RetailApi, RetailApi)
+!endprocedure
+
+!procedure RetailApiParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, RetailApi, RetailApi)
+!endprocedure
+
+
+!procedure RetailApiGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, RetailApi, RetailApiGroup)
+!endprocedure
+
+!procedure RetailApiGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, RetailApi, RetailApiGroup)
+!endprocedure
+
+$GCDefineGroupStyle(RetailApiGroup)

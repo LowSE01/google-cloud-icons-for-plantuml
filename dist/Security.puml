@@ -1,0 +1,34 @@
+!function $SecurityIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGJhc2VQcm9maWxlPSJ0aW55IiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIKCSB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiBvdmVyZmxvdz0idmlzaWJsZSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnID4KCTxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQuMDAwMDAwLCAxLjAwMDAwMCkiPgoJCTxwYXRoIGZpbGw9IiM4NUE0RTYiIGQ9Ik04LDBsLTksNHY2YzAsNS42LDMuOCwxMC43LDksMTJjNS4yLTEuMyw5LTYuNCw5LTEyVjRMOCwweiBNOCwxMWg3Yy0wLjUsNC4xLTMuMyw3LjgtNyw4LjlWMTFsLTcsMFY1LjMKCQkJbDctMy4xVjExeiIvPgoJCTxwYXRoIGZpbGw9IiM1Qzg1REUiIGQ9Ik04LDB2MjJjNS4yLTEuMyw5LTYuNCw5LTEyVjRMOCwweiBNMTUsMTFjLTAuNSw0LjEtMy4zLDcuOC03LDguOVYxMUwxNSwxMXoiLz4KCQk8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiMzMzY3RDYiIGQ9Ik0xNywxMWgtMmMwLDAsMCwwLjMtMC4xLDAuNkwxNywxMXoiLz4KCQk8cG9seWdvbiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiMzMzY3RDYiIHBvaW50cz0iLTEsMTEgMSwxMSAxLDEwLjQgCQkiLz4KCTwvZz4KPC9nPgo8L3N2Zz4K{scale="+$scale+"}>"
+!endfunction
+
+
+!procedure Security(e_alias, e_label)
+    GCEntity(e_alias, e_label, Security, Security)
+!endprocedure
+
+!procedure Security(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, Security, Security)
+!endprocedure
+
+$GCDefineEntityStyle(Security)
+
+
+!procedure SecurityParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, Security, Security)
+!endprocedure
+
+!procedure SecurityParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, Security, Security)
+!endprocedure
+
+
+!procedure SecurityGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, Security, SecurityGroup)
+!endprocedure
+
+!procedure SecurityGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, Security, SecurityGroup)
+!endprocedure
+
+$GCDefineGroupStyle(SecurityGroup)

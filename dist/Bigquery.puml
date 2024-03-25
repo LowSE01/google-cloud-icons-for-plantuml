@@ -1,0 +1,34 @@
+!function $BigqueryIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiNhZWNiZmE7fS5jbHMtMSwuY2xzLTIsLmNscy0ze2ZpbGwtcnVsZTpldmVub2RkO30uY2xzLTJ7ZmlsbDojNjY5ZGY2O30uY2xzLTN7ZmlsbDojNDI4NWY0O308L3N0eWxlPjwvZGVmcz48dGl0bGU+SWNvbl8yNHB4X0JpZ1F1ZXJ5X0NvbG9yPC90aXRsZT48ZyBkYXRhLW5hbWU9IlByb2R1Y3QgSWNvbnMiPjxnID48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik02LjczLDEwLjgzdjIuNjNBNC45MSw0LjkxLDAsMCwwLDguNDQsMTUuMlYxMC44M1oiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik05Ljg5LDguNDF2Ny41M0E3LjYyLDcuNjIsMCwwLDAsMTEsMTYsOCw4LDAsMCwwLDEyLDE2VjguNDFaIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTMuNjQsMTEuODZ2My4yOWE1LDUsMCwwLDAsMS43LTEuODJWMTEuODZaIi8+PHBhdGggY2xhc3M9ImNscy0zIiBkPSJNMTcuNzQsMTYuMzJsLTEuNDIsMS40MmEuNDIuNDIsMCwwLDAsMCwuNmwzLjU0LDMuNTRhLjQyLjQyLDAsMCwwLC41OSwwbDEuNDMtMS40M2EuNDIuNDIsMCwwLDAsMC0uNTlsLTMuNTQtMy41NGEuNDIuNDIsMCwwLDAtLjYsMCIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTExLDJhOSw5LDAsMSwwLDksOSw5LDksMCwwLDAtOS05bTAsMTUuNjlBNi42OCw2LjY4LDAsMSwxLDE3LjY5LDExLDYuNjgsNi42OCwwLDAsMSwxMSwxNy42OSIvPjwvZz48L2c+PC9zdmc+{scale="+$scale+"}>"
+!endfunction
+
+
+!procedure Bigquery(e_alias, e_label)
+    GCEntity(e_alias, e_label, Bigquery, Bigquery)
+!endprocedure
+
+!procedure Bigquery(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, Bigquery, Bigquery)
+!endprocedure
+
+$GCDefineEntityStyle(Bigquery)
+
+
+!procedure BigqueryParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, Bigquery, Bigquery)
+!endprocedure
+
+!procedure BigqueryParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, Bigquery, Bigquery)
+!endprocedure
+
+
+!procedure BigqueryGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, Bigquery, BigqueryGroup)
+!endprocedure
+
+!procedure BigqueryGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, Bigquery, BigqueryGroup)
+!endprocedure
+
+$GCDefineGroupStyle(BigqueryGroup)

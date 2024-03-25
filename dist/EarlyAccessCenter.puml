@@ -1,0 +1,34 @@
+!function $EarlyAccessCenterIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMTguNDYzODQwOCAxMy45NDA2OTU0IDMuNTk4NjU5MiAzLjY1MTEzMzctMy42MDI1Nzg0IDMuNjAwNTU2Mi0xLjAzMDgwMDYtMS4wNjE2Nzc0IDEuNzk4Mzc5LTEuNzk4MDAzNC0xNy4xNjUuMDAwMjg2di0xLjQ5MDI3NThsMTcuMTg0LS4wMDAwMTAyLTEuODIxMjk4Mi0xLjg0ODIyNDl6bS04LjA5Mjc5MDItNi4zNjU2MzM4YzMuMjE2MzIzMSAwIDUuODIzNjY4MiAyLjY0ODAyNjMgNS44MjM2NjgyIDUuOTE0NTMyNCAwIC45MzYyNzczLS4yMTQyMTA0IDEuODIxNzQyNC0uNTk1NTcyNyAyLjYwODYwMjdoLTEwLjQ1NjE5MTA5Yy0uMzgxMzYyMjktLjc4Njg2MDMtLjU5NTU3MjctMS42NzIzMjU0LS41OTU1NzI3LTIuNjA4NjAyNyAwLTMuMjY2NTA2MSAyLjYwNzM0NTA5LTUuOTE0NTMyNCA1LjgyMzY2ODI5LTUuOTE0NTMyNHptLTYuMzMwNTgxMzUtMi4xNTczODU5MSAxLjc0MDk2MzQ5IDEuNzkwMTcxOTItMS4wNDU1NzI2MSAxLjA0NjcwMjI1LTEuNzQwOTYzNS0xLjc5MDE3MTkyem0xMi43NDAzNTgxNS0uMDA3NTI1MzkgMS4wMzE2NTg5IDEuMDYwODE4ODItMS43NjQ0NDM0IDEuNzY2MzQ5NjctMS4wMzE2NTg5LTEuMDYwODE4ODJ6bS03LjA5ODYxMjg1LTIuMjE3NzY1MDMgMS40Njg4MjQ1NS4wMDk5ODE5Mi0uMDE2NjAyOCAyLjUxNDg0MDUzLTEuNDY4ODI0NTMtLjAwOTk4MTkyeiIgZmlsbD0iIzQyODVmNCIvPjwvc3ZnPg=={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure EarlyAccessCenter(e_alias, e_label)
+    GCEntity(e_alias, e_label, EarlyAccessCenter, EarlyAccessCenter)
+!endprocedure
+
+!procedure EarlyAccessCenter(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, EarlyAccessCenter, EarlyAccessCenter)
+!endprocedure
+
+$GCDefineEntityStyle(EarlyAccessCenter)
+
+
+!procedure EarlyAccessCenterParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, EarlyAccessCenter, EarlyAccessCenter)
+!endprocedure
+
+!procedure EarlyAccessCenterParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, EarlyAccessCenter, EarlyAccessCenter)
+!endprocedure
+
+
+!procedure EarlyAccessCenterGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, EarlyAccessCenter, EarlyAccessCenterGroup)
+!endprocedure
+
+!procedure EarlyAccessCenterGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, EarlyAccessCenter, EarlyAccessCenterGroup)
+!endprocedure
+
+$GCDefineGroupStyle(EarlyAccessCenterGroup)

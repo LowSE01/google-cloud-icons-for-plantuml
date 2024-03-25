@@ -1,0 +1,34 @@
+!function $ProducerPortalIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGJhc2VQcm9maWxlPSJ0aW55IiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIKCSB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiBvdmVyZmxvdz0idmlzaWJsZSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnID4KCTxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuOTk5ODUzLCAzLjAwMDAwMCkiPgoJCTxwb2x5Z29uIGlkPSJGaWxsLTEiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZmlsbD0iIzVDODVERSIgcG9pbnRzPSIxLDEuNyAyMSwxLjcgMjEsLTAuNyAxLC0wLjcgCQkiLz4KCQk8cG9seWdvbiBpZD0iRmlsbC0yIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiMzMzY3RDYiIHBvaW50cz0iMTguNSwxOC44IDIxLDE4LjggMjEsMTEuNCAxOC41LDExLjQgCQkiLz4KCQk8cG9seWdvbiBpZD0iRmlsbC0zIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiMzMzY3RDYiIHBvaW50cz0iMTEsMTEuNCAxMSwxNi4zIDMuNSwxNi4zIDMuNSwxMS40IDEsMTEuNCAxLDE4LjggMTMuNSwxOC44IAoJCQkxMy41LDExLjQgCQkiLz4KCQk8cGF0aCBpZD0iRmlsbC00IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiM1Qzg1REUiIGQ9Ik0xLDIuOUwtMC4yLDl2Mi40SDFoMTIuNWg1SDIxaDEuMlY5TDIxLDIuOUgxeiBNMy4xLDUuM0gxOUwxOS43LDlIMi4zCgkJCUwzLjEsNS4zeiIvPgoJPC9nPgo8L2c+Cjwvc3ZnPgo={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure ProducerPortal(e_alias, e_label)
+    GCEntity(e_alias, e_label, ProducerPortal, ProducerPortal)
+!endprocedure
+
+!procedure ProducerPortal(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, ProducerPortal, ProducerPortal)
+!endprocedure
+
+$GCDefineEntityStyle(ProducerPortal)
+
+
+!procedure ProducerPortalParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, ProducerPortal, ProducerPortal)
+!endprocedure
+
+!procedure ProducerPortalParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, ProducerPortal, ProducerPortal)
+!endprocedure
+
+
+!procedure ProducerPortalGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, ProducerPortal, ProducerPortalGroup)
+!endprocedure
+
+!procedure ProducerPortalGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, ProducerPortal, ProducerPortalGroup)
+!endprocedure
+
+$GCDefineGroupStyle(ProducerPortalGroup)

@@ -1,0 +1,34 @@
+!function $IdentityAndAccessManagementIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM2NjlkZjY7fS5jbHMtMSwuY2xzLTJ7ZmlsbC1ydWxlOmV2ZW5vZGQ7fS5jbHMtMntmaWxsOiM0Mjg1ZjQ7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5JY29uXzI0cHhfSUFNX0NvbG9yPC90aXRsZT48ZyBkYXRhLW5hbWU9IlByb2R1Y3QgSWNvbnMiPjxnID48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xMiwyLDMuNzksNS40MnY1LjYzYzAsNS4wNiwzLjUsOS44LDguMjEsMTEsNC43MS0xLjE1LDguMjEtNS44OSw4LjIxLTEwLjk1VjUuNDJabTAsMy43OWEyLjYzLDIuNjMsMCwxLDEtMS44Ni43N0EyLjYzLDIuNjMsMCwwLDEsMTIsNS43OVptNC4xMSwxMS4xNUE4LjY0LDguNjQsMCwwLDEsMTIsMTkuODdhOC42NCw4LjY0LDAsMCwxLTQuMTEtMi45M1YxNC42OWMwLTEuNjcsMi43NC0yLjUyLDQuMTEtMi41MnM0LjExLjg1LDQuMTEsMi41MnYyLjI1WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTEyLDJWNS43OWEyLjYzLDIuNjMsMCwxLDEsMCw1LjI2djEuMTJjMS4zNywwLDQuMTEuODUsNC4xMSwyLjUydjIuMjVBOC42NCw4LjY0LDAsMCwxLDEyLDE5Ljg3VjIyYzQuNzEtMS4xNSw4LjIxLTUuODksOC4yMS0xMC45NVY1LjQyWiIvPjwvZz48L2c+PC9zdmc+{scale="+$scale+"}>"
+!endfunction
+
+
+!procedure IdentityAndAccessManagement(e_alias, e_label)
+    GCEntity(e_alias, e_label, IdentityAndAccessManagement, IdentityAndAccessManagement)
+!endprocedure
+
+!procedure IdentityAndAccessManagement(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, IdentityAndAccessManagement, IdentityAndAccessManagement)
+!endprocedure
+
+$GCDefineEntityStyle(IdentityAndAccessManagement)
+
+
+!procedure IdentityAndAccessManagementParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, IdentityAndAccessManagement, IdentityAndAccessManagement)
+!endprocedure
+
+!procedure IdentityAndAccessManagementParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, IdentityAndAccessManagement, IdentityAndAccessManagement)
+!endprocedure
+
+
+!procedure IdentityAndAccessManagementGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, IdentityAndAccessManagement, IdentityAndAccessManagementGroup)
+!endprocedure
+
+!procedure IdentityAndAccessManagementGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, IdentityAndAccessManagement, IdentityAndAccessManagementGroup)
+!endprocedure
+
+$GCDefineGroupStyle(IdentityAndAccessManagementGroup)

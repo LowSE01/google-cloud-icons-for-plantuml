@@ -1,0 +1,34 @@
+!function $ErrorReportingIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM2NjlkZjY7fS5jbHMtMSwuY2xzLTJ7ZmlsbC1ydWxlOmV2ZW5vZGQ7fS5jbHMtMntmaWxsOiM0Mjg1ZjQ7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5JY29uXzI0cHhfRXJyb3JSZXBvcnRpbmdfQ29sb3I8L3RpdGxlPjxnIGRhdGEtbmFtZT0iUHJvZHVjdCBJY29ucyI+PGcgPjxwb2x5Z29uIGlkPSJGaWxsLTEiIGNsYXNzPSJjbHMtMSIgcG9pbnRzPSI3IDIgMiA3IDIgMTcgNyAyMiAxMiAyMiA5LjUgMTkuMTQgOC4yNSAxOS4xNCA0Ljg2IDE1Ljc1IDQuODYgOC4yNSA4LjI1IDQuODYgOS41IDQuODYgMTIgMiA3IDIiLz48cG9seWdvbiBpZD0iRmlsbC0yIiBjbGFzcz0iY2xzLTEiIHBvaW50cz0iMTQuNSAyIDEyIDQuODYgMTUuNzUgNC44NiAxOS4xNCA4LjI1IDE5LjE0IDE1Ljc1IDE1Ljc1IDE5LjE0IDEyIDE5LjE0IDE0LjUgMjIgMTcgMjIgMjIgMTcgMjIgNyAxNyAyIDE0LjUgMiIvPjxwb2x5Z29uIGlkPSJGaWxsLTMiIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxMiAxNyA5LjUgMTQuNSAxMiAxMiA5LjUgOS41IDEyIDcgOS41IDcgNyA5LjUgNyAxNC41IDkuNSAxNyAxMiAxNyIvPjxwb2x5Z29uIGlkPSJGaWxsLTQiIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxNC41IDcgMTIgOS41IDE0LjUgMTIgMTIgMTQuNSAxNC41IDE3IDE3IDE0LjUgMTcgOS41IDE0LjUgNyIvPjwvZz48L2c+PC9zdmc+{scale="+$scale+"}>"
+!endfunction
+
+
+!procedure ErrorReporting(e_alias, e_label)
+    GCEntity(e_alias, e_label, ErrorReporting, ErrorReporting)
+!endprocedure
+
+!procedure ErrorReporting(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, ErrorReporting, ErrorReporting)
+!endprocedure
+
+$GCDefineEntityStyle(ErrorReporting)
+
+
+!procedure ErrorReportingParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, ErrorReporting, ErrorReporting)
+!endprocedure
+
+!procedure ErrorReportingParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, ErrorReporting, ErrorReporting)
+!endprocedure
+
+
+!procedure ErrorReportingGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, ErrorReporting, ErrorReportingGroup)
+!endprocedure
+
+!procedure ErrorReportingGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, ErrorReporting, ErrorReportingGroup)
+!endprocedure
+
+$GCDefineGroupStyle(ErrorReportingGroup)

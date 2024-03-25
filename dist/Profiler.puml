@@ -1,0 +1,34 @@
+!function $ProfilerIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM2NjlkZjY7fS5jbHMtMntmaWxsOiM0Mjg1ZjQ7fS5jbHMtM3tmaWxsOiNhZWNiZmE7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5JY29uXzI0cHhfUHJvZmlsZXJfQ29sb3I8L3RpdGxlPjxnIGRhdGEtbmFtZT0iUHJvZHVjdCBJY29ucyI+PGcgZGF0YS1uYW1lPSJjb2xvcmVkLTMyL3Byb2ZpbGVyIj48ZyA+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSI4IiB5PSIyIiB3aWR0aD0iOCIgaGVpZ2h0PSIyIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTYuNTQsNy40M2wtLjEzLjEzTDE4LDkuMTYsMTguMTIsOUE4LDgsMCwwLDAsMTYuNTQsNy40M1oiLz48cG9seWdvbiBjbGFzcz0iY2xzLTEiIHBvaW50cz0iMjAuNjEgNi41NSAxOS4wMSA0Ljk1IDE2LjYgNy4zNiAxOS4xMSA4LjA1IDIwLjYxIDYuNTUiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0xNi42LDcuMzZsLS4wNi4wN0E4LDgsMCwwLDEsMTguMTIsOWwxLTFaIi8+PGNpcmNsZSBpZD0iT3ZhbCIgY2xhc3M9ImNscy0xIiBjeD0iMTIiIGN5PSIxNCIgcj0iNCIvPjxwYXRoIGlkPSJPdmFsLTIiIGRhdGEtbmFtZT0iT3ZhbCIgY2xhc3M9ImNscy0zIiBkPSJNMTIsMThhNCw0LDAsMSwwLDAtOHY0TDguNzMsMTYuMzJBNCw0LDAsMCwwLDEyLDE4WiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTEyLDIyYTgsOCwwLDEsMSw4LThBOCw4LDAsMCwxLDEyLDIyWm0wLTJhNiw2LDAsMSwwLTYtNkE2LDYsMCwwLDAsMTIsMjBaIi8+PC9nPjwvZz48L2c+PC9zdmc+{scale="+$scale+"}>"
+!endfunction
+
+
+!procedure Profiler(e_alias, e_label)
+    GCEntity(e_alias, e_label, Profiler, Profiler)
+!endprocedure
+
+!procedure Profiler(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, Profiler, Profiler)
+!endprocedure
+
+$GCDefineEntityStyle(Profiler)
+
+
+!procedure ProfilerParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, Profiler, Profiler)
+!endprocedure
+
+!procedure ProfilerParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, Profiler, Profiler)
+!endprocedure
+
+
+!procedure ProfilerGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, Profiler, ProfilerGroup)
+!endprocedure
+
+!procedure ProfilerGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, Profiler, ProfilerGroup)
+!endprocedure
+
+$GCDefineGroupStyle(ProfilerGroup)

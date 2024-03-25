@@ -1,0 +1,34 @@
+!function $CloudExternalIpAddressesIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM2NjlkZjY7fS5jbHMtMntmaWxsOiM0Mjg1ZjQ7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5JY29uXzI0cHhfRXh0ZXJuYWxJUEFkZHJlc3Nlc0NvbG9yPC90aXRsZT48ZyBkYXRhLW5hbWU9IlByb2R1Y3QgSWNvbnMiPjxnID48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xNy40OSwxMi40djYuN2EuNC40LDAsMCwxLS40LjRINC45YS40LjQsMCwwLDEtLjQtLjRWNi45YS40LjQsMCwwLDEsLjQtLjRoNi43YS40LjQsMCwwLDAsLjQtLjRWNC40YS40LjQsMCwwLDAtLjQtLjRIMi40YS40LjQsMCwwLDAtLjQuNFYyMS42YS40LjQsMCwwLDAsLjQuNEgxOS42YS40LjQsMCwwLDAsLjQtLjRWMTIuNGEuNC40LDAsMCwwLS40LS40SDE3Ljg5QS40LjQsMCwwLDAsMTcuNDksMTIuNFoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0xNCwyLjRWOS42YS40LjQsMCwwLDAsLjQuNGg3LjJhLjQuNCwwLDAsMCwuNC0uNFYyLjRhLjQuNCwwLDAsMC0uNC0uNEgxNC40QS40LjQsMCwwLDAsMTQsMi40Wm01LjYsNC4xSDE3Ljg5YS40LjQsMCwwLDEtLjQtLjRWNC40YS40LjQsMCwwLDEsLjQtLjRIMTkuNmEuNC40LDAsMCwxLC40LjRWNi4xQS40LjQsMCwwLDEsMTkuNiw2LjVaIi8+PC9nPjwvZz48L3N2Zz4={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure CloudExternalIpAddresses(e_alias, e_label)
+    GCEntity(e_alias, e_label, CloudExternalIpAddresses, CloudExternalIpAddresses)
+!endprocedure
+
+!procedure CloudExternalIpAddresses(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, CloudExternalIpAddresses, CloudExternalIpAddresses)
+!endprocedure
+
+$GCDefineEntityStyle(CloudExternalIpAddresses)
+
+
+!procedure CloudExternalIpAddressesParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, CloudExternalIpAddresses, CloudExternalIpAddresses)
+!endprocedure
+
+!procedure CloudExternalIpAddressesParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, CloudExternalIpAddresses, CloudExternalIpAddresses)
+!endprocedure
+
+
+!procedure CloudExternalIpAddressesGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudExternalIpAddresses, CloudExternalIpAddressesGroup)
+!endprocedure
+
+!procedure CloudExternalIpAddressesGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudExternalIpAddresses, CloudExternalIpAddressesGroup)
+!endprocedure
+
+$GCDefineGroupStyle(CloudExternalIpAddressesGroup)

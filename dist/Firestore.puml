@@ -1,0 +1,34 @@
+!function $FirestoreIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM2NjlkZjY7fS5jbHMtMntmaWxsOiNhZWNiZmE7fS5jbHMtM3tmaWxsOiM0Mjg1ZjQ7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5JY29uXzI0cHhfRmlyZXN0b3JlX0NvbG9yPC90aXRsZT48ZyBkYXRhLW5hbWU9IlByb2R1Y3QgSWNvbnMiPjxnIGRhdGEtbmFtZT0iY29sb3JlZC0zMi9maXJlc3RvcmUiPjxnID48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0yMSwxMywxMiw5djRsOSw0Wm0wLTdMMTIsMlY2bDksNFoiLz48cG9seWdvbiBpZD0iUmVjdGFuZ2xlLTciIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIzIDYgMTIgMiAxMiA2IDMgMTAgMyA2Ii8+PHBvbHlnb24gaWQ9IlJlY3RhbmdsZS03LTIiIGRhdGEtbmFtZT0iUmVjdGFuZ2xlLTciIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIzIDEzIDEyIDkgMTIgMTMgMyAxNyAzIDEzIi8+PHBvbHlnb24gaWQ9IlJlY3RhbmdsZS03LTMiIGRhdGEtbmFtZT0iUmVjdGFuZ2xlLTciIGNsYXNzPSJjbHMtMyIgcG9pbnRzPSIxMiAxOCAxNS4zNyAxNi41IDE5Ljg4IDE4LjUgMTIgMjIgMTIgMTgiLz48L2c+PC9nPjwvZz48L3N2Zz4={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure Firestore(e_alias, e_label)
+    GCEntity(e_alias, e_label, Firestore, Firestore)
+!endprocedure
+
+!procedure Firestore(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, Firestore, Firestore)
+!endprocedure
+
+$GCDefineEntityStyle(Firestore)
+
+
+!procedure FirestoreParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, Firestore, Firestore)
+!endprocedure
+
+!procedure FirestoreParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, Firestore, Firestore)
+!endprocedure
+
+
+!procedure FirestoreGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, Firestore, FirestoreGroup)
+!endprocedure
+
+!procedure FirestoreGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, Firestore, FirestoreGroup)
+!endprocedure
+
+$GCDefineGroupStyle(FirestoreGroup)

@@ -1,0 +1,34 @@
+!function $AutomlVisionIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM2NjlkZjY7fS5jbHMtMntmaWxsOiM0Mjg1ZjQ7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5JY29uXzI0cHhfQXV0b01MVmlzaW9uX0NvbG9yPC90aXRsZT48ZyBkYXRhLW5hbWU9IlByb2R1Y3QgSWNvbnMiPjxwb2x5Z29uIGNsYXNzPSJjbHMtMSIgcG9pbnRzPSIxMy40NCAxMy43NyA4LjYzIDEzLjggMTAuNjEgMTAuMjYgMTUuNDEgMTAuMjMgMTMuNDQgMTMuNzciLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik02LjgyLDE5LjQ2bC45NSwxLjY1aDkuNDlMMjIsMTIuODksMjAuMSw5LjZsLTQuNzQsOC4yMUg3Ljc3WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTE3LjE4LDQuNTRsLS45NS0xLjY1SDYuNzRMMiwxMS4xMSwzLjksMTQuNCw4LjY0LDYuMTloNy41OVoiLz48L2c+PC9zdmc+{scale="+$scale+"}>"
+!endfunction
+
+
+!procedure AutomlVision(e_alias, e_label)
+    GCEntity(e_alias, e_label, AutomlVision, AutomlVision)
+!endprocedure
+
+!procedure AutomlVision(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, AutomlVision, AutomlVision)
+!endprocedure
+
+$GCDefineEntityStyle(AutomlVision)
+
+
+!procedure AutomlVisionParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, AutomlVision, AutomlVision)
+!endprocedure
+
+!procedure AutomlVisionParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, AutomlVision, AutomlVision)
+!endprocedure
+
+
+!procedure AutomlVisionGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, AutomlVision, AutomlVisionGroup)
+!endprocedure
+
+!procedure AutomlVisionGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, AutomlVision, AutomlVisionGroup)
+!endprocedure
+
+$GCDefineGroupStyle(AutomlVisionGroup)

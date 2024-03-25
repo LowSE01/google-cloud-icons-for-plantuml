@@ -1,0 +1,34 @@
+!function $StreamSuiteIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyLjAwMDAwMCwgNS4wMDAwMDApIj4KICAgICAgICAgICAgPHBvbHlnb24gZmlsbD0iIzQyODVGNCIgcG9pbnRzPSI1LjczMzk3Nzk2IDEuMDA3MDQyMjUgMTYuMDg5OTkxNCAxLjAwNzA0MjI1IDE0Ljk1NzY2NDMgMi42MTgzMDk4NiA0LjU2NTI1ODIyIDIuNjE4MzA5ODYiPjwvcG9seWdvbj4KICAgICAgICAgICAgPHBvbHlnb24gZmlsbD0iIzQyODVGNCIgcG9pbnRzPSIzLjQ1MTM0ODg1IDQuMjk2NzEzNjIgMTMuODA3MzYyMyA0LjI5NjcxMzYyIDEyLjY3NTAzNTEgNS45MDc5ODEyMiAyLjI4MjYyOTExIDUuOTA3OTgxMjIiPjwvcG9seWdvbj4KICAgICAgICAgICAgPHBvbHlnb24gZmlsbD0iIzQyODVGNCIgcG9pbnRzPSIxLjE2ODcxOTc0IDcuNTg2Mzg0OTggMTEuNTI0NzMzMiA3LjU4NjM4NDk4IDEwLjM5MjQwNiA5LjE5NzY1MjU4IC00LjI2MzI1NjQxZS0xNCA5LjE5NzY1MjU4Ij48L3BvbHlnb24+CiAgICAgICAgICAgIDxjaXJjbGUgc3Ryb2tlPSIjNDI4NUY0IiBzdHJva2Utd2lkdGg9IjEuNjExMjY3NjEiIGN4PSIxMC4zMzg5NjcxIiBjeT0iMTMuMjI1ODIxNiIgcj0iMS41NDQxMzE0NiI+PC9jaXJjbGU+CiAgICAgICAgICAgIDxwb2x5Z29uIGZpbGw9IiM0Mjg1RjQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE1LjM2MDQ4MSwgNi4xMTA4NjkpIHJvdGF0ZSgtNTUuMDAwMDAwKSB0cmFuc2xhdGUoLTE1LjM2MDQ4MSwgLTYuMTEwODY5KSAiIHBvaW50cz0iOC40ODMxOTgyMSA1LjI5NDIyNjM0IDIyLjIzODIyNjMgNS4yOTAzNDQwNCAyMi4yMzc3NjQxIDYuOTI3NTEwOTQgOC40ODI3MzYwMyA2LjkzMTM5MzI0Ij48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure StreamSuite(e_alias, e_label)
+    GCEntity(e_alias, e_label, StreamSuite, StreamSuite)
+!endprocedure
+
+!procedure StreamSuite(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, StreamSuite, StreamSuite)
+!endprocedure
+
+$GCDefineEntityStyle(StreamSuite)
+
+
+!procedure StreamSuiteParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, StreamSuite, StreamSuite)
+!endprocedure
+
+!procedure StreamSuiteParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, StreamSuite, StreamSuite)
+!endprocedure
+
+
+!procedure StreamSuiteGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, StreamSuite, StreamSuiteGroup)
+!endprocedure
+
+!procedure StreamSuiteGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, StreamSuite, StreamSuiteGroup)
+!endprocedure
+
+$GCDefineGroupStyle(StreamSuiteGroup)

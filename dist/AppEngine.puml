@@ -1,0 +1,34 @@
+!function $AppEngineIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM0Mjg1ZjQ7fS5jbHMtMSwuY2xzLTIsLmNscy0ze2ZpbGwtcnVsZTpldmVub2RkO30uY2xzLTJ7ZmlsbDojYWVjYmZhO30uY2xzLTN7ZmlsbDojNjY5ZGY2O308L3N0eWxlPjwvZGVmcz48dGl0bGU+SWNvbl8yNHB4X0FwcEVuZ2luZV9Db2xvcjwvdGl0bGU+PGcgZGF0YS1uYW1lPSJQcm9kdWN0IEljb25zIj48ZyA+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTQuMywxMGwtMS4yMiwxLjIyQTEuNzEsMS43MSwwLDAsMSwxMiwxNC4yM2ExLjc0LDEuNzQsMCwwLDEtMS4zMy0uNjRMOS40NSwxNC44MUEzLjQzLDMuNDMsMCwxLDAsMTQuMywxMFoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0xMiw2LjI2YTYuMjUsNi4yNSwwLDEsMCw2LjI1LDYuMjVBNi4yNSw2LjI1LDAsMCwwLDEyLDYuMjZNMTIsMTdhNC40NSw0LjQ1LDAsMSwxLDQuNDQtNC40NEE0LjQ0LDQuNDQsMCwwLDEsMTIsMTciLz48cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik0yMS42MiwxMS45bC0yLjU2LS44MWE3LjEsNy4xLDAsMCwxLC4xNywxLjUzLDcuNjIsNy42MiwwLDAsMS0uMDgsMS4wOGgyLjQ3YS40NC40NCwwLDAsMCwuMzgtLjQydi0xYS40NC40NCwwLDAsMC0uMzgtLjQyIi8+PHBhdGggY2xhc3M9ImNscy0zIiBkPSJNMTIsNS41MmE3LjQ4LDcuNDgsMCwwLDEsMS41LjE1bC0uOTItMi41NWMtLjA3LS4yMi0uMjEtLjM4LS40Mi0uMzhoLS4zOGEuNDUuNDUsMCwwLDAtLjQyLjM4bC0uOCwyLjU0QTcuNjQsNy42NCwwLDAsMSwxMiw1LjUyIi8+PHBhdGggY2xhc3M9ImNscy0zIiBkPSJNNC43NywxMi42MmE3LjEsNy4xLDAsMCwxLC4xNy0xLjUzbC0yLjU2LjgxYS40NC40NCwwLDAsMC0uMzguNDJ2MWEuNDQuNDQsMCwwLDAsLjM4LjQySDQuODVhNy42Miw3LjYyLDAsMCwxLS4wOC0xLjA4Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTIsMTBhMi41LDIuNSwwLDEsMCwyLjUsMi41QTIuNSwyLjUsMCwwLDAsMTIsMTBabTAsMy43NWExLjI1LDEuMjUsMCwxLDEsMS4yNS0xLjI1QTEuMjUsMS4yNSwwLDAsMSwxMiwxMy43NloiLz48L2c+PC9nPjwvc3ZnPg=={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure AppEngine(e_alias, e_label)
+    GCEntity(e_alias, e_label, AppEngine, AppEngine)
+!endprocedure
+
+!procedure AppEngine(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, AppEngine, AppEngine)
+!endprocedure
+
+$GCDefineEntityStyle(AppEngine)
+
+
+!procedure AppEngineParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, AppEngine, AppEngine)
+!endprocedure
+
+!procedure AppEngineParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, AppEngine, AppEngine)
+!endprocedure
+
+
+!procedure AppEngineGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, AppEngine, AppEngineGroup)
+!endprocedure
+
+!procedure AppEngineGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, AppEngine, AppEngineGroup)
+!endprocedure
+
+$GCDefineGroupStyle(AppEngineGroup)

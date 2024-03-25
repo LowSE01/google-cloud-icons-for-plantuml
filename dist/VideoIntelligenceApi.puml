@@ -1,0 +1,34 @@
+!function $VideoIntelligenceApiIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM2NjlkZjY7fS5jbHMtMntmaWxsOiM0Mjg1ZjQ7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5JY29uXzI0cHhfVmlkZW9JbnRlbGxpZ2VuY2VfQ29sb3I8L3RpdGxlPjxnIGRhdGEtbmFtZT0iUHJvZHVjdCBJY29ucyI+PGcgPjxwb2x5Z29uIGNsYXNzPSJjbHMtMSIgcG9pbnRzPSIxNi4zMyA0LjgzIDEwLjgxIDQuODMgMTIuMjggNy4xNiAxNC4zMyA3LjE2IDE0LjMzIDguNDkgMTEuNDEgOC40OSA5LjA4IDQuODMgMi4wMSA0LjgzIDIuMDEgOS4xNiA0IDkuMTYgNS4yNiA2LjgzIDcuODMgNi44MyA4LjY5IDguMTYgNi4xMiA4LjE2IDQuODYgMTAuNDkgMi4wMSAxMC40OSAyLjAxIDEzLjA4IDQuODYgMTMuMDggNi4xMiAxNS40OSA4LjY5IDE1LjQ5IDcuODMgMTYuODMgNS4yNiAxNi44MyA0IDE0LjQ5IDIuMDEgMTQuNDkgMi4wMSAxOC44MyA5LjA4IDE4LjgzIDExLjQxIDE1LjE2IDE0LjMzIDE1LjE2IDE0LjMzIDE2LjQ5IDEyLjI4IDE2LjQ5IDEwLjgxIDE4LjgzIDE2LjMzIDE4LjgzIDE2LjMzIDEyLjQ5IDkuOTIgMTIuNDkgOS4wOSAxMy44MyA3LjI1IDEzLjgzIDguNTEgMTEuODMgNy4yNSA5LjgzIDkuMDkgOS44MyA5Ljg5IDExLjE2IDE2LjMzIDExLjE2IDE2LjMzIDQuODMiLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMjIgNS45MyAxOCA4Ljg0IDE4IDE0Ljk0IDIyIDE3Ljg5IDIyIDUuOTMiLz48L2c+PC9nPjwvc3ZnPg=={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure VideoIntelligenceApi(e_alias, e_label)
+    GCEntity(e_alias, e_label, VideoIntelligenceApi, VideoIntelligenceApi)
+!endprocedure
+
+!procedure VideoIntelligenceApi(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, VideoIntelligenceApi, VideoIntelligenceApi)
+!endprocedure
+
+$GCDefineEntityStyle(VideoIntelligenceApi)
+
+
+!procedure VideoIntelligenceApiParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, VideoIntelligenceApi, VideoIntelligenceApi)
+!endprocedure
+
+!procedure VideoIntelligenceApiParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, VideoIntelligenceApi, VideoIntelligenceApi)
+!endprocedure
+
+
+!procedure VideoIntelligenceApiGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, VideoIntelligenceApi, VideoIntelligenceApiGroup)
+!endprocedure
+
+!procedure VideoIntelligenceApiGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, VideoIntelligenceApi, VideoIntelligenceApiGroup)
+!endprocedure
+
+$GCDefineGroupStyle(VideoIntelligenceApiGroup)

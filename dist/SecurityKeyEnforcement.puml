@@ -1,0 +1,34 @@
+!function $SecurityKeyEnforcementIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM0Mjg1ZjQ7fS5jbHMtMntmaWxsOiM2NjlkZjY7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5JY29uXzI0cHhfU2VjS2V5RW5mb3JjZXJfQ29sb3I8L3RpdGxlPjxnIGRhdGEtbmFtZT0iUHJvZHVjdCBJY29ucyI+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNNy43OCwxNi42VjEyLjg1YzAtLjE1LS4yOS0uMzQtLjQ5LS40M2E1LjQ2LDUuNDYsMCwxLDEsNy40NC02LjgzQTUuNCw1LjQsMCwwLDEsMTIsMTIuMzhhLjgyLjgyLDAsMCwwLS41NC45VjIySDcuNzhWMjAuMjVINC4xN1YxNi42Wm0zLjY0LTkuMTFhMS44MiwxLjgyLDAsMSwwLTMuNjQtLjA2LDEuODMsMS44MywwLDAsMCwxLjgsMS44NWgwYTEuODQsMS44NCwwLDAsMCwxLjgzLTEuNzlaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTkuNTIsNS41OUE1LjQ0LDUuNDQsMCwwLDAsMTMuMiwyLjE1YTUuNDQsNS40NCwwLDAsMSwxLjEzLDEwLjIzLjg0Ljg0LDAsMCwwLS41NS45VjIyaDIuNDNWMTMuMjlhLjgzLjgzLDAsMCwxLC41NS0uOUE1LjQsNS40LDAsMCwwLDE5LjUyLDUuNTlaIi8+PC9nPjwvc3ZnPg=={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure SecurityKeyEnforcement(e_alias, e_label)
+    GCEntity(e_alias, e_label, SecurityKeyEnforcement, SecurityKeyEnforcement)
+!endprocedure
+
+!procedure SecurityKeyEnforcement(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, SecurityKeyEnforcement, SecurityKeyEnforcement)
+!endprocedure
+
+$GCDefineEntityStyle(SecurityKeyEnforcement)
+
+
+!procedure SecurityKeyEnforcementParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, SecurityKeyEnforcement, SecurityKeyEnforcement)
+!endprocedure
+
+!procedure SecurityKeyEnforcementParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, SecurityKeyEnforcement, SecurityKeyEnforcement)
+!endprocedure
+
+
+!procedure SecurityKeyEnforcementGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, SecurityKeyEnforcement, SecurityKeyEnforcementGroup)
+!endprocedure
+
+!procedure SecurityKeyEnforcementGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, SecurityKeyEnforcement, SecurityKeyEnforcementGroup)
+!endprocedure
+
+$GCDefineGroupStyle(SecurityKeyEnforcementGroup)

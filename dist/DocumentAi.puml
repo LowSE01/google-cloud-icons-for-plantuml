@@ -1,0 +1,34 @@
+!function $DocumentAiIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUgMykiPjxnIGZpbGw9IiM0Mjg1ZjQiPjxwYXRoIGQ9Im03IDB2MmgtNC45Nzc3NTUzMXYxNGg0Ljk3Nzc1NTMxdjJoLTUuMzQ1Nzk0MTJjLS44NjYyNTk2MiAwLTEuNTc1ODQ2NDYtLjcyNjk4MDYtMS42NDgxNDAyLTEuNjQ1MjcxOWwtLjAwNjA2NTY4LS4xNTQ3Mjgxdi0xNC40YzAtLjk5Ljc0ODEzMzMxLTEuOCAxLjY2MjUxODQ3LTEuOHoiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Im00IDEyLjVoM3YxLjVoLTN6IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJtNCA5LjVoM3YxLjVoLTN6IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJtNCA2LjVoM3YxLjVoLTN6IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48Y2lyY2xlIGN4PSIxMS41IiBjeT0iMTYuNSIgcj0iMS41IiB0cmFuc2Zvcm09Im1hdHJpeCgxIDAgMCAtMSAwIDMzKSIvPjxjaXJjbGUgY3g9IjEzLjUiIGN5PSI3LjUiIHI9IjEuNSIgdHJhbnNmb3JtPSJtYXRyaXgoMSAwIDAgLTEgMCAxNSkiLz48Y2lyY2xlIGN4PSIxMC41IiBjeT0iMi41IiByPSIxLjUiLz48L2c+PHBhdGggZD0ibTggNy41aC44MTQxNzYyNWMxLjkxNTcwODg1IDAgMS42NzYyNDUyNS0uNzAzMjk2NyAxLjY3NjI0NTI1LTQiIHN0cm9rZT0iIzQyODVmNCIvPjxwYXRoIGQ9Im04IDEwLjQ5Mzg0NjJoLjgxMjc5NDU3YzMuNzc3MTA0MjMgMCA0LjczMzMzMzEzLjIyMTUzODQgNC42ODU1MjE2My0xLjk5Mzg0NjIiIHN0cm9rZT0iIzQyODVmNCIvPjxwYXRoIGQ9Im04IDE1LjQ5MTY5NzRoLjUxNzA0NzgxYzIuNzgwNjIyMTkuMDA2MTQ3MiAzLjAxMTA0MzA5LjIyMTI5OTcgMi45ODA2Mjg1OS0xLjk5MTY5NzQiIHN0cm9rZT0iIzQyODVmNCIgdHJhbnNmb3JtPSJtYXRyaXgoMSAwIDAgLTEgMCAyOSkiLz48L2c+PC9zdmc+{scale="+$scale+"}>"
+!endfunction
+
+
+!procedure DocumentAi(e_alias, e_label)
+    GCEntity(e_alias, e_label, DocumentAi, DocumentAi)
+!endprocedure
+
+!procedure DocumentAi(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, DocumentAi, DocumentAi)
+!endprocedure
+
+$GCDefineEntityStyle(DocumentAi)
+
+
+!procedure DocumentAiParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, DocumentAi, DocumentAi)
+!endprocedure
+
+!procedure DocumentAiParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, DocumentAi, DocumentAi)
+!endprocedure
+
+
+!procedure DocumentAiGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, DocumentAi, DocumentAiGroup)
+!endprocedure
+
+!procedure DocumentAiGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, DocumentAi, DocumentAiGroup)
+!endprocedure
+
+$GCDefineGroupStyle(DocumentAiGroup)

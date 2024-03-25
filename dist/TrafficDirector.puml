@@ -1,0 +1,34 @@
+!function $TrafficDirectorIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM0Mjg1ZjQ7fS5jbHMtMntmaWxsOiM2NjlkZjY7fS5jbHMtM3tmaWxsOiNhZWNiZmE7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5JY29uXzI0cHhfVHJhZmZpY0RldGVjdG9yX0NvbG9yPC90aXRsZT48ZyBkYXRhLW5hbWU9IlByb2R1Y3QgSWNvbnMiPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTksMTVhNi4yMiw2LjIyLDAsMCwwLTQtNVY4YTguMjIsOC4yMiwwLDAsMSw2LDdaIi8+PGcgZGF0YS1uYW1lPSJjb2xvcmVkLTMyL3RyYWZmaWMtZGlyZWN0b3IiPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTUsN3Y0TDIsOVptNiw4LjM5VjE4SDlWMTUuMzgiLz48cGF0aCBpZD0iQ29tYmluZWQtU2hhcGUtMiIgZGF0YS1uYW1lPSJDb21iaW5lZC1TaGFwZSIgY2xhc3M9ImNscy0yIiBkPSJNOSw1SDhsMi0zLDIsM0gxMVYxOEg5WiIvPjwvZz48ZyBkYXRhLW5hbWU9ImNvbG9yZWQtMzIvdHJhZmZpYy1kaXJlY3RvciI+PHBhdGggaWQ9IkNvbWJpbmVkLVNoYXBlLTMiIGRhdGEtbmFtZT0iQ29tYmluZWQtU2hhcGUiIGNsYXNzPSJjbHMtMyIgZD0iTTE5LDE3VjEzbDMsMlpNMTMsOC42MlY2aDJWOC42MiIvPjxwYXRoIGlkPSJDb21iaW5lZC1TaGFwZS00IiBkYXRhLW5hbWU9IkNvbWJpbmVkLVNoYXBlIiBjbGFzcz0iY2xzLTIiIGQ9Ik0xNSwxOWgxbC0yLDMtMi0zaDFWNmgyWiIvPjwvZz48cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik0xMyw2aDJWOC40M0E2LjEzLDYuMTMsMCwwLDAsMTksMTR2MmE4LjE1LDguMTUsMCwwLDEtNi03LjU4Ii8+PC9nPjwvc3ZnPg=={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure TrafficDirector(e_alias, e_label)
+    GCEntity(e_alias, e_label, TrafficDirector, TrafficDirector)
+!endprocedure
+
+!procedure TrafficDirector(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, TrafficDirector, TrafficDirector)
+!endprocedure
+
+$GCDefineEntityStyle(TrafficDirector)
+
+
+!procedure TrafficDirectorParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, TrafficDirector, TrafficDirector)
+!endprocedure
+
+!procedure TrafficDirectorParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, TrafficDirector, TrafficDirector)
+!endprocedure
+
+
+!procedure TrafficDirectorGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, TrafficDirector, TrafficDirectorGroup)
+!endprocedure
+
+!procedure TrafficDirectorGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, TrafficDirector, TrafficDirectorGroup)
+!endprocedure
+
+$GCDefineGroupStyle(TrafficDirectorGroup)

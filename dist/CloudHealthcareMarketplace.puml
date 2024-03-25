@@ -1,0 +1,34 @@
+!function $CloudHealthcareMarketplaceIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1LjAwMDAwMCwgMS4wMDAwMDApIj4KICAgICAgICAgICAgPHBhdGggZD0iTTEsOSBMMSwxOSBDMSwyMC4xMDQ1Njk1IDEuODk1NDMwNSwyMSAzLDIxIEwxMSwyMSBDMTIuMTA0NTY5NSwyMSAxMywyMC4xMDQ1Njk1IDEzLDE5IEwxMyw5IEwxLDkgWiIgc3Ryb2tlPSIjNDI4NUY0IiBzdHJva2Utd2lkdGg9IjIiPjwvcGF0aD4KICAgICAgICAgICAgPHJlY3QgZmlsbD0iIzQyODVGNCIgeD0iNiIgeT0iMTEiIHdpZHRoPSIyIiBoZWlnaHQ9IjgiPjwvcmVjdD4KICAgICAgICAgICAgPHJlY3QgZmlsbD0iIzQyODVGNCIgeD0iMyIgeT0iMTQiIHdpZHRoPSI4IiBoZWlnaHQ9IjIiPjwvcmVjdD4KICAgICAgICAgICAgPHJlY3QgZmlsbD0iIzQyODVGNCIgeD0iMCIgeT0iMCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjIiPjwvcmVjdD4KICAgICAgICAgICAgPHJlY3QgZmlsbD0iIzQyODVGNCIgeD0iMCIgeT0iNCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjIiPjwvcmVjdD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg=={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure CloudHealthcareMarketplace(e_alias, e_label)
+    GCEntity(e_alias, e_label, CloudHealthcareMarketplace, CloudHealthcareMarketplace)
+!endprocedure
+
+!procedure CloudHealthcareMarketplace(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, CloudHealthcareMarketplace, CloudHealthcareMarketplace)
+!endprocedure
+
+$GCDefineEntityStyle(CloudHealthcareMarketplace)
+
+
+!procedure CloudHealthcareMarketplaceParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, CloudHealthcareMarketplace, CloudHealthcareMarketplace)
+!endprocedure
+
+!procedure CloudHealthcareMarketplaceParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, CloudHealthcareMarketplace, CloudHealthcareMarketplace)
+!endprocedure
+
+
+!procedure CloudHealthcareMarketplaceGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudHealthcareMarketplace, CloudHealthcareMarketplaceGroup)
+!endprocedure
+
+!procedure CloudHealthcareMarketplaceGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudHealthcareMarketplace, CloudHealthcareMarketplaceGroup)
+!endprocedure
+
+$GCDefineGroupStyle(CloudHealthcareMarketplaceGroup)

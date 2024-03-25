@@ -1,0 +1,34 @@
+!function $CloudShellIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiNhZWNiZmE7fS5jbHMtMntmaWxsOiM0Mjg1ZjQ7fS5jbHMtM3tmaWxsOiM2NjlkZjY7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5JY29uXzI0cHhfQ2xvdWRzaGVsbF9Db2xvcjwvdGl0bGU+PGcgZGF0YS1uYW1lPSJQcm9kdWN0IEljb25zIj48ZyBkYXRhLW5hbWU9IkNsb3VkLVNoZWxsIHNoYWRlZCAzMnB4Ij48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0yMC4yLDIuNjdIMy44QTEuNzksMS43OSwwLDAsMCwyLDQuNDd2MTAuOGExLjc5LDEuNzksMCwwLDAsMS44LDEuOEgxMHYyLjI2SDh2Mmg4di0ySDE0VjE3LjA3aDYuMmExLjc5LDEuNzksMCwwLDAsMS44LTEuOFY0LjQ3QTEuNzksMS43OSwwLDAsMCwyMC4yLDIuNjdabS0zLjUzLDEyaC00di0yaDRabTAtNC41NEw3LjYsMTMuOTNWMTIuMDdsNi41My0yLjhMNy42LDYuNFY0LjUzbDkuMDcsMy43NFoiLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMTAgMTcuMDcgMTQgMTcuMDcgMTQgMTkuMzMgMTAgMTkuMzMgMTAgMTcuMDciLz48cmVjdCBjbGFzcz0iY2xzLTMiIHg9IjgiIHk9IjE5LjMzIiB3aWR0aD0iOCIgaGVpZ2h0PSIyIi8+PC9nPjwvZz48L3N2Zz4={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure CloudShell(e_alias, e_label)
+    GCEntity(e_alias, e_label, CloudShell, CloudShell)
+!endprocedure
+
+!procedure CloudShell(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, CloudShell, CloudShell)
+!endprocedure
+
+$GCDefineEntityStyle(CloudShell)
+
+
+!procedure CloudShellParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, CloudShell, CloudShell)
+!endprocedure
+
+!procedure CloudShellParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, CloudShell, CloudShell)
+!endprocedure
+
+
+!procedure CloudShellGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudShell, CloudShellGroup)
+!endprocedure
+
+!procedure CloudShellGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudShell, CloudShellGroup)
+!endprocedure
+
+$GCDefineGroupStyle(CloudShellGroup)

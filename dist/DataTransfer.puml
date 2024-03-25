@@ -1,0 +1,34 @@
+!function $DataTransferIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyBpZD0iQXJ0d29yayIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwb2x5Z29uIHBvaW50cz0iMjEuNzQgMTIuODkgMTcuNjIgMTcuMDIgMTYuNTYgMTUuOTUgMTguODggMTMuNjQgMTEuMjYgMTMuNjQgMTEuMjYgMTIuMTQgMTguODggMTIuMTQgMTYuNTYgOS44MiAxNy42MiA4Ljc2IDIxLjc0IDEyLjg5IiBzdHlsZT0iZmlsbDojNDI4NWY0Ii8+PHBhdGggZD0iTTExLjc3LDQuNzZsLjMuM1Y2bC0uMy4zQTQuNjksNC42OSwwLDAsMCw3LjQsMTBsLS4xMy41MS0uNTIuMDVhMy4xOSwzLjE5LDAsMCwwLTMsMywyLjgzLDIuODMsMCwwLDAsMCwuNDFMMi41MiwxNWE0LjEsNC4xLDAsMCwxLS4yOC0xLjQ4QTQuNjEsNC42MSwwLDAsMSw2LjA5LDkuMTQsNi4xMiw2LjEyLDAsMCwxLDExLjc3LDQuNzZaIiBzdHlsZT0iZmlsbDojYWVjYmZhIi8+PHBvbHlnb24gcG9pbnRzPSIxNC4wMSAxNy40NSA2LjM4IDE3LjQ1IDguNyAxOS43NyA3LjY0IDIwLjgzIDMuNTEgMTYuNyA3LjY0IDEyLjU3IDguNyAxMy42NCA2LjM4IDE1Ljk1IDE0LjAxIDE1Ljk1IDE0LjAxIDE3LjQ1IiBzdHlsZT0iZmlsbDojNDI4NWY0Ii8+PHBhdGggZD0iTTE2LjYzLDcuNDlsLTEuMSwxYTQuNDUsNC40NSwwLDAsMC0zLjc2LTIuMjdWNC43NkE1Ljg4LDUuODgsMCwwLDEsMTYuNjMsNy40OVoiIHN0eWxlPSJmaWxsOiM2NjlkZjYiLz48L3N2Zz4={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure DataTransfer(e_alias, e_label)
+    GCEntity(e_alias, e_label, DataTransfer, DataTransfer)
+!endprocedure
+
+!procedure DataTransfer(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, DataTransfer, DataTransfer)
+!endprocedure
+
+$GCDefineEntityStyle(DataTransfer)
+
+
+!procedure DataTransferParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, DataTransfer, DataTransfer)
+!endprocedure
+
+!procedure DataTransferParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, DataTransfer, DataTransfer)
+!endprocedure
+
+
+!procedure DataTransferGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, DataTransfer, DataTransferGroup)
+!endprocedure
+
+!procedure DataTransferGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, DataTransfer, DataTransferGroup)
+!endprocedure
+
+$GCDefineGroupStyle(DataTransferGroup)

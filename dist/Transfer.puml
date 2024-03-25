@@ -1,0 +1,34 @@
+!function $TransferIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzLjAwMDAwMCwgMi4wMDAwMDApIiBmaWxsPSIjNDI4NUY0Ij4KICAgICAgICAgICAgPHBhdGggZD0iTTExLDMgTDExLDAuNSBMMTgsNSBMMTEsOS41IEwxMSw3IEwyLjExNDk3LDcgQzEuNTYyNjksNyAxLjExNDk3LDYuNTUyMjggMS4xMTQ5Nyw2IEwxLjExNDk3LDQgQzEuMTE0OTcsMy40NDc3MiAxLjU2MjY5LDMgMi4xMTQ5NywzIEwxMSwzIFogTTcsMTAuNSBMNywxMyBMMTUuODMxNSwxMyBDMTYuMzgzOCwxMyAxNi44MzE1LDEzLjQ0NzcgMTYuODMxNSwxNCBMMTYuODMxNSwxNiBDMTYuODMxNSwxNi41NTIzIDE2LjM4MzgsMTcgMTUuODMxNSwxNyBMNywxNyBMNywxOS41IEwwLDE1IEw3LDEwLjUgWiIgPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg=={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure Transfer(e_alias, e_label)
+    GCEntity(e_alias, e_label, Transfer, Transfer)
+!endprocedure
+
+!procedure Transfer(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, Transfer, Transfer)
+!endprocedure
+
+$GCDefineEntityStyle(Transfer)
+
+
+!procedure TransferParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, Transfer, Transfer)
+!endprocedure
+
+!procedure TransferParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, Transfer, Transfer)
+!endprocedure
+
+
+!procedure TransferGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, Transfer, TransferGroup)
+!endprocedure
+
+!procedure TransferGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, Transfer, TransferGroup)
+!endprocedure
+
+$GCDefineGroupStyle(TransferGroup)

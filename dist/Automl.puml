@@ -1,0 +1,34 @@
+!function $AutomlIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM0Mjg1ZjQ7fS5jbHMtMntmaWxsOiM2NjlkZjY7ZmlsbC1vcGFjaXR5OjAuODt9LmNscy0ze2ZpbGw6I2FlY2JmYTtmaWxsLW9wYWNpdHk6MC42O308L3N0eWxlPjwvZGVmcz48dGl0bGU+SWNvbl8yNHB4X0F1dG9NTF9Db2xvcjwvdGl0bGU+PGcgZGF0YS1uYW1lPSJQcm9kdWN0IEljb25zIj48cG9seWdvbiBjbGFzcz0iY2xzLTEiIHBvaW50cz0iNC41IDE2LjcyIDkuNSA4LjE0IDExLjE3IDguMTQgMTIuODMgNS41NyAxMS4xNSAzIDcgMyAyIDExLjU4IDQuNSAxNi43MiIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxNC41IDUuNTcgMTIuODMgOC4xNCAxNi4xNyA4LjE0IDE3LjgzIDUuNTcgMTYuMTcgMyAxMi44MyAzIDE0LjUgNS41NyIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMyIgcG9pbnRzPSIxOS41IDcuMjggMTQuNSAxNS44NiAxMi44MyAxNS44NiAxMS4xNyAxOC40MyAxMi44NSAyMSAxNyAyMSAyMiAxMi40MiAxOS41IDcuMjgiLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMTEuMTcgMjEgOS41IDE4LjQzIDExLjE3IDE1Ljg2IDcuODMgMTUuODYgNi4xNyAxOC40MyA3LjgzIDIxIDExLjE3IDIxIi8+PC9nPjwvc3ZnPg=={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure Automl(e_alias, e_label)
+    GCEntity(e_alias, e_label, Automl, Automl)
+!endprocedure
+
+!procedure Automl(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, Automl, Automl)
+!endprocedure
+
+$GCDefineEntityStyle(Automl)
+
+
+!procedure AutomlParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, Automl, Automl)
+!endprocedure
+
+!procedure AutomlParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, Automl, Automl)
+!endprocedure
+
+
+!procedure AutomlGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, Automl, AutomlGroup)
+!endprocedure
+
+!procedure AutomlGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, Automl, AutomlGroup)
+!endprocedure
+
+$GCDefineGroupStyle(AutomlGroup)

@@ -1,0 +1,34 @@
+!function $DataLayersIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyBpZD0iQXJ0d29yayIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxyZWN0IHg9IjExLjI1IiB5PSI0LjEiIHdpZHRoPSIxLjUiIGhlaWdodD0iNC42NCIgc3R5bGU9ImZpbGw6I2FlY2JmYSIvPjxwYXRoIGQ9Ik0xMiwyMC44LDIuMjUsMTQuMzIsMTIsNy44NGw5Ljc1LDYuNDhaTTUsMTQuMzIsMTIsMTlsNy00LjY4TDEyLDkuNjRaIiBzdHlsZT0iZmlsbDojNjY5ZGY2Ii8+PHBhdGggZD0iTTEyLDE2LjE2LDIuMjUsOS42OCwxMiwzLjJsOS43NSw2LjQ4Wk01LDkuNjhsNyw0LjY4LDctNC42OEwxMiw1WiIgc3R5bGU9ImZpbGw6I2FlY2JmYSIvPjxwYXRoIGQ9Ik0xOC4yNiwxMiwxMiw3Ljg0LDUuNzQsMTIsMTIsMTYuMTZaIiBzdHlsZT0iZmlsbDojNDI4NWY0Ii8+PC9zdmc+{scale="+$scale+"}>"
+!endfunction
+
+
+!procedure DataLayers(e_alias, e_label)
+    GCEntity(e_alias, e_label, DataLayers, DataLayers)
+!endprocedure
+
+!procedure DataLayers(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, DataLayers, DataLayers)
+!endprocedure
+
+$GCDefineEntityStyle(DataLayers)
+
+
+!procedure DataLayersParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, DataLayers, DataLayers)
+!endprocedure
+
+!procedure DataLayersParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, DataLayers, DataLayers)
+!endprocedure
+
+
+!procedure DataLayersGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, DataLayers, DataLayersGroup)
+!endprocedure
+
+!procedure DataLayersGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, DataLayers, DataLayersGroup)
+!endprocedure
+
+$GCDefineGroupStyle(DataLayersGroup)

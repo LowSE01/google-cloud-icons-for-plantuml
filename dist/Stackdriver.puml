@@ -1,0 +1,34 @@
+!function $StackdriverIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyBpZD0iQXJ0d29yayIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwb2x5Z29uIHBvaW50cz0iMTEuMTkgMTEuMzUgMTUuNzUgMy41MSA2Ljc1IDMuNTEgMi4yNSAxMS4zNSAxMS4xOSAxMS4zNSIgc3R5bGU9ImZpbGw6I2FlY2JmYSIvPjxwb2x5Z29uIHBvaW50cz0iMi4yNSAxMi42NSA2Ljc0IDIwLjQ5IDE1LjczIDIwLjQ5IDExLjI1IDEyLjY1IDIuMjUgMTIuNjUiIHN0eWxlPSJmaWxsOiM0Mjg1ZjQiLz48cGF0aCBkPSJNMjEuNzUsMTJsLTQuNS03Ljg3TDEyLjc0LDEybDQuNTEsNy44N1oiIHN0eWxlPSJmaWxsOiM2NjlkZjYiLz48L3N2Zz4={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure Stackdriver(e_alias, e_label)
+    GCEntity(e_alias, e_label, Stackdriver, Stackdriver)
+!endprocedure
+
+!procedure Stackdriver(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, Stackdriver, Stackdriver)
+!endprocedure
+
+$GCDefineEntityStyle(Stackdriver)
+
+
+!procedure StackdriverParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, Stackdriver, Stackdriver)
+!endprocedure
+
+!procedure StackdriverParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, Stackdriver, Stackdriver)
+!endprocedure
+
+
+!procedure StackdriverGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, Stackdriver, StackdriverGroup)
+!endprocedure
+
+!procedure StackdriverGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, Stackdriver, StackdriverGroup)
+!endprocedure
+
+$GCDefineGroupStyle(StackdriverGroup)

@@ -1,0 +1,34 @@
+!function $BareMetalSolutionsIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjNDI4NWY0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzIDMpIj48cGF0aCBkPSJtOSAxNy45ODk0NjE4LTktNC4yNzUxNzYxIDQuNS0xLjQyODU3MTQgNC41IDQuMjg1NzE0MyA0LjUtNC4yODU3MTQzIDQuNSAxLjQyODU3MTR6Ii8+PHBhdGggZD0ibTkgMCA3LjUgNy4xNDI4NTcxNC03LjUgNy4xNDI4NTcxNi03LjUtNy4xNDI4NTcxNnptMCAxLjQyODU3MTQzLTYgNS43MTQyODU3MSA2IDUuNzE0Mjg1NzYgNi01LjcxNDI4NTc2eiIvPjxwYXRoIGQ9Im0xNS44NDEgOS4yODQ3MTQyOS42NTkuNjMtNy41MDAzNzY2IDcuMjI4MTQyODEtNy41MDA2MjM0LTcuMjI4MTQyODEuNjU5LS42MjkuNjI3LjYtLjA2MjA1MjQ3LjA1OTMyMDUyIDYuMjc2Njc1ODcgNS44ODkxMjczOSA2LjI3NjY3NTktNS44ODkxMjczOS0uMDYzMjk5My0uMDU5MzIwNTJ6Ii8+PC9nPjwvc3ZnPg=={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure BareMetalSolutions(e_alias, e_label)
+    GCEntity(e_alias, e_label, BareMetalSolutions, BareMetalSolutions)
+!endprocedure
+
+!procedure BareMetalSolutions(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, BareMetalSolutions, BareMetalSolutions)
+!endprocedure
+
+$GCDefineEntityStyle(BareMetalSolutions)
+
+
+!procedure BareMetalSolutionsParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, BareMetalSolutions, BareMetalSolutions)
+!endprocedure
+
+!procedure BareMetalSolutionsParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, BareMetalSolutions, BareMetalSolutions)
+!endprocedure
+
+
+!procedure BareMetalSolutionsGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, BareMetalSolutions, BareMetalSolutionsGroup)
+!endprocedure
+
+!procedure BareMetalSolutionsGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, BareMetalSolutions, BareMetalSolutionsGroup)
+!endprocedure
+
+$GCDefineGroupStyle(BareMetalSolutionsGroup)

@@ -1,0 +1,34 @@
+!function $CloudDeployIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+CiAgICA8cG9seWdvbiBwb2ludHM9IjIwLjM5IDE4LjI0IDIwLjM5IDggMTEuNTIgMi44OSAxMS41MiA3LjU1IDE2LjM3IDEwLjMyIDE2LjM1IDE1LjkxIDIwLjM5IDE4LjI0IiBzdHlsZT0iZmlsbDojNDI4NWY0Ii8+CiAgICA8cG9seWdvbiBwb2ludHM9IjE0Ljc5IDE5Ljg2IDE0Ljc5IDExLjIzIDcuMzMgNi45MiA3LjMzIDEwLjk0IDExLjM0IDEzLjIzIDExLjMyIDE3Ljg1IDE0Ljc5IDE5Ljg2IiBzdHlsZT0iZmlsbDojNjY5ZGY2Ii8+CiAgICA8cG9seWdvbiBwb2ludHM9IjkuNzYgMjEuMTUgOS43NiAxNC4xNCAzLjY5IDEwLjY0IDMuNjkgMTQgNi44NiAxNS44MSA2Ljg0IDE5LjQ3IDkuNzYgMjEuMTUiIHN0eWxlPSJmaWxsOiNhZWNiZmEiLz4KPC9zdmc+{scale="+$scale+"}>"
+!endfunction
+
+
+!procedure CloudDeploy(e_alias, e_label)
+    GCEntity(e_alias, e_label, CloudDeploy, CloudDeploy)
+!endprocedure
+
+!procedure CloudDeploy(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, CloudDeploy, CloudDeploy)
+!endprocedure
+
+$GCDefineEntityStyle(CloudDeploy)
+
+
+!procedure CloudDeployParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, CloudDeploy, CloudDeploy)
+!endprocedure
+
+!procedure CloudDeployParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, CloudDeploy, CloudDeploy)
+!endprocedure
+
+
+!procedure CloudDeployGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudDeploy, CloudDeployGroup)
+!endprocedure
+
+!procedure CloudDeployGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudDeploy, CloudDeployGroup)
+!endprocedure
+
+$GCDefineGroupStyle(CloudDeployGroup)

@@ -1,0 +1,34 @@
+!function $CloudEndpointsIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM0Mjg1ZjQ7fS5jbHMtMntmaWxsOiNhZWNiZmE7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5JY29uXzI0cHhfRW5kcG9pbnRzX0NvbG9yPC90aXRsZT48ZyBkYXRhLW5hbWU9IlByb2R1Y3QgSWNvbnMiPjxnIGRhdGEtbmFtZT0iY29sb3JlZC0zMi9lbmRwb2ludHMiPjxnID48cG9seWdvbiBjbGFzcz0iY2xzLTEiIHBvaW50cz0iMTUgMTAgOSAxMCA4IDEyIDkgMTQgMTUgMTQgMTYgMTIgMTUgMTAiLz48cG9seWdvbiBpZD0iU2hhcGUtMiIgZGF0YS1uYW1lPSJTaGFwZSIgY2xhc3M9ImNscy0yIiBwb2ludHM9IjE2IDEyIDE1IDEwIDkuNTEgMTAgOSAxMCA4IDEyIDE2IDEyIi8+PC9nPjwvZz48cG9seWdvbiBjbGFzcz0iY2xzLTEiIHBvaW50cz0iMTggNiAxNSA2IDE4Ljk3IDEyIDIwLjQ3IDkuNzUgMTggNiIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIyMS45NSAxMiAyMC40NyA5Ljc1IDE4Ljk3IDEyIDE4Ljk3IDEyIDE1IDE4IDE4IDE4IDIxLjk1IDEyIi8+PHBvbHlnb24gY2xhc3M9ImNscy0xIiBwb2ludHM9IjUuOTUgMTggOC45NSAxOCA0Ljk4IDEyIDMuNDggMTQuMjUgNS45NSAxOCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIyIDEyIDMuNDggMTQuMjUgNC45OCAxMiA0Ljk4IDEyIDguOTUgNiA1Ljk1IDYgMiAxMiIvPjwvZz48L3N2Zz4={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure CloudEndpoints(e_alias, e_label)
+    GCEntity(e_alias, e_label, CloudEndpoints, CloudEndpoints)
+!endprocedure
+
+!procedure CloudEndpoints(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, CloudEndpoints, CloudEndpoints)
+!endprocedure
+
+$GCDefineEntityStyle(CloudEndpoints)
+
+
+!procedure CloudEndpointsParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, CloudEndpoints, CloudEndpoints)
+!endprocedure
+
+!procedure CloudEndpointsParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, CloudEndpoints, CloudEndpoints)
+!endprocedure
+
+
+!procedure CloudEndpointsGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudEndpoints, CloudEndpointsGroup)
+!endprocedure
+
+!procedure CloudEndpointsGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudEndpoints, CloudEndpointsGroup)
+!endprocedure
+
+$GCDefineGroupStyle(CloudEndpointsGroup)

@@ -1,0 +1,34 @@
+!function $CloudAssetInventoryIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyLjAwMDAwMCwgNC4wMDAwMDApIiBmaWxsPSIjNDI4NUY0Ij4KICAgICAgICAgICAgPHBvbHlnb24gaWQ9IkZpbGwtMSIgcG9pbnRzPSIxMi4xMTQxNDQgMCAxMS4xMzk3NDQgMC45NzQ0IDE4LjIyODUwNCA4LjA0NTUyIDEyLjExNDE0NCAxNC4xNTk4OCA2LjAwMDYyNCA4LjA0NTUyIDguOTIwNDY0IDUuMTI0IDcuOTU1MzA0IDQuMTU5NjggNC4wNjk0NjQgOC4wNDU1MiAxMi4xMTQxNDQgMTYuMDkxMDQgMjAuMTYwNTA0IDguMDQ1NTIiPjwvcG9seWdvbj4KICAgICAgICAgICAgPHBvbHlnb24gaWQ9IkZpbGwtMiIgcG9pbnRzPSIxMC4xMjI2NzIgOS44MTMyMTYgOC4zNTUzMTIgOC4wNDU4NTYgMTAuMTIyNjcyIDYuMjc3NjU2IDExLjg5MDAzMiA4LjA0NTg1NiI+PC9wb2x5Z29uPgogICAgICAgICAgICA8cG9seWdvbiBpZD0iRmlsbC0zIiBwb2ludHM9IjguMDQ1MzUyIDAgLTAuMDAwMTY4IDguMDQ1NTIgOC4wNDUzNTIgMTYuMDkxMDQgOS4wMDg4MzIgMTUuMTI2NzIgMS45MzA5OTIgOC4wNDU1MiA4LjA0NTM1MiAxLjkzMTE2IDE0LjE1ODg3MiA4LjA0NTUyIDExLjIzOTAzMiAxMC45NjYyIDEyLjIwNTAzMiAxMS45MzIyIDE2LjA5MDg3MiA4LjA0NTUyIj48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure CloudAssetInventory(e_alias, e_label)
+    GCEntity(e_alias, e_label, CloudAssetInventory, CloudAssetInventory)
+!endprocedure
+
+!procedure CloudAssetInventory(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, CloudAssetInventory, CloudAssetInventory)
+!endprocedure
+
+$GCDefineEntityStyle(CloudAssetInventory)
+
+
+!procedure CloudAssetInventoryParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, CloudAssetInventory, CloudAssetInventory)
+!endprocedure
+
+!procedure CloudAssetInventoryParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, CloudAssetInventory, CloudAssetInventory)
+!endprocedure
+
+
+!procedure CloudAssetInventoryGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudAssetInventory, CloudAssetInventoryGroup)
+!endprocedure
+
+!procedure CloudAssetInventoryGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudAssetInventory, CloudAssetInventoryGroup)
+!endprocedure
+
+$GCDefineGroupStyle(CloudAssetInventoryGroup)

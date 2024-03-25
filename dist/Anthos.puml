@@ -1,0 +1,34 @@
+!function $AnthosIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI0IDI0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6I0ZFQkMwMDt9Cgkuc3Qxe2ZpbGw6I0VFM0MyQjt9Cgkuc3Qye2ZpbGw6IzJCQUE0Rjt9Cgkuc3Qze2ZpbGw6IzM5ODJGODt9Cjwvc3R5bGU+Cjxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iNiwxNS44IDEyLDUuMyAxOCwxNS44IDIzLDIwLjggMjMuMiwyMSAyMy4yLDIxIDEyLDEuNiAwLjgsMjEgMC44LDIxIDEsMjAuOCAiLz4KPGc+Cgk8Zz4KCQk8cG9seWdvbiBjbGFzcz0ic3QxIiBwb2ludHM9IjEyLDkuNyAxLDIwLjggNS42LDE4LjcgMTIsMTIuMyAxOC40LDE4LjcgMjMsMjAuOCAJCSIvPgoJPC9nPgo8L2c+Cjxwb2x5Z29uIGNsYXNzPSJzdDIiIHBvaW50cz0iNiwyMC42IDEuOCwyMi40IDIyLjIsMjIuNCAxOCwyMC42ICIvPgo8cG9seWdvbiBjbGFzcz0ic3QzIiBwb2ludHM9IjIzLDIwLjggMTIsMTUuOCAxLDIwLjggMCwyMi40IDEuOCwyMi40IDEyLDE3LjggMjIuMiwyMi40IDI0LDIyLjQgIi8+Cjwvc3ZnPgo={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure Anthos(e_alias, e_label)
+    GCEntity(e_alias, e_label, Anthos, Anthos)
+!endprocedure
+
+!procedure Anthos(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, Anthos, Anthos)
+!endprocedure
+
+$GCDefineEntityStyle(Anthos)
+
+
+!procedure AnthosParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, Anthos, Anthos)
+!endprocedure
+
+!procedure AnthosParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, Anthos, Anthos)
+!endprocedure
+
+
+!procedure AnthosGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, Anthos, AnthosGroup)
+!endprocedure
+
+!procedure AnthosGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, Anthos, AnthosGroup)
+!endprocedure
+
+$GCDefineGroupStyle(AnthosGroup)

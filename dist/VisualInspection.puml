@@ -1,0 +1,34 @@
+!function $VisualInspectionIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyBpZD0iQXJ0d29yayIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0xNC4yOCwxNS4zM2wxLjkzLDEuOTNMMTIsMjAuNjUsMS4yLDEySDhhNCw0LDAsMCwwLDQsNGgwQTQuMDksNC4wOSwwLDAsMCwxNC4yOCwxNS4zM1pNMTYsMTJhNCw0LDAsMCwxLS42NCwyLjE4bDIuMDgsMi4xTDIyLjgxLDEyWiIgc3R5bGU9ImZpbGw6IzY2OWRmNjtmaWxsLXJ1bGU6ZXZlbm9kZCIvPjxwYXRoIGQ9Ik0xMiwzLjM2LDEuMiwxMkg4YTQsNCwwLDAsMSw0LTRoMGE0LDQsMCwwLDEsNCw0aDYuNzlaIiBzdHlsZT0iZmlsbDojYWVjYmZhO2ZpbGwtcnVsZTpldmVub2RkIi8+PHBhdGggZD0iTTEyLDkuNTdhMi4zNywyLjM3LDAsMCwxLDEuNzEuNzEsMi40LDIuNCwwLDAsMSwwLDMuNDMsMi40MSwyLjQxLDAsMCwxLTMuNDIsMCwyLjQsMi40LDAsMCwxLDAtMy40M0EyLjM3LDIuMzcsMCwwLDEsMTIsOS41N1oiIHN0eWxlPSJmaWxsOiM0Mjg1ZjQ7ZmlsbC1ydWxlOmV2ZW5vZGQiLz48L3N2Zz4={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure VisualInspection(e_alias, e_label)
+    GCEntity(e_alias, e_label, VisualInspection, VisualInspection)
+!endprocedure
+
+!procedure VisualInspection(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, VisualInspection, VisualInspection)
+!endprocedure
+
+$GCDefineEntityStyle(VisualInspection)
+
+
+!procedure VisualInspectionParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, VisualInspection, VisualInspection)
+!endprocedure
+
+!procedure VisualInspectionParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, VisualInspection, VisualInspection)
+!endprocedure
+
+
+!procedure VisualInspectionGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, VisualInspection, VisualInspectionGroup)
+!endprocedure
+
+!procedure VisualInspectionGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, VisualInspection, VisualInspectionGroup)
+!endprocedure
+
+$GCDefineGroupStyle(VisualInspectionGroup)

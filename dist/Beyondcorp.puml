@@ -1,0 +1,34 @@
+!function $BeyondcorpIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM0Mjg1ZjQ7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5JY29uXzI0cHhfQmV5b25kQ29ycF9Db2xvcjwvdGl0bGU+PGcgZGF0YS1uYW1lPSJQcm9kdWN0IEljb25zIj48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xOS41MSw2LjkyYTEwLjQzLDEwLjQzLDAsMCwxLTEsLjkyQTguMDksOC4wOSwwLDAsMSw4LDE5LjY1SDkuNzVhNy41MSw3LjUxLDAsMCwxLS44Ni0xLjNINi4zMWE4Ljc1LDguNzUsMCwwLDEtMS0xLjE5SDguMzdBMTAuMzgsMTAuMzgsMCwwLDEsOCwxNS44NUg0LjU5YTgsOCwwLDAsMS0uNDItMS4xOUg3Ljc0Yy0uMDctLjQyLS4xMS0uODUtLjE0LTEuM0gzLjk0YTYuNTEsNi41MSwwLDAsMSwwLS43N3YtLjQzSDcuNTdhMTEuMzQsMTEuMzQsMCwwLDEsLjA4LTEuM0g0LjA4YTguMTYsOC4xNiwwLDAsMSwuMzYtMS4xOWgzLjRhOS41Miw5LjUyLDAsMCwxLC4zMy0xLjNINS4xQTgsOCwwLDAsMSw2LDcuMThIOC42MWE5LjIsOS4yLDAsMCwxLC43MS0xLjMxSDcuNWE4LjA2LDguMDYsMCwwLDEsNy43NC0uNjksMTAuNywxMC43LDAsMCwwLDEuMjksMy4xOXMyLjkzLTEuNjcsMy4zOC0zLjQ0QTIuNDIsMi40MiwwLDAsMCwxNS4yMywzLjd2LjA3YTkuNDEsOS40MSwwLDEsMCw2LjE3LDguODJBOC43MSw4LjcxLDAsMCwwLDE5LjUxLDYuOTJaTTE2LjUsNGExLjE0LDEuMTQsMCwxLDEsLjgxLDEuMzloMEExLjEzLDEuMTMsMCwwLDEsMTYuNSw0WiIvPjwvZz48L3N2Zz4={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure Beyondcorp(e_alias, e_label)
+    GCEntity(e_alias, e_label, Beyondcorp, Beyondcorp)
+!endprocedure
+
+!procedure Beyondcorp(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, Beyondcorp, Beyondcorp)
+!endprocedure
+
+$GCDefineEntityStyle(Beyondcorp)
+
+
+!procedure BeyondcorpParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, Beyondcorp, Beyondcorp)
+!endprocedure
+
+!procedure BeyondcorpParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, Beyondcorp, Beyondcorp)
+!endprocedure
+
+
+!procedure BeyondcorpGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, Beyondcorp, BeyondcorpGroup)
+!endprocedure
+
+!procedure BeyondcorpGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, Beyondcorp, BeyondcorpGroup)
+!endprocedure
+
+$GCDefineGroupStyle(BeyondcorpGroup)

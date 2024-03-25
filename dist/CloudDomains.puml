@@ -1,0 +1,34 @@
+!function $CloudDomainsIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyBpZD0iQXJ0d29yayIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwb2x5Z29uIHBvaW50cz0iMTYuMzggNS43NyAxMS4yOSAxOC4yMiAxMi43MSA1Ljc3IDE2LjM4IDUuNzciIHN0eWxlPSJmaWxsOiM2NjlkZjY7ZmlsbC1ydWxlOmV2ZW5vZGQiLz48cG9seWdvbiBwb2ludHM9IjEyLjcxIDUuNzcgMTEuMjkgMTguMjIgNy42MiAxOC4yMiAxMi43MSA1Ljc3IiBzdHlsZT0iZmlsbDojYWVjYmZhO2ZpbGwtcnVsZTpldmVub2RkIi8+PHBhdGggZD0iTTMuNzEsMTQuNjUsMi4yNSwxOC4yMkg0LjgybC40MS0zLjU3WiIgc3R5bGU9ImZpbGw6I2FlY2JmYTtmaWxsLXJ1bGU6ZXZlbm9kZCIvPjxwb2x5Z29uIHBvaW50cz0iNS44MyA5LjQ5IDUuNDIgMTMuMDcgNC4zNSAxMy4wNyA1LjgzIDkuNDkiIHN0eWxlPSJmaWxsOiNhZWNiZmE7ZmlsbC1ydWxlOmV2ZW5vZGQiLz48cG9seWdvbiBwb2ludHM9IjkuNDggOS40OSA5LjQ3IDkuNTIgOC4wMiAxMy4wNyA1LjQyIDEzLjA3IDUuODMgOS40OSA5LjQ4IDkuNDkiIHN0eWxlPSJmaWxsOiM2NjlkZjY7ZmlsbC1ydWxlOmV2ZW5vZGQiLz48cG9seWdvbiBwb2ludHM9IjIxLjc1IDUuNzcgMTYuNjUgMTguMjMgMTguMDggNS43NyAyMS43NSA1Ljc3IiBzdHlsZT0iZmlsbDojNjY5ZGY2O2ZpbGwtcnVsZTpldmVub2RkIi8+PHBvbHlnb24gcG9pbnRzPSIxOC4wOCA1Ljc3IDE2LjY1IDE4LjIzIDEyLjk4IDE4LjIzIDE4LjA4IDUuNzciIHN0eWxlPSJmaWxsOiNhZWNiZmE7ZmlsbC1ydWxlOmV2ZW5vZGQiLz48cG9seWdvbiBwb2ludHM9IjcuMzggMTQuNjUgNS45MSAxOC4yMiA0LjgyIDE4LjIyIDUuMjMgMTQuNjUgNy4zOCAxNC42NSIgc3R5bGU9ImZpbGw6IzY2OWRmNjtmaWxsLXJ1bGU6ZXZlbm9kZCIvPjwvc3ZnPg=={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure CloudDomains(e_alias, e_label)
+    GCEntity(e_alias, e_label, CloudDomains, CloudDomains)
+!endprocedure
+
+!procedure CloudDomains(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, CloudDomains, CloudDomains)
+!endprocedure
+
+$GCDefineEntityStyle(CloudDomains)
+
+
+!procedure CloudDomainsParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, CloudDomains, CloudDomains)
+!endprocedure
+
+!procedure CloudDomainsParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, CloudDomains, CloudDomains)
+!endprocedure
+
+
+!procedure CloudDomainsGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudDomains, CloudDomainsGroup)
+!endprocedure
+
+!procedure CloudDomainsGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudDomains, CloudDomainsGroup)
+!endprocedure
+
+$GCDefineGroupStyle(CloudDomainsGroup)

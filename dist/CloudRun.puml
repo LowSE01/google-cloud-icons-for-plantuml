@@ -1,0 +1,34 @@
+!function $CloudRunIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiNhZWNiZmE7fS5jbHMtMSwuY2xzLTJ7ZmlsbC1ydWxlOmV2ZW5vZGQ7fS5jbHMtMntmaWxsOiM0Mjg1ZjQ7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5JY29uXzI0cHhfQ2xvdWRSdW5fQ29sb3I8L3RpdGxlPjxnIGRhdGEtbmFtZT0iUHJvZHVjdCBJY29ucyI+PGcgPjxwb2x5Z29uIGNsYXNzPSJjbHMtMSIgcG9pbnRzPSI4LjkgMi42MyAxMi4wMiAxMiAyMS4zOCAxMiA4LjkgMi42MyIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIyMS4zOCAxMiAxMi4wMiAxMiA4LjkgMjEuMzggMjEuMzggMTIiLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy40NCAyMS4zOCA2LjU3IDE5LjgxIDguOSAxMiA1Ljc4IDEyIDMuNDQgMjEuMzgiLz48cG9seWdvbiBjbGFzcz0iY2xzLTEiIHBvaW50cz0iMy40NCAyLjYzIDUuNzggMTIgOC45IDEyIDYuNTcgNC4xOSAzLjQ0IDIuNjMiLz48L2c+PC9nPjwvc3ZnPg=={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure CloudRun(e_alias, e_label)
+    GCEntity(e_alias, e_label, CloudRun, CloudRun)
+!endprocedure
+
+!procedure CloudRun(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, CloudRun, CloudRun)
+!endprocedure
+
+$GCDefineEntityStyle(CloudRun)
+
+
+!procedure CloudRunParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, CloudRun, CloudRun)
+!endprocedure
+
+!procedure CloudRunParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, CloudRun, CloudRun)
+!endprocedure
+
+
+!procedure CloudRunGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudRun, CloudRunGroup)
+!endprocedure
+
+!procedure CloudRunGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudRun, CloudRunGroup)
+!endprocedure
+
+$GCDefineGroupStyle(CloudRunGroup)

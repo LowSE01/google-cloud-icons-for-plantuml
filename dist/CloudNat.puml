@@ -1,0 +1,34 @@
+!function $CloudNatIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM0Mjg1ZjQ7fS5jbHMtMntmaWxsOiM2NjlkZjY7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5JY29uXzI0cHhfQ2xvdWROQVRfQ29sb3I8L3RpdGxlPjxnIGRhdGEtbmFtZT0iUHJvZHVjdCBJY29ucyI+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTUuMywxMS4xN2MwLC4yNywwLC41NCwwLC44M3MwLC41NiwwLC44M2g0LjVWMTEuMTdaIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNOS44Niw1Ljg5SDdWNy41NmgzLjkzQTEwLDEwLDAsMCwwLDkuODYsNS44OVoiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xMSwxNi40NEg3LjZ2MS42N0g5Ljg5QTEwLjcsMTAuNywwLDAsMCwxMSwxNi40NFoiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xMiwxMmE3LjQ1LDcuNDUsMCwwLDAsMC0uODNINC41djEuNjZIMTJBNy40NSw3LjQ1LDAsMCwwLDEyLDEyWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTMuNjcsMTIuNDhBLjQ4LjQ4LDAsMSwxLDQuMTQsMTIsLjQ4LjQ4LDAsMCwxLDMuNjcsMTIuNDhabTAtMi4xNUExLjY3LDEuNjcsMCwxLDAsNS4zMywxMiwxLjY3LDEuNjcsMCwwLDAsMy42NywxMC4zM1oiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik02LjE3LDE3Ljc1YS40OC40OCwwLDEsMSwuNDctLjQ4QS40Ny40NywwLDAsMSw2LjE3LDE3Ljc1Wm0wLTIuMTRhMS42NywxLjY3LDAsMSwwLDEuNjYsMS42NkExLjY3LDEuNjcsMCwwLDAsNi4xNywxNS42MVoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik02LjE3LDcuMmEuNDguNDgsMCwxLDEsLjQ3LS40N0EuNDcuNDcsMCwwLDEsNi4xNyw3LjJabTAtMi4xNGExLjY3LDEuNjcsMCwxLDAsMCwzLjMzLDEuNjcsMS42NywwLDAsMCwwLTMuMzNaIi8+PHBvbHlnb24gY2xhc3M9ImNscy0xIiBwb2ludHM9IjE4LjY3IDE0LjUgMTguNjcgOS41IDIyIDEyIDE4LjY3IDE0LjUiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik05LjUsMjJsLS44Ni0xLjVBMTAuNzMsMTAuNzMsMCwwLDAsMTIuODMsMTJhMTAuODksMTAuODksMCwwLDAtNC4yLTguNUw5LjUsMmExMi41MywxMi41MywwLDAsMSw1LDEwQTEyLjQ2LDEyLjQ2LDAsMCwxLDkuNSwyMloiLz48L2c+PC9zdmc+{scale="+$scale+"}>"
+!endfunction
+
+
+!procedure CloudNat(e_alias, e_label)
+    GCEntity(e_alias, e_label, CloudNat, CloudNat)
+!endprocedure
+
+!procedure CloudNat(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, CloudNat, CloudNat)
+!endprocedure
+
+$GCDefineEntityStyle(CloudNat)
+
+
+!procedure CloudNatParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, CloudNat, CloudNat)
+!endprocedure
+
+!procedure CloudNatParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, CloudNat, CloudNat)
+!endprocedure
+
+
+!procedure CloudNatGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudNat, CloudNatGroup)
+!endprocedure
+
+!procedure CloudNatGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudNat, CloudNatGroup)
+!endprocedure
+
+$GCDefineGroupStyle(CloudNatGroup)

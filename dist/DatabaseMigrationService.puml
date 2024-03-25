@@ -1,0 +1,34 @@
+!function $DatabaseMigrationServiceIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyBpZD0iQXJ0d29yayIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwb2x5Z29uIHBvaW50cz0iNC42OSA3LjcgOS4zOCA0Ljk5IDkuMzggMi4yNyAyLjI1IDYuMzggMi42NCA2Ljg2IDQuMjYgNy43NCA0LjY5IDcuNyIgc3R5bGU9ImZpbGw6IzQyODVmNCIvPjxwYXRoIGQ9Ik05LjM4LDE3LjM2LDIuMjUsMTMuMjVWMTAuNjZsNy4xMyw0LjEyWm0wLDEuNzdMMi4yNSwxNXYyLjZsNy4xMyw0LjEyWm0wLTguNzFMNC42OSw3LjcsMi4yNSw2LjM4djIuNUw5LjM4LDEzIiBzdHlsZT0iZmlsbDojYWVjYmZhO2ZpbGwtcnVsZTpldmVub2RkIi8+PHBhdGggZD0iTTkuMzgsMjEuNzNsNy00VjE1LjFsLTcsNG0wLTQuMzUsNy00aDIuMDh2Mi4zM0gxNi43OGwtNy40LDQuMjlabTAtMS43N0wxNi43OSw4LjdoMi40NHYxLjM2bDIuNTEtMi41MS0yLjUxLTIuNVY2LjM3SDE2LjM2bC0xLjIzLjcyLTEuMDYuNjFMMTEuMzUsOS4yN2wtMiwxLjE1WiIgc3R5bGU9ImZpbGw6IzY2OWRmNjtmaWxsLXJ1bGU6ZXZlbm9kZCIvPjxwb2x5Z29uIHBvaW50cz0iOS4zOCA0Ljk5IDEyLjU0IDYuODIgMTQuOSA1LjQ2IDkuMzggMi4yNyA5LjM4IDQuOTkiIHN0eWxlPSJmaWxsOiM2NjlkZjY7ZmlsbC1ydWxlOmV2ZW5vZGQiLz48L3N2Zz4={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure DatabaseMigrationService(e_alias, e_label)
+    GCEntity(e_alias, e_label, DatabaseMigrationService, DatabaseMigrationService)
+!endprocedure
+
+!procedure DatabaseMigrationService(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, DatabaseMigrationService, DatabaseMigrationService)
+!endprocedure
+
+$GCDefineEntityStyle(DatabaseMigrationService)
+
+
+!procedure DatabaseMigrationServiceParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, DatabaseMigrationService, DatabaseMigrationService)
+!endprocedure
+
+!procedure DatabaseMigrationServiceParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, DatabaseMigrationService, DatabaseMigrationService)
+!endprocedure
+
+
+!procedure DatabaseMigrationServiceGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, DatabaseMigrationService, DatabaseMigrationServiceGroup)
+!endprocedure
+
+!procedure DatabaseMigrationServiceGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, DatabaseMigrationService, DatabaseMigrationServiceGroup)
+!endprocedure
+
+$GCDefineGroupStyle(DatabaseMigrationServiceGroup)

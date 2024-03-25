@@ -1,0 +1,34 @@
+!function $ApiAnalyticsIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM0Mjg1ZjQ7fS5jbHMtMntmaWxsOiM2NjlkZjY7fS5jbHMtM3tmaWxsOiNhZWNiZmE7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5JY29uXzI0cHhfQVBJQW5hbHl0aWNzX0NvbG9yPC90aXRsZT48ZyBkYXRhLW5hbWU9IlByb2R1Y3QgSWNvbnMiPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTMuNDcsMTUuNjhhNC4zMSw0LjMxLDAsMSwxLDYuMDctLjQsMy42OCwzLjY4LDAsMCwxLS4zOS40QTQuMzIsNC4zMiwwLDAsMSwzLjQ3LDE1LjY4Wm01LjItNS4yYTMuMDcsMy4wNywwLDEsMC0uNCw0LjMzLDMsMywwLDAsMCwuNC0uNCwzLjA3LDMuMDcsMCwwLDAsMC0zLjkzWiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTE0Ljg2LDE1LjY4YTQuMzEsNC4zMSwwLDEsMSw2LjA3LS40LDMuNzgsMy43OCwwLDAsMS0uNC40QTQuMzEsNC4zMSwwLDAsMSwxNC44NiwxNS42OFptNS4yLTUuMmEzLjA3LDMuMDcsMCwxLDAtLjQsNC4zMywzLDMsMCwwLDAsLjQtLjQsMy4wOCwzLjA4LDAsMCwwLDAtMy45M1oiLz48Y2lyY2xlIGNsYXNzPSJjbHMtMiIgY3g9IjYuMzEiIGN5PSIxMi40NCIgcj0iMS42OSIvPjxjaXJjbGUgY2xhc3M9ImNscy0yIiBjeD0iMTcuNjkiIGN5PSIxMi40NCIgcj0iMS42OSIvPjxwYXRoIGNsYXNzPSJjbHMtMyIgZD0iTTE0LjM5LDcuODFhLjMxLjMxLDAsMCwwLS4xOC0uNTZIOS43OWEuMzEuMzEsMCwwLDAtLjE4LjU2LDUuNzMsNS43MywwLDAsMSwyLjEzLDIuOTIuMjguMjgsMCwwLDAsLjM2LjE2LjI5LjI5LDAsMCwwLC4xNy0uMTdBNS42Nyw1LjY3LDAsMCwxLDE0LjM5LDcuODFaIi8+PC9nPjwvc3ZnPg=={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure ApiAnalytics(e_alias, e_label)
+    GCEntity(e_alias, e_label, ApiAnalytics, ApiAnalytics)
+!endprocedure
+
+!procedure ApiAnalytics(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, ApiAnalytics, ApiAnalytics)
+!endprocedure
+
+$GCDefineEntityStyle(ApiAnalytics)
+
+
+!procedure ApiAnalyticsParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, ApiAnalytics, ApiAnalytics)
+!endprocedure
+
+!procedure ApiAnalyticsParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, ApiAnalytics, ApiAnalytics)
+!endprocedure
+
+
+!procedure ApiAnalyticsGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, ApiAnalytics, ApiAnalyticsGroup)
+!endprocedure
+
+!procedure ApiAnalyticsGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, ApiAnalytics, ApiAnalyticsGroup)
+!endprocedure
+
+$GCDefineGroupStyle(ApiAnalyticsGroup)

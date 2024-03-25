@@ -1,0 +1,34 @@
+!function $QuotasIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM2NjlkZjY7fS5jbHMtMntmaWxsOiM0Mjg1ZjQ7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5JY29uXzI0cHhfUXVvdGFzX0NvbG9yPC90aXRsZT48ZyBkYXRhLW5hbWU9IlByb2R1Y3QgSWNvbnMiPjxnIGRhdGEtbmFtZT0iY29sb3JlZC0zMi9xdW90YXMiPjxnID48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik02LDJINFYyMC41OEExLjMxLDEuMzEsMCwwLDAsNS4yOSwyMkgxOC43M0ExLjI5LDEuMjksMCwwLDAsMjAsMjAuNThWMmwtMiwuMTRWMjBINloiLz48cGF0aCBpZD0iUGF0aC0yIiBkYXRhLW5hbWU9IlBhdGgiIGNsYXNzPSJjbHMtMiIgZD0iTTEyLDIyaDYuNzNBMS4yOSwxLjI5LDAsMCwwLDIwLDIwLjU4VjJIMThWMjBIMTJ2MloiLz48cmVjdCBpZD0iUmVjdGFuZ2xlLTMyOCIgY2xhc3M9ImNscy0xIiB4PSI3IiB5PSIxMiIgd2lkdGg9IjEwIiBoZWlnaHQ9IjciLz48cmVjdCBpZD0iUmVjdGFuZ2xlLTMyOC0yIiBkYXRhLW5hbWU9IlJlY3RhbmdsZS0zMjgiIGNsYXNzPSJjbHMtMiIgeD0iMTIiIHk9IjEyIiB3aWR0aD0iNSIgaGVpZ2h0PSI3Ii8+PC9nPjwvZz48cmVjdCBjbGFzcz0iY2xzLTEiIHg9IjciIHk9IjMiIHdpZHRoPSIxIiBoZWlnaHQ9IjMiLz48cmVjdCBjbGFzcz0iY2xzLTIiIHg9IjcuNSIgeT0iMyIgd2lkdGg9IjAuNSIgaGVpZ2h0PSIzIi8+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSIxMCIgeT0iMyIgd2lkdGg9IjEiIGhlaWdodD0iMyIvPjxyZWN0IGNsYXNzPSJjbHMtMSIgeD0iMTMiIHk9IjMiIHdpZHRoPSIxIiBoZWlnaHQ9IjMiLz48cmVjdCBjbGFzcz0iY2xzLTEiIHg9IjE2IiB5PSIzIiB3aWR0aD0iMSIgaGVpZ2h0PSIzIi8+PHJlY3QgY2xhc3M9ImNscy0yIiB4PSIxMC41IiB5PSIzIiB3aWR0aD0iMC41IiBoZWlnaHQ9IjMiLz48cmVjdCBjbGFzcz0iY2xzLTIiIHg9IjEzLjUiIHk9IjMiIHdpZHRoPSIwLjUiIGhlaWdodD0iMyIvPjxyZWN0IGNsYXNzPSJjbHMtMiIgeD0iMTYuNSIgeT0iMyIgd2lkdGg9IjAuNSIgaGVpZ2h0PSIzIi8+PC9nPjwvc3ZnPg=={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure Quotas(e_alias, e_label)
+    GCEntity(e_alias, e_label, Quotas, Quotas)
+!endprocedure
+
+!procedure Quotas(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, Quotas, Quotas)
+!endprocedure
+
+$GCDefineEntityStyle(Quotas)
+
+
+!procedure QuotasParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, Quotas, Quotas)
+!endprocedure
+
+!procedure QuotasParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, Quotas, Quotas)
+!endprocedure
+
+
+!procedure QuotasGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, Quotas, QuotasGroup)
+!endprocedure
+
+!procedure QuotasGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, Quotas, QuotasGroup)
+!endprocedure
+
+$GCDefineGroupStyle(QuotasGroup)

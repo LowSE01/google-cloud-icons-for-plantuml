@@ -1,0 +1,34 @@
+!function $CloudGenericIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8ZyBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8cGF0aCBkPSJNMjIsMiBMMjIsMjIgTDIsMjIgTDIsMiBMMjIsMiBaIE0xMiw2LjYxNTM4NDYyIEMxMC4yMTMxMTg1LDYuNjE1Mzg0NjIgOC42OTA1MTM4Niw3Ljc0Njg4ODIzIDguMTA5NTk5ODUsOS4zMzI0ODE2NiBMOC4xMDk1OTk4NSw5LjMzMjQ4MTY2IEw3Ljk0ODk5NjY2LDkuMzMyNzc1OTIgQzUuOTM3OTU5NzksOS4zMzI3NzU5MiA0LjMwNzY5MjMxLDEwLjk2MzA0MzQgNC4zMDc2OTIzMSwxMi45NzQwODAzIEM0LjMwNzY5MjMxLDE0Ljk4NTExNzEgNS45Mzc5NTk3OSwxNi42MTUzODQ2IDcuOTQ4OTk2NjYsMTYuNjE1Mzg0NiBMNy45NDg5OTY2NiwxNi42MTUzODQ2IEwxNi4wNTEwMDMzLDE2LjYxNTM4NDYgQzE4LjA2MjA0MDIsMTYuNjE1Mzg0NiAxOS42OTIzMDc3LDE0Ljk4NTExNzEgMTkuNjkyMzA3NywxMi45NzQwODAzIEMxOS42OTIzMDc3LDEwLjk2MzA0MzQgMTguMDYyMDQwMiw5LjMzMjc3NTkyIDE2LjA1MTAwMzMsOS4zMzI3NzU5MiBMMTYuMDUxMDAzMyw5LjMzMjc3NTkyIEwxNS44OTA0MDAyLDkuMzMyNDgxNjYgQzE1LjMwOTQ4NjEsNy43NDY4ODgyMyAxMy43ODY4ODE1LDYuNjE1Mzg0NjIgMTIsNi42MTUzODQ2MiBaIiBmaWxsPSIjNDI4NUY0Ij48L3BhdGg+CiAgICA8L2c+Cjwvc3ZnPg=={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure CloudGeneric(e_alias, e_label)
+    GCEntity(e_alias, e_label, CloudGeneric, CloudGeneric)
+!endprocedure
+
+!procedure CloudGeneric(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, CloudGeneric, CloudGeneric)
+!endprocedure
+
+$GCDefineEntityStyle(CloudGeneric)
+
+
+!procedure CloudGenericParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, CloudGeneric, CloudGeneric)
+!endprocedure
+
+!procedure CloudGenericParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, CloudGeneric, CloudGeneric)
+!endprocedure
+
+
+!procedure CloudGenericGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudGeneric, CloudGenericGroup)
+!endprocedure
+
+!procedure CloudGenericGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudGeneric, CloudGenericGroup)
+!endprocedure
+
+$GCDefineGroupStyle(CloudGenericGroup)

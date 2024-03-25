@@ -1,0 +1,34 @@
+!function $CloudComposerIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiNhZWNiZmE7fS5jbHMtMntmaWxsOiM0Mjg1ZjQ7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5JY29uXzI0cHhfQ2xvdWRDb21wb3Nlcl9Db2xvcjwvdGl0bGU+PGcgZGF0YS1uYW1lPSJQcm9kdWN0IEljb25zIj48cG9seWdvbiBjbGFzcz0iY2xzLTEiIHBvaW50cz0iMTAuMDMgNS45NiA0LjY4IDUuOTYgNC42OCAyIDE5LjMxIDIgMTkuMzEgNS45NCAxNC4wMSA1Ljk0IDE0LjAxIDExLjI3IDEwLjAzIDExLjI3IDEwLjAzIDUuOTYiLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iNC42OCA3LjM3IDguNjMgNy4zNyA4LjYzIDEyLjY3IDEzLjk3IDEyLjY3IDEzLjk3IDIyIDEwLjAzIDIyIDEwLjAzIDE2LjY1IDQuNjggMTYuNjUgNC42OCA3LjM3Ii8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjE1LjM4IDcuMzYgMTkuMzIgNy4zNiAxOS4zMiAyMiAxNS4zOCAyMiAxNS4zOCA3LjM2Ii8+PHBvbHlnb24gY2xhc3M9ImNscy0xIiBwb2ludHM9IjguNiAyMiA0LjY4IDIyIDQuNjggMTguMDYgOC42IDE4LjA2IDguNiAyMiIvPjwvZz48L3N2Zz4={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure CloudComposer(e_alias, e_label)
+    GCEntity(e_alias, e_label, CloudComposer, CloudComposer)
+!endprocedure
+
+!procedure CloudComposer(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, CloudComposer, CloudComposer)
+!endprocedure
+
+$GCDefineEntityStyle(CloudComposer)
+
+
+!procedure CloudComposerParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, CloudComposer, CloudComposer)
+!endprocedure
+
+!procedure CloudComposerParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, CloudComposer, CloudComposer)
+!endprocedure
+
+
+!procedure CloudComposerGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudComposer, CloudComposerGroup)
+!endprocedure
+
+!procedure CloudComposerGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudComposer, CloudComposerGroup)
+!endprocedure
+
+$GCDefineGroupStyle(CloudComposerGroup)

@@ -1,0 +1,34 @@
+!function $CloudMonitoringIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM2NjlkZjY7fS5jbHMtMntmaWxsOiM0Mjg1ZjQ7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5JY29uXzI0cHhfTW9uaXRvcmluZ19Db2xvcjwvdGl0bGU+PGcgZGF0YS1uYW1lPSJQcm9kdWN0IEljb25zIj48cmVjdCBjbGFzcz0iY2xzLTEiIHg9IjEwLjgzIiB5PSIxNS44NCIgd2lkdGg9IjIuMzMiIGhlaWdodD0iMi42NCIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTE4LjQ4LDEzLjg3YS41Ni41NiwwLDAsMS0uNC0uMTdMMTQsOS40N2wtMi43NCwyLjg5YS41Ny41NywwLDAsMS0uNzYuMDVMOC40MiwxMC43M2wtMi4yLDIuOTJhLjU2LjU2LDAsMCwxLS40NS4yMkgydjEuNzFhLjc1Ljc1LDAsMCwwLC43NC43NUgyMS4yNmEuNzUuNzUsMCwwLDAsLjc0LS43NVYxMy44N1oiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik01LjUsMTIuNzYsNy44OCw5LjZhLjU1LjU1LDAsMCwxLC4zNy0uMjIuNjMuNjMsMCwwLDEsLjQyLjEybDIuMTIsMS43MiwyLjgtMi45NGEuNTQuNTQsMCwwLDEsLjQtLjE3aDBhLjU0LjU0LDAsMCwxLC40LjE3bDQuMzMsNC40OEgyMlY2YS43NC43NCwwLDAsMC0uNzQtLjc0SDIuNzRBLjc0Ljc0LDAsMCwwLDIsNnY2LjgxWiIvPjxyZWN0IGNsYXNzPSJjbHMtMiIgeD0iOC42NyIgeT0iMTguMTgiIHdpZHRoPSI2LjY3IiBoZWlnaHQ9IjAuNjEiIHJ4PSIwLjMiLz48L2c+PC9zdmc+{scale="+$scale+"}>"
+!endfunction
+
+
+!procedure CloudMonitoring(e_alias, e_label)
+    GCEntity(e_alias, e_label, CloudMonitoring, CloudMonitoring)
+!endprocedure
+
+!procedure CloudMonitoring(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, CloudMonitoring, CloudMonitoring)
+!endprocedure
+
+$GCDefineEntityStyle(CloudMonitoring)
+
+
+!procedure CloudMonitoringParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, CloudMonitoring, CloudMonitoring)
+!endprocedure
+
+!procedure CloudMonitoringParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, CloudMonitoring, CloudMonitoring)
+!endprocedure
+
+
+!procedure CloudMonitoringGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudMonitoring, CloudMonitoringGroup)
+!endprocedure
+
+!procedure CloudMonitoringGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudMonitoring, CloudMonitoringGroup)
+!endprocedure
+
+$GCDefineGroupStyle(CloudMonitoringGroup)

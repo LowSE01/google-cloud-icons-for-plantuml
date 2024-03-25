@@ -1,0 +1,34 @@
+!function $ApigeeApiPlatformIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM2NjlkZjY7fS5jbHMtMSwuY2xzLTJ7ZmlsbC1ydWxlOmV2ZW5vZGQ7fS5jbHMtMntmaWxsOiM0Mjg1ZjQ7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5JY29uXzI0cHhfQXBwaWdlZUFQSVBsYXRmb3JtX0NvbG9yPC90aXRsZT48ZyBkYXRhLW5hbWU9IlByb2R1Y3QgSWNvbnMiPjxnID48ZyA+PHBhdGggaWQ9IkZpbGwtMSIgY2xhc3M9ImNscy0xIiBkPSJNNS4yLDEybDEuMzItMS4zMkw0LjczLDguODlhMi45NCwyLjk0LDAsMCwxLDIuMDgtNSwyLjkyLDIuOTIsMCwwLDEsMi4wNy44NmwxLjgsMS43OUwxMiw1LjIsMTAuMjEsMy40MWE0LjgxLDQuODEsMCwxLDAtNi44LDYuOFoiLz48cGF0aCBpZD0iRmlsbC0zIiBjbGFzcz0iY2xzLTEiIGQ9Ik0xOC44LDEybC0xLjMyLDEuMzIsMS43OSwxLjhhMi45NCwyLjk0LDAsMCwxLTQuMTYsNC4xNWwtMS43OS0xLjc5TDEyLDE4LjhsMS43OSwxLjc5YTQuODEsNC44MSwwLDEsMCw2LjgtNi44WiIvPjxnID48cGF0aCBpZD0iRmlsbC01IiBjbGFzcz0iY2xzLTIiIGQ9Ik04Ljg5LDE5LjI3YTIuOTQsMi45NCwwLDAsMS00LjE2LTQuMTZsMS43OS0xLjc5LDQuMTYsNC4xNlpNMTUuMTIsNC43M2EyLjkzLDIuOTMsMCwwLDEsNSwyLjA4LDMsMywwLDAsMS0uODYsMi4wOGwtMS43OSwxLjc5TDEzLjMyLDYuNTJaTTEyLDE1LjE5QTMuMiwzLjIsMCwwLDEsOC44MSwxMmgwQTMuMjEsMy4yMSwwLDAsMSwxMiw4LjgxaDBBMy4yMSwzLjIxLDAsMCwxLDE1LjE5LDEyaDBBMy4yLDMuMiwwLDAsMSwxMiwxNS4xOVpNMTguOCwxMmwxLjc5LTEuNzlhNC44MSw0LjgxLDAsMSwwLTYuOC02LjhMMTIsNS4yLDUuMiwxMiwzLjQxLDEzLjc5YTQuODEsNC44MSwwLDEsMCw2LjgsNi44TDEyLDE4LjhaIi8+PC9nPjwvZz48L2c+PC9nPjwvc3ZnPg=={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure ApigeeApiPlatform(e_alias, e_label)
+    GCEntity(e_alias, e_label, ApigeeApiPlatform, ApigeeApiPlatform)
+!endprocedure
+
+!procedure ApigeeApiPlatform(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, ApigeeApiPlatform, ApigeeApiPlatform)
+!endprocedure
+
+$GCDefineEntityStyle(ApigeeApiPlatform)
+
+
+!procedure ApigeeApiPlatformParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, ApigeeApiPlatform, ApigeeApiPlatform)
+!endprocedure
+
+!procedure ApigeeApiPlatformParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, ApigeeApiPlatform, ApigeeApiPlatform)
+!endprocedure
+
+
+!procedure ApigeeApiPlatformGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, ApigeeApiPlatform, ApigeeApiPlatformGroup)
+!endprocedure
+
+!procedure ApigeeApiPlatformGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, ApigeeApiPlatform, ApigeeApiPlatformGroup)
+!endprocedure
+
+$GCDefineGroupStyle(ApigeeApiPlatformGroup)

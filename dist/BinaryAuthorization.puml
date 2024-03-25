@@ -1,0 +1,34 @@
+!function $BinaryAuthorizationIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyBpZD0iQXJ0d29yayIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0xNC44NiwxMS42Mmgydi4wNmMwLDUuOTEtMy40NCw4LTQuNTgsOC41NHYxLjUzbC4yNS0uMDhjLjIzLS4wOCw1Ljc3LTIuMDgsNS43Ny0xMFYxMC4ySDE0LjEzWiIgc3R5bGU9ImZpbGw6IzY2OWRmNiIvPjxwYXRoIGQ9Ik0xNC4xMywxMC4ybC43LTEuMjdWMi4yNWwtMS4xMi44N2MtMi40NCwxLjc5LTUsNS4wOC00Ljg0LDguOTRhOCw4LDAsMCwwLDMuNCw2LjM5bC4xLjA3Ljc1LTEuMjItLjEtLjA2YTYuMjQsNi4yNCwwLDAsMS0uODItLjcxTDE0Ljg2LDE1VjExLjYyWm0tLjcsMS40MnYyLjU2TDExLjMsMTUuNDFhNi40OSw2LjQ5LDAsMCwxLTEtMy40MmMtLjEzLTMuMzMsMi4xMy01Ljg1LDMuMTEtNi43OFY4LjUzbC0xLjY4LDMuMDloMS43MiIgc3R5bGU9ImZpbGw6IzQyODVmNCIvPjxwYXRoIGQ9Ik0xMi4yNCwyMC4yMmE5LjI4LDkuMjgsMCwwLDEtNS4wNi04Ljc2VjEwLjE1SDUuNzV2MS4zMWMwLDcuNTIsNS42LDEwLDYuMjQsMTAuMmwuMjQuMDkiIHN0eWxlPSJmaWxsOiNhZWNiZmEiLz48L3N2Zz4={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure BinaryAuthorization(e_alias, e_label)
+    GCEntity(e_alias, e_label, BinaryAuthorization, BinaryAuthorization)
+!endprocedure
+
+!procedure BinaryAuthorization(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, BinaryAuthorization, BinaryAuthorization)
+!endprocedure
+
+$GCDefineEntityStyle(BinaryAuthorization)
+
+
+!procedure BinaryAuthorizationParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, BinaryAuthorization, BinaryAuthorization)
+!endprocedure
+
+!procedure BinaryAuthorizationParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, BinaryAuthorization, BinaryAuthorization)
+!endprocedure
+
+
+!procedure BinaryAuthorizationGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, BinaryAuthorization, BinaryAuthorizationGroup)
+!endprocedure
+
+!procedure BinaryAuthorizationGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, BinaryAuthorization, BinaryAuthorizationGroup)
+!endprocedure
+
+$GCDefineGroupStyle(BinaryAuthorizationGroup)

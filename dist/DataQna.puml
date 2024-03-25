@@ -1,0 +1,34 @@
+!function $DataQnaIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyBpZD0iYjcxNmFjNWItZTk1MC00NDdlLThiOWItYzk0M2E5ZjMxY2IwIiBkYXRhLW5hbWU9IkFydHdvcmsiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTYuNzkxLDYuMzc1YS44NDEuODQxLDAsMCwxLC44MzQuODQ2VjE3LjY0YS42ODUuNjg1LDAsMCwxLS43NS43MzVINC42ODhMMi4yNSwyMC44MTJWNy4yMjFhLjg0MS44NDEsMCwwLDEsLjgzNC0uODQ2WiIgZmlsbD0iIzQyODVmNCIvPjxyZWN0IHg9IjEyLjM3NSIgeT0iMTEuNDM4IiB3aWR0aD0iMi44MTMiIGhlaWdodD0iNC44NzUiIGZpbGw9IiM2NjlkZjYiLz48cmVjdCB4PSI4LjYyNSIgeT0iOC42MjUiIHdpZHRoPSIyLjgxMyIgaGVpZ2h0PSI3LjY4OCIgZmlsbD0iI2FlY2JmYSIvPjxyZWN0IHg9IjQuODc1IiB5PSIxMC4xMjUiIHdpZHRoPSIyLjgxMyIgaGVpZ2h0PSI2LjE4OCIgZmlsbD0iI2ZmZiIvPjxwYXRoIGQ9Ik0yMC45MTYsMy4xODhhLjgzOS44MzksMCwwLDEsLjgzMy44VjE3LjYyNWwtMi4yNS0yLjI1aC0uNzV2LTkuM2EuODIzLjgyMywwLDAsMC0uODI0LS44MjFINi4zNzVWNC4wMzNhLjg0MS44NDEsMCwwLDEsLjgtLjg0NUgyMC45MTZaIiBmaWxsPSIjNjY5ZGY2Ii8+PC9zdmc+{scale="+$scale+"}>"
+!endfunction
+
+
+!procedure DataQna(e_alias, e_label)
+    GCEntity(e_alias, e_label, DataQna, DataQna)
+!endprocedure
+
+!procedure DataQna(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, DataQna, DataQna)
+!endprocedure
+
+$GCDefineEntityStyle(DataQna)
+
+
+!procedure DataQnaParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, DataQna, DataQna)
+!endprocedure
+
+!procedure DataQnaParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, DataQna, DataQna)
+!endprocedure
+
+
+!procedure DataQnaGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, DataQna, DataQnaGroup)
+!endprocedure
+
+!procedure DataQnaGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, DataQna, DataQnaGroup)
+!endprocedure
+
+$GCDefineGroupStyle(DataQnaGroup)

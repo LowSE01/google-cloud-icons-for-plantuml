@@ -1,0 +1,34 @@
+!function $NetworkTiersIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM2NjlkZjY7fS5jbHMtMntmaWxsOiNhZWNiZmE7fS5jbHMtM3tmaWxsOiM0Mjg1ZjQ7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5JY29uXzI0cHhfTmV0d29ya1RpZXJzX0NvbG9yPC90aXRsZT48ZyBkYXRhLW5hbWU9IlByb2R1Y3QgSWNvbnMiPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTcuMywxNS43QTUuOTIsNS45MiwwLDAsMSw2LDEySDJhOS44OSw5Ljg5LDAsMCwwLDIuNDYsNi41NFoiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xMiwyQTEwLDEwLDAsMCwwLDUuNDUsNC40NUw4LjI5LDcuMjlBNiw2LDAsMCwxLDE4LDEyaDRBMTAsMTAsMCwwLDAsMTIsMloiLz48Y2lyY2xlIGlkPSJPdmFsLTIiIGNsYXNzPSJjbHMtMiIgY3g9IjgiIGN5PSIxOSIgcj0iMiIvPjxjaXJjbGUgaWQ9Ik92YWwtMi0yIiBkYXRhLW5hbWU9Ik92YWwtMiIgY2xhc3M9ImNscy0zIiBjeD0iMTkiIGN5PSIxNiIgcj0iMiIvPjxjaXJjbGUgaWQ9Ik92YWwtMi0zIiBkYXRhLW5hbWU9Ik92YWwtMiIgY2xhc3M9ImNscy0xIiBjeD0iMTQiIGN5PSIyMCIgcj0iMiIvPjxwYXRoIGNsYXNzPSJjbHMtMyIgZD0iTTYsMTJIMmExMCwxMCwwLDAsMCwuNDQsMi45MWw0LS43OUE2LDYsMCwwLDEsNiwxMloiLz48ZyBkYXRhLW5hbWU9ImNvbG9yZWQtMzIvbmV0d29yay10aWVycyI+PGcgPjxjaXJjbGUgaWQ9Ik92YWwtMi00IiBkYXRhLW5hbWU9Ik92YWwtMiIgY2xhc3M9ImNscy0yIiBjeD0iNSIgY3k9IjgiIHI9IjIiLz48L2c+PC9nPjxwYXRoIGNsYXNzPSJjbHMtMyIgZD0iTTE3LjYxLDkuODhBNiw2LDAsMCwxLDE4LDEyaDRhMTAsMTAsMCwwLDAtLjQzLTIuOTFaIi8+PC9nPjwvc3ZnPg=={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure NetworkTiers(e_alias, e_label)
+    GCEntity(e_alias, e_label, NetworkTiers, NetworkTiers)
+!endprocedure
+
+!procedure NetworkTiers(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, NetworkTiers, NetworkTiers)
+!endprocedure
+
+$GCDefineEntityStyle(NetworkTiers)
+
+
+!procedure NetworkTiersParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, NetworkTiers, NetworkTiers)
+!endprocedure
+
+!procedure NetworkTiersParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, NetworkTiers, NetworkTiers)
+!endprocedure
+
+
+!procedure NetworkTiersGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, NetworkTiers, NetworkTiersGroup)
+!endprocedure
+
+!procedure NetworkTiersGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, NetworkTiers, NetworkTiersGroup)
+!endprocedure
+
+$GCDefineGroupStyle(NetworkTiersGroup)

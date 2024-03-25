@@ -1,0 +1,34 @@
+!function $WorkloadIdentityPoolIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyBpZD0iYjJjN2FlNTQtMGNiMS00OTgyLWI4OTUtNGE5ZmVhOWJiMTU5IiBkYXRhLW5hbWU9IkFydHdvcmsiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB4PSIzIiB5PSI2IiB3aWR0aD0iMTgiIGhlaWdodD0iMTIiIHJ4PSIxIiBmaWxsPSJub25lIiBzdHJva2U9IiM0Mjg1ZjQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIyIi8+PGxpbmUgeDE9IjE0LjAwMiIgeTE9IjEwLjQ3MSIgeDI9IjE4LjAwMiIgeTI9IjEwLjQ3MSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjY5ZGY2IiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiLz48bGluZSB4MT0iMTQuMDAyIiB5MT0iMTMuNTEyIiB4Mj0iMTguMDAyIiB5Mj0iMTMuNTEyIiBmaWxsPSJub25lIiBzdHJva2U9IiM2NjlkZjYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPjxyZWN0IHg9IjYuNDkyIiB5PSI5LjQ5IiB3aWR0aD0iNS4wMDciIGhlaWdodD0iNS4wMDciIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2FlY2JmYSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+PHJlY3QgeD0iOC4wMDMiIHk9IjExLjAwOSIgd2lkdGg9IjIuMDE0IiBoZWlnaHQ9IjEuOTkxIiBmaWxsPSIjNDI4NWY0Ii8+PC9zdmc+{scale="+$scale+"}>"
+!endfunction
+
+
+!procedure WorkloadIdentityPool(e_alias, e_label)
+    GCEntity(e_alias, e_label, WorkloadIdentityPool, WorkloadIdentityPool)
+!endprocedure
+
+!procedure WorkloadIdentityPool(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, WorkloadIdentityPool, WorkloadIdentityPool)
+!endprocedure
+
+$GCDefineEntityStyle(WorkloadIdentityPool)
+
+
+!procedure WorkloadIdentityPoolParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, WorkloadIdentityPool, WorkloadIdentityPool)
+!endprocedure
+
+!procedure WorkloadIdentityPoolParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, WorkloadIdentityPool, WorkloadIdentityPool)
+!endprocedure
+
+
+!procedure WorkloadIdentityPoolGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, WorkloadIdentityPool, WorkloadIdentityPoolGroup)
+!endprocedure
+
+!procedure WorkloadIdentityPoolGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, WorkloadIdentityPool, WorkloadIdentityPoolGroup)
+!endprocedure
+
+$GCDefineGroupStyle(WorkloadIdentityPoolGroup)

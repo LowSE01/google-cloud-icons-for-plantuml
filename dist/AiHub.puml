@@ -1,0 +1,34 @@
+!function $AiHubIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM0Mjg1ZjQ7fS5jbHMtMSwuY2xzLTIsLmNscy00e2ZpbGwtcnVsZTpldmVub2RkO30uY2xzLTJ7ZmlsbDojMWU4OGU1O30uY2xzLTMsLmNscy00e2ZpbGw6I2FlY2JmYTt9LmNscy01e2ZpbGw6IzY2OWRmNjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPkljb25fMjRweF9BSUh1Yl9Db2xvcjwvdGl0bGU+PGcgZGF0YS1uYW1lPSJQcm9kdWN0IEljb25zIj48cG9seWdvbiBjbGFzcz0iY2xzLTEiIHBvaW50cz0iMjAuNjkgMTIuNDMgMTIgMTYuNzggMTIgMjIgMjAuNjkgMTcuNjUgMjAuNjkgMTIuNDMiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik02Ljc4LDQuNjEsMy4zMSw2LjM1WiIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMSIgcG9pbnRzPSIxNy4yMiA4LjA5IDE3LjIyIDguMDkgMTcuMjIgMTIuNDMgMjAuNjkgMTAuNyAyMC42OSA2LjM1IDE3LjIyIDguMDkiLz48cG9seWdvbiBjbGFzcz0iY2xzLTEiIHBvaW50cz0iMTIgMTUuMDQgMTUuNDggMTMuMzEgMTUuNDggOC45NiAxNS40OCA4Ljk2IDEyIDEwLjcgMTIgMTUuMDQiLz48cG9seWdvbiBjbGFzcz0iY2xzLTMiIHBvaW50cz0iNi43OCA0LjYxIDMuMzEgNi4zNSA2Ljc4IDguMDkgMTAuMjYgNi4zNSA2Ljc4IDQuNjEiLz48cG9seWdvbiBjbGFzcz0iY2xzLTQiIHBvaW50cz0iMTIgMiA4LjUyIDMuNzQgMTIgNS40OCAxNy4yMiA4LjA5IDIwLjY5IDYuMzUgMTIgMiIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMyIgcG9pbnRzPSIxMiA3LjIyIDguNTIgOC45NiAxMiAxMC43IDE1LjQ4IDguOTYgMTIgNy4yMiIvPjxwYXRoIGNsYXNzPSJjbHMtNSIgZD0iTTguNTIsMTV2NS4yMkwxMiwyMlYxNi43OFptMi42MSw1LjIyLTEuNzQtLjg3VjE2Ljc4bDEuNzQuODdaIi8+PHBhdGggY2xhc3M9ImNscy01IiBkPSJNMy4zMSw2LjM1djExLjNsMy40NywxLjc0VjguMDlabTIuNjEsMTEuMy0xLjc1LS44N3YtMTBsMS43NS44N1oiLz48cGF0aCBjbGFzcz0iY2xzLTUiIGQ9Ik04LjUyLDksMTIsMTAuN1YxNUw4LjUyLDEzLjMxWm0yLjYxLDQuMzV2LTNMOS4zOSw5LjQ1djNaIi8+PC9nPjwvc3ZnPg=={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure AiHub(e_alias, e_label)
+    GCEntity(e_alias, e_label, AiHub, AiHub)
+!endprocedure
+
+!procedure AiHub(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, AiHub, AiHub)
+!endprocedure
+
+$GCDefineEntityStyle(AiHub)
+
+
+!procedure AiHubParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, AiHub, AiHub)
+!endprocedure
+
+!procedure AiHubParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, AiHub, AiHub)
+!endprocedure
+
+
+!procedure AiHubGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, AiHub, AiHubGroup)
+!endprocedure
+
+!procedure AiHubGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, AiHub, AiHubGroup)
+!endprocedure
+
+$GCDefineGroupStyle(AiHubGroup)

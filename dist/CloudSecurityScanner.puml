@@ -1,0 +1,34 @@
+!function $CloudSecurityScannerIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyBpZD0iQXJ0d29yayIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxjaXJjbGUgY3g9IjExLjQ1IiBjeT0iMTEuNTEiIHI9IjIuODkiIHN0eWxlPSJmaWxsOiM2NjlkZjYiLz48cGF0aCBkPSJNMTguMDUsNi44MWE4LjEyLDguMTIsMCwwLDAtNC45NC0zLjIzbC0uMjcsMS4zQTYuNzksNi43OSwwLDEsMSw2LjY1LDYuNzRsLTEtLjk0YTguMSw4LjEsMCwxLDAsMTMsMi4xMkExLjMxLDEuMzEsMCwwLDEsMTguMDUsNi44MVoiIHN0eWxlPSJmaWxsOiNhZWNiZmEiLz48cGF0aCBkPSJNMTQuNDYsMjAuNDJhMiwyLDAsMSwxLDAtMy45MyIgc3R5bGU9ImZpbGw6IzY2OWRmNiIvPjxwYXRoIGQ9Ik0xNC40NiwxNi40OWEyLDIsMCwxLDEsMCwzLjkzIiBzdHlsZT0iZmlsbDojNDI4NWY0Ii8+PHBhdGggZD0iTTE5LjM4LDguMWExLjM0LDEuMzQsMCwwLDEsMC0yLjY3di0xaDBhMi4zOCwyLjM4LDAsMCwwLDAsNC43NVoiIHN0eWxlPSJmaWxsOiM2NjlkZjYiLz48cGF0aCBkPSJNMTkuMzgsNS40M2ExLjM0LDEuMzQsMCwwLDEsMCwyLjY3djFoMGEyLjM4LDIuMzgsMCwwLDAsMC00Ljc1WiIgc3R5bGU9ImZpbGw6IzQyODVmNCIvPjxwYXRoIGQ9Ik00LjIyLDEyLjc4YTIsMiwwLDEsMSwwLTMuOTMiIHN0eWxlPSJmaWxsOiM2NjlkZjYiLz48cGF0aCBkPSJNNC4yMiw4Ljg1YTIsMiwwLDAsMSwwLDMuOTMiIHN0eWxlPSJmaWxsOiM0Mjg1ZjQiLz48L3N2Zz4={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure CloudSecurityScanner(e_alias, e_label)
+    GCEntity(e_alias, e_label, CloudSecurityScanner, CloudSecurityScanner)
+!endprocedure
+
+!procedure CloudSecurityScanner(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, CloudSecurityScanner, CloudSecurityScanner)
+!endprocedure
+
+$GCDefineEntityStyle(CloudSecurityScanner)
+
+
+!procedure CloudSecurityScannerParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, CloudSecurityScanner, CloudSecurityScanner)
+!endprocedure
+
+!procedure CloudSecurityScannerParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, CloudSecurityScanner, CloudSecurityScanner)
+!endprocedure
+
+
+!procedure CloudSecurityScannerGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudSecurityScanner, CloudSecurityScannerGroup)
+!endprocedure
+
+!procedure CloudSecurityScannerGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudSecurityScanner, CloudSecurityScannerGroup)
+!endprocedure
+
+$GCDefineGroupStyle(CloudSecurityScannerGroup)

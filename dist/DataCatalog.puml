@@ -1,0 +1,34 @@
+!function $DataCatalogIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM0Mjg1ZjQ7fS5jbHMtMntmaWxsOiNhZWNiZmE7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5JY29uXzI0cHhfQ2xvdWREYXRhQ2F0YWxvZ19Db2xvcjwvdGl0bGU+PGcgZGF0YS1uYW1lPSJQcm9kdWN0IEljb25zIj48cG9seWdvbiBjbGFzcz0iY2xzLTEiIHBvaW50cz0iMi44MSA5LjM3IDUuMTkgNS4xMyA4LjI1IDUuMTMgOC4yNSA3IDYuMjYgNyA0Ljk0IDkuMzQgNS43NSAxMC43IDQuMTYgMTEuNjMgMi44MSA5LjM3Ii8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjE0LjUgMTMuMDcgMTcgMTEuNjMgMTkuNSAxMy4wNyAxOS41IDE1Ljk2IDE3IDE3LjQgMTQuNSAxNS45NiAxNC41IDEzLjA3Ii8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjQuNSAxMy4wNyA3IDExLjYzIDkuNSAxMy4wNyA5LjUgMTUuOTYgNyAxNy40IDQuNSAxNS45NiA0LjUgMTMuMDciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iOS41IDQuNTkgMTIgMy4xNSAxNC41IDQuNTkgMTQuNSA3LjQ3IDEyIDguOTIgOS41IDcuNDcgOS41IDQuNTkiLz48cG9seWdvbiBjbGFzcz0iY2xzLTEiIHBvaW50cz0iMTcgMTEuNjMgMTkuNSAxMy4wNyAxOS41IDE1Ljk2IDE3IDE3LjQgMTcgMTEuNjMiLz48cG9seWdvbiBjbGFzcz0iY2xzLTEiIHBvaW50cz0iNyAxMS42MyA5LjUgMTMuMDcgOS41IDE1Ljk2IDcgMTcuNCA3IDExLjYzIi8+PHBvbHlnb24gY2xhc3M9ImNscy0xIiBwb2ludHM9IjEyIDMuMTUgMTQuNSA0LjU5IDE0LjUgNy40NyAxMiA4LjkyIDEyIDMuMTUiLz48cG9seWdvbiBjbGFzcz0iY2xzLTEiIHBvaW50cz0iMTguMjUgMTAuNyAxOS4wNiA5LjM1IDE3Ljc0IDcgMTUuNzUgNyAxNS43NSA1LjEzIDE4LjgxIDUuMTMgMjEuMTkgOS4zNyAxOS44NCAxMS42MyAxOC4yNSAxMC43Ii8+PHBvbHlnb24gY2xhc3M9ImNscy0xIiBwb2ludHM9IjkuNjEgMjAuNzUgOC4xMyAxOC4yOSA5LjczIDE3LjM2IDEwLjY2IDE4Ljg4IDEzLjMxIDE4Ljg4IDE0LjI1IDE3LjM2IDE1Ljg1IDE4LjI4IDE0LjM2IDIwLjc1IDkuNjEgMjAuNzUiLz48L2c+PC9zdmc+{scale="+$scale+"}>"
+!endfunction
+
+
+!procedure DataCatalog(e_alias, e_label)
+    GCEntity(e_alias, e_label, DataCatalog, DataCatalog)
+!endprocedure
+
+!procedure DataCatalog(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, DataCatalog, DataCatalog)
+!endprocedure
+
+$GCDefineEntityStyle(DataCatalog)
+
+
+!procedure DataCatalogParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, DataCatalog, DataCatalog)
+!endprocedure
+
+!procedure DataCatalogParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, DataCatalog, DataCatalog)
+!endprocedure
+
+
+!procedure DataCatalogGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, DataCatalog, DataCatalogGroup)
+!endprocedure
+
+!procedure DataCatalogGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, DataCatalog, DataCatalogGroup)
+!endprocedure
+
+$GCDefineGroupStyle(DataCatalogGroup)

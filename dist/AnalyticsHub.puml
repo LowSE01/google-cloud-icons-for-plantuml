@@ -1,0 +1,34 @@
+!function $AnalyticsHubIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCI+PHBhdGggZD0iTTEwLjUzLDExLjY4bC0yLjYtMS41N0ExLjM0LDEuMzQsMCwwLDAsOCw5Ljc2YTEuMzcsMS4zNywwLDEsMC0xLjM2LDEuMzYsMS4zMiwxLjMyLDAsMCwwLC45Mi0uMzdsMi42MSwxLjU3YS4zMy4zMywwLDAsMCwuMTkuMDYuMzguMzgsMCwwLDAsLjE5LS43Wk02LjYyLDEwLjM3YS42MS42MSwwLDEsMSwwLTEuMjIuNjEuNjEsMCwwLDEsMCwxLjIyWiIgc3R5bGU9ImZpbGw6IzY2OWRmNiIvPjxwYXRoIGQ9Ik05LjIsMTguODNBNi44Myw2LjgzLDAsMSwxLDE2LDEyLDYuODUsNi44NSwwLDAsMSw5LjIsMTguODNabTAtMTIuMTVBNS4zMyw1LjMzLDAsMSwwLDE0LjUyLDEyLDUuMzMsNS4zMywwLDAsMCw5LjIsNi42OFoiIHN0eWxlPSJmaWxsOiNhZWNiZmEiLz48cGF0aCBkPSJNMTkuNzcsMTUuNTRhMS44MiwxLjgyLDAsMCwwLTEuMS4zN2wtNS43Ni0zLjNBMy4wOSwzLjA5LDAsMCwwLDEzLDEyYTMuMDksMy4wOSwwLDAsMC0uMDgtLjYxbDUuNzYtMy4zYTEuODIsMS44MiwwLDAsMCwxLjEuMzdBMS44NiwxLjg2LDAsMSwwLDE3LjkxLDYuNmExLjM3LDEuMzcsMCwwLDAsMCwuMTlsLTUuODIsMy4zM2EyLjQ3LDIuNDcsMCwxLDAsMCwzLjc2bDUuODIsMy4zM2ExLjM3LDEuMzcsMCwwLDAsMCwuMTksMS44NiwxLjg2LDAsMSwwLDEuODYtMS44NloiIHN0eWxlPSJmaWxsOiM0Mjg1ZjQiLz48L3N2Zz4={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure AnalyticsHub(e_alias, e_label)
+    GCEntity(e_alias, e_label, AnalyticsHub, AnalyticsHub)
+!endprocedure
+
+!procedure AnalyticsHub(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, AnalyticsHub, AnalyticsHub)
+!endprocedure
+
+$GCDefineEntityStyle(AnalyticsHub)
+
+
+!procedure AnalyticsHubParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, AnalyticsHub, AnalyticsHub)
+!endprocedure
+
+!procedure AnalyticsHubParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, AnalyticsHub, AnalyticsHub)
+!endprocedure
+
+
+!procedure AnalyticsHubGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, AnalyticsHub, AnalyticsHubGroup)
+!endprocedure
+
+!procedure AnalyticsHubGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, AnalyticsHub, AnalyticsHubGroup)
+!endprocedure
+
+$GCDefineGroupStyle(AnalyticsHubGroup)

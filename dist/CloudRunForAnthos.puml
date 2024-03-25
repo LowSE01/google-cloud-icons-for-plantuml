@@ -1,0 +1,34 @@
+!function $CloudRunForAnthosIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCI+PHBhdGggZD0iTTYuNDIsMTNhMy45MiwzLjkyLDAsMCwwLDAsNy44MywzLjkyLDMuOTIsMCwwLDAsMC03LjgzWk02LDE3LjA5LDUuMzcsMTkuMmwtLjgzLjQyLjYyLTIuNTNoMGwtLjYyLTIuNTIuODMuNDJMNiwxNy4wOVptMCwyLjUzLjgzLTIuNTNMNiwxNC41N2wzLjMyLDIuNTJaIiBzdHlsZT0iZmlsbDojYWVjYmZhIi8+PHBhdGggZD0iTTEyLjc1LDMuMTMsNy40NywxMi40MmE0LjYxLDQuNjEsMCwwLDEsMS4yNi41bDQtNy4wNiw0LjMyLDcuNTdMMTIuNzUsOS4wNiw4Ljg2LDEzYTQuMzcsNC4zNywwLDAsMSwxLC44OUwxMi43NSwxMWw0LjU3LDQuNjQtNC41Ny0yLjA3TDEwLjQsMTQuNjJhNC40OCw0LjQ4LDAsMCwxLC41LDEuMjdsMS44NS0uODMsNC4zNiwySDExYTQuNjcsNC42NywwLDAsMS0uMjIsMS4zNkgyMS40M1oiIHN0eWxlPSJmaWxsOiM0Mjg1ZjQiLz48L3N2Zz4={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure CloudRunForAnthos(e_alias, e_label)
+    GCEntity(e_alias, e_label, CloudRunForAnthos, CloudRunForAnthos)
+!endprocedure
+
+!procedure CloudRunForAnthos(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, CloudRunForAnthos, CloudRunForAnthos)
+!endprocedure
+
+$GCDefineEntityStyle(CloudRunForAnthos)
+
+
+!procedure CloudRunForAnthosParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, CloudRunForAnthos, CloudRunForAnthos)
+!endprocedure
+
+!procedure CloudRunForAnthosParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, CloudRunForAnthos, CloudRunForAnthos)
+!endprocedure
+
+
+!procedure CloudRunForAnthosGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudRunForAnthos, CloudRunForAnthosGroup)
+!endprocedure
+
+!procedure CloudRunForAnthosGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudRunForAnthos, CloudRunForAnthosGroup)
+!endprocedure
+
+$GCDefineGroupStyle(CloudRunForAnthosGroup)

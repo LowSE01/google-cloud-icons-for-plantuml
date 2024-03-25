@@ -1,0 +1,34 @@
+!function $ConfigurationManagementIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCI+PHBhdGggZD0iTTUuNzYsOC42NHYzLjg4QTguMTYsOC4xNiwwLDAsMCwxMiwyMC4yOVY1LjczWiIgc3R5bGU9ImZpbGw6IzQyODVmNCIvPjxwYXRoIGQ9Ik0xMiwyMC4yOWwuNjYtLjE5YTguMTYsOC4xNiwwLDAsMCw1LjU4LTcuNThWOC42NEwxMiw1LjczWiIgc3R5bGU9ImZpbGw6I2FlY2JmYSIvPjxwYXRoIGQ9Ik0xNy43OSw0LjE0YTIuODUsMi44NSwwLDAsMC0uMjksMGwuODMtMS0uNTctLjQ4LTEuNjcsMiwyLDEuNjYuNDgtLjU3LTEtLjg1YTIuMywyLjMsMCwwLDEsLjI2LDAsMi42NCwyLjY0LDAsMCwxLDIuNjQsMi42NCwyLjU4LDIuNTgsMCwwLDEtLjI5LDEuMTlsLjU1LjU2LjA5LS4xM2EzLjUsMy41LDAsMCwwLC40LTEuNjJBMy4zOSwzLjM5LDAsMCwwLDE3Ljc5LDQuMTRaIiBzdHlsZT0iZmlsbDojYWVjYmZhIi8+PHBhdGggZD0iTTUuNjcsMTcuN2wtLjYxLjQ0Ljc2LDEuMDZhMi40OCwyLjQ4LDAsMCwxLS4yNywwLDIuNjQsMi42NCwwLDAsMS0xLjMzLTQuMjlsLS4zOS0uNjhhMS4xNCwxLjE0LDAsMCwwLS4xMS4xMSwzLjM4LDMuMzgsMCwwLDAsMS42NSw1LjU4LDIuOTMsMi45MywwLDAsMCwuMjkuMDVsLTEsLjc0LjQ0LjYxLDIuMTEtMS41WiIgc3R5bGU9ImZpbGw6IzQyODVmNCIvPjwvc3ZnPg=={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure ConfigurationManagement(e_alias, e_label)
+    GCEntity(e_alias, e_label, ConfigurationManagement, ConfigurationManagement)
+!endprocedure
+
+!procedure ConfigurationManagement(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, ConfigurationManagement, ConfigurationManagement)
+!endprocedure
+
+$GCDefineEntityStyle(ConfigurationManagement)
+
+
+!procedure ConfigurationManagementParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, ConfigurationManagement, ConfigurationManagement)
+!endprocedure
+
+!procedure ConfigurationManagementParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, ConfigurationManagement, ConfigurationManagement)
+!endprocedure
+
+
+!procedure ConfigurationManagementGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, ConfigurationManagement, ConfigurationManagementGroup)
+!endprocedure
+
+!procedure ConfigurationManagementGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, ConfigurationManagement, ConfigurationManagementGroup)
+!endprocedure
+
+$GCDefineGroupStyle(ConfigurationManagementGroup)

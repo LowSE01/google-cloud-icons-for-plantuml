@@ -1,0 +1,34 @@
+!function $Text-to-speechIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM2NjlkZjY7fS5jbHMtMntmaWxsOiM0Mjg1ZjQ7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5JY29uXzI0cHhfVGV4dHRvU3BlZWNoX0NvbG9yPC90aXRsZT48ZyBkYXRhLW5hbWU9IlByb2R1Y3QgSWNvbnMiPjxyZWN0IGNsYXNzPSJjbHMtMSIgeD0iMi4wMSIgeT0iNi45OSIgd2lkdGg9IjYuNjQiIGhlaWdodD0iMS42NyIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMSIgcG9pbnRzPSIxMS4xNyAxNS4zMiAyIDE1LjMyIDIgMTYuOTkgMiAxNi45OSAxMS4xNyAxNi45OSAxMS4xNyAxNS4zMiIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMSIgcG9pbnRzPSI0LjUxIDExLjE2IDIgMTEuMTYgMiAxMi44MiA2LjE4IDEyLjgyIDEyIDEyLjgyIDEwLjMzIDExLjE2IDQuNTEgMTEuMTYiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0xMiw5LjA3YS40Mi40MiwwLDAsMSwuNDItLjM2LjQxLjQxLDAsMCwxLC40MS4zNnY5LjE4YTIuMDksMi4wOSwwLDAsMCwyLjYxLDJBMi4xNiwyLjE2LDAsMCwwLDE3LDE4LjE0VjUuNzVhLjQuNCwwLDAsMSwuMTktLjQuNDEuNDEsMCwwLDEsLjQ1LDAsLjQuNCwwLDAsMSwuMTkuNHY5LjE2YTIuMDcsMi4wNywwLDAsMCwuODEsMS42NCwyLDIsMCwwLDAsMS44LjM3QTIuMTYsMi4xNiwwLDAsMCwyMiwxNC44VjEySDIwLjMzdjIuOTJhLjQuNCwwLDAsMS0uMTkuNC40MS40MSwwLDAsMS0uNDUsMCwuNC40LDAsMCwxLS4xOS0uNFY1Ljc1YTIuMDksMi4wOSwwLDAsMC0yLjYxLTIsMi4xNiwyLjE2LDAsMCwwLTEuNTYsMi4xM1YxOC4yNWEuNC40LDAsMCwxLS4xOS40LjQxLjQxLDAsMCwxLS40NSwwLC40LjQsMCwwLDEtLjE5LS40VjkuMDhhMi4wNywyLjA3LDAsMCwwLTQuMTEtLjM2LDIuNCwyLjQsMCwwLDAtLjA1LjQ2djJMMTIsMTIuODJWOS4wN1oiLz48L2c+PC9zdmc+{scale="+$scale+"}>"
+!endfunction
+
+
+!procedure Text-to-speech(e_alias, e_label)
+    GCEntity(e_alias, e_label, Text-to-speech, Text-to-speech)
+!endprocedure
+
+!procedure Text-to-speech(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, Text-to-speech, Text-to-speech)
+!endprocedure
+
+$GCDefineEntityStyle(Text-to-speech)
+
+
+!procedure Text-to-speechParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, Text-to-speech, Text-to-speech)
+!endprocedure
+
+!procedure Text-to-speechParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, Text-to-speech, Text-to-speech)
+!endprocedure
+
+
+!procedure Text-to-speechGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, Text-to-speech, Text-to-speechGroup)
+!endprocedure
+
+!procedure Text-to-speechGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, Text-to-speech, Text-to-speechGroup)
+!endprocedure
+
+$GCDefineGroupStyle(Text-to-speechGroup)

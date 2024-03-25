@@ -1,0 +1,34 @@
+!function $SecurityCommandCenterIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM0Mjg1ZjQ7fS5jbHMtMntmaWxsOiM2NjlkZjY7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5JY29uXzI0cHhfU2VjdXJpdHlDb21tYW5kQ2VudGVyX0NvbG9yPC90aXRsZT48ZyBkYXRhLW5hbWU9IlByb2R1Y3QgSWNvbnMiPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTEzLjMxLDYuODVhNS4yMyw1LjIzLDAsMCwxLDMuNzUsMy43NWgzLjUzVjUuMjRMMTMuMzEsMloiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik02LjkzLDEwLjYxYTUuMjIsNS4yMiwwLDAsMSwzLjc1LTMuNzVWMkwzLjQxLDUuMjR2NS4zN1oiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xMC42OSwxN2E1LjIzLDUuMjMsMCwwLDEtMy43NS0zLjc1SDMuNjNBMTIsMTIsMCwwLDAsMTAuNjksMjJaIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTcuMDcsMTMuMjVBNS4yMyw1LjIzLDAsMCwxLDEzLjMyLDE3djVhMTIsMTIsMCwwLDAsNy4wNS04Ljc1WiIvPjxjaXJjbGUgaWQ9Ik92YWwiIGNsYXNzPSJjbHMtMiIgY3g9IjEyIiBjeT0iMTEuOTIiIHI9IjIuNjMiLz48L2c+PC9zdmc+{scale="+$scale+"}>"
+!endfunction
+
+
+!procedure SecurityCommandCenter(e_alias, e_label)
+    GCEntity(e_alias, e_label, SecurityCommandCenter, SecurityCommandCenter)
+!endprocedure
+
+!procedure SecurityCommandCenter(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, SecurityCommandCenter, SecurityCommandCenter)
+!endprocedure
+
+$GCDefineEntityStyle(SecurityCommandCenter)
+
+
+!procedure SecurityCommandCenterParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, SecurityCommandCenter, SecurityCommandCenter)
+!endprocedure
+
+!procedure SecurityCommandCenterParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, SecurityCommandCenter, SecurityCommandCenter)
+!endprocedure
+
+
+!procedure SecurityCommandCenterGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, SecurityCommandCenter, SecurityCommandCenterGroup)
+!endprocedure
+
+!procedure SecurityCommandCenterGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, SecurityCommandCenter, SecurityCommandCenterGroup)
+!endprocedure
+
+$GCDefineGroupStyle(SecurityCommandCenterGroup)

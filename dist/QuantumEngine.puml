@@ -1,0 +1,34 @@
+!function $QuantumEngineIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiNhZWNiZmE7fS5jbHMtMntmaWxsOiM0Mjg1ZjQ7fS5jbHMtM3tmaWxsOiM2NjlkZjY7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5JY29uXzI0cHhfUXVhbnRhbUVuZ2luZV9Db2xvcjwvdGl0bGU+PGcgZGF0YS1uYW1lPSJQcm9kdWN0IEljb25zIj48cmVjdCBjbGFzcz0iY2xzLTEiIHg9IjcuMDEiIHk9IjIiIHdpZHRoPSIyIiBoZWlnaHQ9IjMiLz48cmVjdCBjbGFzcz0iY2xzLTEiIHg9IjExLjAxIiB5PSIyIiB3aWR0aD0iMiIgaGVpZ2h0PSIzIi8+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSIxNS4wMSIgeT0iMiIgd2lkdGg9IjIiIGhlaWdodD0iMyIvPjxyZWN0IGNsYXNzPSJjbHMtMiIgeD0iNy4wMSIgeT0iMTkiIHdpZHRoPSIyIiBoZWlnaHQ9IjMiLz48cmVjdCBjbGFzcz0iY2xzLTIiIHg9IjExLjAxIiB5PSIxOSIgd2lkdGg9IjIiIGhlaWdodD0iMyIvPjxyZWN0IGNsYXNzPSJjbHMtMiIgeD0iMTUuMDEiIHk9IjE5IiB3aWR0aD0iMiIgaGVpZ2h0PSIzIi8+PHJlY3QgY2xhc3M9ImNscy0yIiB4PSIxOSIgeT0iMTUiIHdpZHRoPSIzIiBoZWlnaHQ9IjIiLz48cmVjdCBjbGFzcz0iY2xzLTIiIHg9IjE5IiB5PSIxMSIgd2lkdGg9IjMiIGhlaWdodD0iMiIvPjxyZWN0IGNsYXNzPSJjbHMtMiIgeD0iMTkiIHk9IjciIHdpZHRoPSIzIiBoZWlnaHQ9IjIiLz48cmVjdCBjbGFzcz0iY2xzLTEiIHg9IjIiIHk9IjE1IiB3aWR0aD0iMyIgaGVpZ2h0PSIyIi8+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSIyIiB5PSIxMSIgd2lkdGg9IjMiIGhlaWdodD0iMiIvPjxyZWN0IGNsYXNzPSJjbHMtMSIgeD0iMiIgeT0iNyIgd2lkdGg9IjMiIGhlaWdodD0iMiIvPjxnIGRhdGEtbmFtZT0iY29sb3JlZC0zMi9xdWFudHVtLWVuZ2luZSI+PGcgPjxwYXRoIGNsYXNzPSJjbHMtMyIgZD0iTTExLDEzSDlWN0g3djhoNHYzaDJWMTVoNFY3SDE1djZIMTNWNkgxMVpNNCwyMFY0SDIwVjIwWiIvPjwvZz48L2c+PC9nPjwvc3ZnPg=={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure QuantumEngine(e_alias, e_label)
+    GCEntity(e_alias, e_label, QuantumEngine, QuantumEngine)
+!endprocedure
+
+!procedure QuantumEngine(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, QuantumEngine, QuantumEngine)
+!endprocedure
+
+$GCDefineEntityStyle(QuantumEngine)
+
+
+!procedure QuantumEngineParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, QuantumEngine, QuantumEngine)
+!endprocedure
+
+!procedure QuantumEngineParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, QuantumEngine, QuantumEngine)
+!endprocedure
+
+
+!procedure QuantumEngineGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, QuantumEngine, QuantumEngineGroup)
+!endprocedure
+
+!procedure QuantumEngineGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, QuantumEngine, QuantumEngineGroup)
+!endprocedure
+
+$GCDefineGroupStyle(QuantumEngineGroup)

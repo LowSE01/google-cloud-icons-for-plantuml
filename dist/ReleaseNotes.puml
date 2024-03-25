@@ -1,0 +1,34 @@
+!function $ReleaseNotesIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtOS40NzM2ODQyMSA0LjE1Nzg5NDc0djIuMTA1MjYzMTVoLTcuMzY4NDIxMDV2MTIuODYzMTU3OTFoMTIuNjMxNTc4OTR2LTcuNmgyLjEwNTI2MzJ2Ny4zNjg0MjFjMCAxLjE1Nzg5NDgtLjk0NzM2ODUgMi4xMDUyNjMyLTIuMTA1MjYzMiAyLjEwNTI2MzJoLTEyLjYzMTU3ODk0Yy0xLjE1Nzg5NDc0IDAtMi4xMDUyNjMxNi0uOTQ3MzY4NC0yLjEwNTI2MzE2LTIuMTA1MjYzMnYtMTIuNjMxNTc4OTFjMC0xLjE1Nzg5NDczLjk0NzM2ODQyLTIuMTA1MjYzMTUgMi4xMDUyNjMxNi0yLjEwNTI2MzE1em0wIDEwLjUyNjMxNTc2djIuMTA1MjYzMmgtNS4yNjMxNTc4OXYtMi4xMDUyNjMyem0zLjE1Nzg5NDY5LTMuMTU3ODk0N3YyLjEwNTI2MzFoLTguNDIxMDUyNTh2LTIuMTA1MjYzMXptMC0zLjE1Nzg5NDc1djIuMTA1MjYzMTVoLTguNDIxMDUyNTh2LTIuMTA1MjYzMTV6bTMuMTU3ODk0OC01LjI2MzE1Nzg5Ljk4Njg0MjEgMi4xNzEwNTI2MyAyLjE3MTA1MjYuOTg2ODQyMS0yLjE3MTA1MjYuOTg2ODQyMTEtLjk4Njg0MjEgMi4xNzEwNTI2My0uOTg2ODQyMS0yLjE3MTA1MjYzLTIuMTcxMDUyNy0uOTg2ODQyMTEgMi4xNzEwNTI3LS45ODY4NDIxem0tMy4xNTc4OTQ4LTIuMTA1MjYzMTYuNjU3ODk0OCAxLjQ0NzM2ODQyIDEuNDQ3MzY4NC42NTc4OTQ3NC0xLjQ0NzM2ODQuNjU3ODk0NzMtLjY1Nzg5NDggMS40NDczNjg0My0uNjU3ODk0Ny0xLjQ0NzM2ODQzLTEuNDQ3MzY4NC0uNjU3ODk0NzMgMS40NDczNjg0LS42NTc4OTQ3NHoiIGZpbGw9IiM0Mjg1ZjQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMgMSkiLz48L3N2Zz4={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure ReleaseNotes(e_alias, e_label)
+    GCEntity(e_alias, e_label, ReleaseNotes, ReleaseNotes)
+!endprocedure
+
+!procedure ReleaseNotes(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, ReleaseNotes, ReleaseNotes)
+!endprocedure
+
+$GCDefineEntityStyle(ReleaseNotes)
+
+
+!procedure ReleaseNotesParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, ReleaseNotes, ReleaseNotes)
+!endprocedure
+
+!procedure ReleaseNotesParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, ReleaseNotes, ReleaseNotes)
+!endprocedure
+
+
+!procedure ReleaseNotesGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, ReleaseNotes, ReleaseNotesGroup)
+!endprocedure
+
+!procedure ReleaseNotesGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, ReleaseNotes, ReleaseNotesGroup)
+!endprocedure
+
+$GCDefineGroupStyle(ReleaseNotesGroup)

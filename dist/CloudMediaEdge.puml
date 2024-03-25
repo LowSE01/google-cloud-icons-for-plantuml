@@ -1,0 +1,34 @@
+!function $CloudMediaEdgeIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyBpZD0iQXJ0d29yayIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPjxjaXJjbGUgY3g9IjEyLjc2IiBjeT0iNy42OSIgcj0iMi4wNiIgc3R5bGU9ImZpbGw6IzQyODVmNCIvPjxjaXJjbGUgY3g9IjExLjI0IiBjeT0iMTYuMzEiIHI9IjIuMDYiIHN0eWxlPSJmaWxsOiM0Mjg1ZjQiLz48Y2lyY2xlIGN4PSIxNi4zMSIgY3k9IjEyLjc2IiByPSIyLjA2IiBzdHlsZT0iZmlsbDojNDI4NWY0Ii8+PGNpcmNsZSBjeD0iNy42OSIgY3k9IjExLjI0IiByPSIyLjA2IiBzdHlsZT0iZmlsbDojNDI4NWY0Ii8+PGNpcmNsZSBjeD0iOS4wNiIgY3k9IjcuOCIgcj0iMS4xMyIgc3R5bGU9ImZpbGw6IzY2OWRmNiIvPjxjaXJjbGUgY3g9IjE0Ljk0IiBjeT0iMTYuMiIgcj0iMS4xMyIgc3R5bGU9ImZpbGw6IzY2OWRmNiIvPjxjaXJjbGUgY3g9IjcuOCIgY3k9IjE0Ljk0IiByPSIxLjEzIiBzdHlsZT0iZmlsbDojNjY5ZGY2Ii8+PGNpcmNsZSBjeD0iMTYuMiIgY3k9IjkuMDYiIHI9IjEuMTMiIHN0eWxlPSJmaWxsOiM2NjlkZjYiLz48Y2lyY2xlIGN4PSIxMS4xNyIgY3k9IjQuMDYiIHI9IjEuNSIgc3R5bGU9ImZpbGw6IzY2OWRmNiIvPjxjaXJjbGUgY3g9IjEyLjgzIiBjeT0iMTkuOTQiIHI9IjEuNSIgc3R5bGU9ImZpbGw6IzY2OWRmNiIvPjxjaXJjbGUgY3g9IjQuMDYiIGN5PSIxMi44MyIgcj0iMS41IiBzdHlsZT0iZmlsbDojNjY5ZGY2Ii8+PGNpcmNsZSBjeD0iMTkuOTQiIGN5PSIxMS4xNyIgcj0iMS41IiBzdHlsZT0iZmlsbDojNjY5ZGY2Ii8+PGNpcmNsZSBjeD0iMTYuNTQiIGN5PSI1LjE1IiByPSIxLjY5IiBzdHlsZT0iZmlsbDojYWVjYmZhIi8+PGNpcmNsZSBjeD0iNy40NiIgY3k9IjE4Ljg1IiByPSIxLjY5IiBzdHlsZT0iZmlsbDojYWVjYmZhIi8+PGNpcmNsZSBjeD0iNS4yMyIgY3k9IjcuMzUiIHI9IjEuNjkiIHN0eWxlPSJmaWxsOiNhZWNiZmEiLz48Y2lyY2xlIGN4PSIxOC43NyIgY3k9IjE2LjY1IiByPSIxLjY5IiBzdHlsZT0iZmlsbDojYWVjYmZhIi8+PC9zdmc+{scale="+$scale+"}>"
+!endfunction
+
+
+!procedure CloudMediaEdge(e_alias, e_label)
+    GCEntity(e_alias, e_label, CloudMediaEdge, CloudMediaEdge)
+!endprocedure
+
+!procedure CloudMediaEdge(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, CloudMediaEdge, CloudMediaEdge)
+!endprocedure
+
+$GCDefineEntityStyle(CloudMediaEdge)
+
+
+!procedure CloudMediaEdgeParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, CloudMediaEdge, CloudMediaEdge)
+!endprocedure
+
+!procedure CloudMediaEdgeParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, CloudMediaEdge, CloudMediaEdge)
+!endprocedure
+
+
+!procedure CloudMediaEdgeGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudMediaEdge, CloudMediaEdgeGroup)
+!endprocedure
+
+!procedure CloudMediaEdgeGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudMediaEdge, CloudMediaEdgeGroup)
+!endprocedure
+
+$GCDefineGroupStyle(CloudMediaEdgeGroup)

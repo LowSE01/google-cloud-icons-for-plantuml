@@ -1,0 +1,34 @@
+!function $CloudCodeIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiNhZWNiZmE7fS5jbHMtMntmaWxsOiM2NjlkZjY7fS5jbHMtM3tmaWxsOiM0Mjg1ZjQ7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5JY29uXzI0cHhfQ2xvdWRDb2RlX0NvbG9yPC90aXRsZT48ZyBkYXRhLW5hbWU9IlByb2R1Y3QgSWNvbnMiPjxnID48ZyBkYXRhLW5hbWU9IkxheWVyIDEtMiI+PHBvbHlnb24gY2xhc3M9ImNscy0xIiBwb2ludHM9IjUuNDUgOC41MyA4LjU1IDUuNDIgMTEuNjUgOC41MyA4LjU1IDExLjY1IDUuNDUgOC41MyIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIyIDEyIDUuMSA4Ljg4IDguMiAxMiA1LjEgMTUuMTIgMiAxMiIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMyIgcG9pbnRzPSI1LjQ1IDE1LjQ3IDguNTUgMTIuMzUgMTEuNjUgMTUuNDcgOC41NSAxOC41OSA1LjQ1IDE1LjQ3Ii8+PHBvbHlnb24gY2xhc3M9ImNscy0xIiBwb2ludHM9IjEyLjM1IDguNTMgMTUuNDUgNS40MiAxOC41NSA4LjUzIDE1LjQ1IDExLjY1IDEyLjM1IDguNTMiLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMTUuOCAxMiAxOC45IDguODggMjIgMTIgMTguOSAxNS4xMiAxNS44IDEyIi8+PHBvbHlnb24gY2xhc3M9ImNscy0zIiBwb2ludHM9IjEyLjM1IDE1LjQ3IDE1LjQ1IDEyLjM1IDE4LjU1IDE1LjQ3IDE1LjQ1IDE4LjU5IDEyLjM1IDE1LjQ3Ii8+PC9nPjwvZz48L2c+PC9zdmc+{scale="+$scale+"}>"
+!endfunction
+
+
+!procedure CloudCode(e_alias, e_label)
+    GCEntity(e_alias, e_label, CloudCode, CloudCode)
+!endprocedure
+
+!procedure CloudCode(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, CloudCode, CloudCode)
+!endprocedure
+
+$GCDefineEntityStyle(CloudCode)
+
+
+!procedure CloudCodeParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, CloudCode, CloudCode)
+!endprocedure
+
+!procedure CloudCodeParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, CloudCode, CloudCode)
+!endprocedure
+
+
+!procedure CloudCodeGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudCode, CloudCodeGroup)
+!endprocedure
+
+!procedure CloudCodeGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudCode, CloudCodeGroup)
+!endprocedure
+
+$GCDefineGroupStyle(CloudCodeGroup)

@@ -1,0 +1,34 @@
+!function $CatalogIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGJhc2VQcm9maWxlPSJ0aW55IiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIKCSB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiBvdmVyZmxvdz0idmlzaWJsZSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnID4KCTxyZWN0IHk9IjAiIGZpbGw9Im5vbmUiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIvPgoJPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMy4wMDAwMDAsIDQuMDAwMDAwKSI+CgkJPHBhdGggZmlsbD0iIzMzNjdENiIgZD0iTTkuOSwxMy42YzAuMywxLjIsMS40LDIuMSwyLjcsMi4xYzEuNiwwLDIuOC0xLjMsMi44LTIuOHMtMS4zLTIuOC0yLjgtMi44CgkJCWMtMS4zLDAtMi40LDAuOS0yLjcsMi4xSDIuNnYxLjVIOS45eiBNMTguOCwxNy44SC0wLjhWNy4yaDUuMkw2LDguOGgzaDNsMS41LTEuNWg1LjJWMTcuOHogTTQuOSwxMy42SDMuNHYxLjVoMS41VjEzLjZ6CgkJCSBNNy4xLDEzLjZINS42djEuNWgxLjVWMTMuNnogTTExLjIsMTIuOWMwLDAuOCwwLjYsMS40LDEuNCwxLjRzMS40LTAuNiwxLjQtMS40cy0wLjYtMS40LTEuNC0xLjRTMTEuMiwxMi4xLDExLjIsMTIuOXoiLz4KCQk8cG9seWdvbiBmaWxsPSIjNUM4NURFIiBwb2ludHM9IjguMiw4IDYuNCw4IDUuMSw2LjUgMC44LDYuNSAwLjgsMy41IDguMiwzLjUgCQkiLz4KCQk8cG9seWdvbiBpZD0iU2hhcGUtQ29weS0yIiBmaWxsPSIjODVBNEU2IiBwb2ludHM9IjEyLjgsNi44IDExLjUsOCA5LDggOSwyLjggMywyLjggMywxLjIgMTIuOCwxLjIgCQkiLz4KCQk8cG9seWdvbiBpZD0iU2hhcGUtQ29weS0zIiBmaWxsPSIjODVBNEU2IiBwb2ludHM9IjE3LjIsNi41IDEzLjUsNi41IDEzLjUsMC41IDYuOCwwLjUgNi44LC0xIDE3LjIsLTEgCQkiLz4KCTwvZz4KPC9nPgo8L3N2Zz4K{scale="+$scale+"}>"
+!endfunction
+
+
+!procedure Catalog(e_alias, e_label)
+    GCEntity(e_alias, e_label, Catalog, Catalog)
+!endprocedure
+
+!procedure Catalog(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, Catalog, Catalog)
+!endprocedure
+
+$GCDefineEntityStyle(Catalog)
+
+
+!procedure CatalogParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, Catalog, Catalog)
+!endprocedure
+
+!procedure CatalogParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, Catalog, Catalog)
+!endprocedure
+
+
+!procedure CatalogGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, Catalog, CatalogGroup)
+!endprocedure
+
+!procedure CatalogGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, Catalog, CatalogGroup)
+!endprocedure
+
+$GCDefineGroupStyle(CatalogGroup)

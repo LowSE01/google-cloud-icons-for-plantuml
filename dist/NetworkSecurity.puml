@@ -1,0 +1,34 @@
+!function $NetworkSecurityIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOm5vbmU7fS5jbHMtMntmaWxsOiM2NjlkZjY7fS5jbHMtM3tmaWxsOiM0Mjg1ZjQ7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5JY29uXzI0cHhfTmV0d29ya1NlY3VyaXR5X0NvbG9yPC90aXRsZT48ZyBkYXRhLW5hbWU9IlByb2R1Y3QgSWNvbnMiPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTExLjUsMTN2MS43OUw4Ljg2LDEyLjEyLDguOTEsMTJIMTJWMTFIOC45MUExLjUsMS41LDAsMSwwLDcuNSwxM2ExLjQ2LDEuNDYsMCwwLDAsLjY2LS4xNmwyLjg5LDIuOTFBLjk0Ljk0LDAsMCwwLDEyLDE3VjEzWiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTExLDdhMSwxLDAsMCwwLC41Ljg1VjEwSDEyVjZBMSwxLDAsMCwwLDExLDdaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTIsMTdhLjk0Ljk0LDAsMCwxLS45NS0xLjI1TDguMTYsMTIuODRBMS40NiwxLjQ2LDAsMCwxLDcuNSwxM2ExLjUsMS41LDAsMSwxLDEuNDEtMkgxMlYxMGgtLjVWNy44NUExLDEsMCwwLDEsMTIsNlYyTDQsNXY2LjA1YzAsNS4wNiwzLjQxLDkuOCw4LDExaDBaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNOC44NiwxMi4xMmwyLjY0LDIuNjdWMTNIMTJWMTJIOC45MVoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0xNS4xNSwxMC44NiwxMi41LDguMjFWMTBIMTJ2MWgzLjA5WiIvPjxwYXRoIGNsYXNzPSJjbHMtMyIgZD0iTTEzLDdhLjkzLjkzLDAsMCwxLS4wNS4yNGwyLjkxLDIuOTFBMS41LDEuNSwwLDEsMSwxNS4wOSwxMkgxMnYxaC41djIuMTVBMSwxLDAsMCwxLDEyLDE3djVjNC41OS0xLjE1LDgtNS44OSw4LTEwLjk1VjVMMTIsMlY2QTEsMSwwLDAsMSwxMyw3WiIvPjwvZz48L3N2Zz4={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure NetworkSecurity(e_alias, e_label)
+    GCEntity(e_alias, e_label, NetworkSecurity, NetworkSecurity)
+!endprocedure
+
+!procedure NetworkSecurity(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, NetworkSecurity, NetworkSecurity)
+!endprocedure
+
+$GCDefineEntityStyle(NetworkSecurity)
+
+
+!procedure NetworkSecurityParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, NetworkSecurity, NetworkSecurity)
+!endprocedure
+
+!procedure NetworkSecurityParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, NetworkSecurity, NetworkSecurity)
+!endprocedure
+
+
+!procedure NetworkSecurityGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, NetworkSecurity, NetworkSecurityGroup)
+!endprocedure
+
+!procedure NetworkSecurityGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, NetworkSecurity, NetworkSecurityGroup)
+!endprocedure
+
+$GCDefineGroupStyle(NetworkSecurityGroup)

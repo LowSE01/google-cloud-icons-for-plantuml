@@ -1,0 +1,34 @@
+!function $CloudFirewallRulesIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM0Mjg1ZjQ7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5JY29uXzI0cHhfRmlyZXdhbGxSdWxlc19Db2xvcjwvdGl0bGU+PGcgZGF0YS1uYW1lPSJQcm9kdWN0IEljb25zIj48ZyA+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSIxLjk4IiB5PSIyIiB3aWR0aD0iOC44OSIgaGVpZ2h0PSIyLjIyIi8+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSIxLjk4IiB5PSIxOS43OCIgd2lkdGg9IjguODkiIGhlaWdodD0iMi4yMiIvPjxyZWN0IGNsYXNzPSJjbHMtMSIgeD0iMS45OCIgeT0iMTAuODkiIHdpZHRoPSI4Ljg5IiBoZWlnaHQ9IjIuMjIiLz48cmVjdCBjbGFzcz0iY2xzLTEiIHg9IjEzLjA5IiB5PSIyIiB3aWR0aD0iOC44OSIgaGVpZ2h0PSIyLjIyIi8+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSIxMy4wOSIgeT0iMTkuNzgiIHdpZHRoPSI4Ljg5IiBoZWlnaHQ9IjIuMjIiLz48cmVjdCBjbGFzcz0iY2xzLTEiIHg9IjEzLjA5IiB5PSIxMC44OSIgd2lkdGg9IjguODkiIGhlaWdodD0iMi4yMiIvPjxyZWN0IGNsYXNzPSJjbHMtMSIgeD0iNy41MyIgeT0iNi40NCIgd2lkdGg9IjguODkiIGhlaWdodD0iMi4yMiIvPjxyZWN0IGNsYXNzPSJjbHMtMSIgeD0iNy41MyIgeT0iMTUuMzMiIHdpZHRoPSI4Ljg5IiBoZWlnaHQ9IjIuMjIiLz48cmVjdCBjbGFzcz0iY2xzLTEiIHg9IjEuOTgiIHk9IjYuNDQiIHdpZHRoPSIzLjMzIiBoZWlnaHQ9IjIuMjIiLz48cmVjdCBjbGFzcz0iY2xzLTEiIHg9IjEuOTgiIHk9IjE1LjMzIiB3aWR0aD0iMy4zMyIgaGVpZ2h0PSIyLjIyIi8+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSIxOC42NSIgeT0iNi40NCIgd2lkdGg9IjMuMzMiIGhlaWdodD0iMi4yMiIvPjxyZWN0IGNsYXNzPSJjbHMtMSIgeD0iMTguNjUiIHk9IjE1LjMzIiB3aWR0aD0iMy4zMyIgaGVpZ2h0PSIyLjIyIi8+PC9nPjwvZz48L3N2Zz4={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure CloudFirewallRules(e_alias, e_label)
+    GCEntity(e_alias, e_label, CloudFirewallRules, CloudFirewallRules)
+!endprocedure
+
+!procedure CloudFirewallRules(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, CloudFirewallRules, CloudFirewallRules)
+!endprocedure
+
+$GCDefineEntityStyle(CloudFirewallRules)
+
+
+!procedure CloudFirewallRulesParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, CloudFirewallRules, CloudFirewallRules)
+!endprocedure
+
+!procedure CloudFirewallRulesParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, CloudFirewallRules, CloudFirewallRules)
+!endprocedure
+
+
+!procedure CloudFirewallRulesGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudFirewallRules, CloudFirewallRulesGroup)
+!endprocedure
+
+!procedure CloudFirewallRulesGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudFirewallRules, CloudFirewallRulesGroup)
+!endprocedure
+
+$GCDefineGroupStyle(CloudFirewallRulesGroup)

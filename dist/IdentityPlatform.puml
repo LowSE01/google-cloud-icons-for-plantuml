@@ -1,0 +1,34 @@
+!function $IdentityPlatformIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM2NjlkZjY7fS5jbHMtMSwuY2xzLTJ7ZmlsbC1ydWxlOmV2ZW5vZGQ7fS5jbHMtMntmaWxsOiM0Mjg1ZjQ7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5JY29uXzI0cHhfQ0lDUF9Db2xvcjwvdGl0bGU+PGcgZGF0YS1uYW1lPSJQcm9kdWN0IEljb25zIj48ZyA+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMy4zMyw3LDEyLDJsOC42Niw1djkuNzJMMTcuMzMsMTRINi42N0wzLjMzLDE2LjY3Wk0xNiw4LjY3YTQsNCwwLDEsMC00LDRBNCw0LDAsMCwwLDE2LDguNjdabS0xLjMzLDBBMi42NywyLjY3LDAsMSwxLDEyLDYsMi42NywyLjY3LDAsMCwxLDE0LjY3LDguNjdaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTIsMTIuNjdhNCw0LDAsMCwwLDAtOFYybDguNjYsNXY5LjcyTDE3LjMzLDE0SDEyWm0yLjY3LTRBMi42NywyLjY3LDAsMCwxLDEyLDExLjMxVjZBMi42NywyLjY3LDAsMCwxLDE0LjY3LDguNjZaIi8+PHBvbHlnb24gY2xhc3M9ImNscy0xIiBwb2ludHM9IjQgMTggMTIgMjIgMjAgMTggMTYuNjcgMTUuMzMgNy4zMyAxNS4zMyA0IDE4Ii8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjEyIDIyIDIwIDE4IDE2LjY3IDE1LjMzIDEyIDE1LjMzIDEyIDIyIi8+PC9nPjwvZz48L3N2Zz4={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure IdentityPlatform(e_alias, e_label)
+    GCEntity(e_alias, e_label, IdentityPlatform, IdentityPlatform)
+!endprocedure
+
+!procedure IdentityPlatform(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, IdentityPlatform, IdentityPlatform)
+!endprocedure
+
+$GCDefineEntityStyle(IdentityPlatform)
+
+
+!procedure IdentityPlatformParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, IdentityPlatform, IdentityPlatform)
+!endprocedure
+
+!procedure IdentityPlatformParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, IdentityPlatform, IdentityPlatform)
+!endprocedure
+
+
+!procedure IdentityPlatformGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, IdentityPlatform, IdentityPlatformGroup)
+!endprocedure
+
+!procedure IdentityPlatformGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, IdentityPlatform, IdentityPlatformGroup)
+!endprocedure
+
+$GCDefineGroupStyle(IdentityPlatformGroup)

@@ -1,0 +1,34 @@
+!function $CloudApisIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM0Mjg1ZjQ7fS5jbHMtMntmaWxsOiM2NjlkZjY7fS5jbHMtM3tmaWxsOiNhZWNiZmE7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5JY29uXzI0cHhfQ2xvdWRBUElzX0NvbG9yPC90aXRsZT48ZyBkYXRhLW5hbWU9IlByb2R1Y3QgSWNvbnMiPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTE2LjQ5LDEyLDEyLDE2LjQ5LDcuNTEsMTIsMTIsNy41MVpNMTIsMTQuOTEsMTQuOTEsMTIsMTIsOS4wOSw5LjA5LDEyWiIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxNi4zMyAxNS4wMiAxOC45OCAxNS4wMiAyMiAxMiAxOS4zNSAxMiAxNi4zMyAxNS4wMiIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMyIgcG9pbnRzPSIxNi4zMyA4Ljk4IDE5LjM1IDEyIDIyIDEyIDE4Ljk4IDguOTggMTYuMzMgOC45OCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMyIgcG9pbnRzPSI3LjY3IDguOTggNS4wMiA4Ljk4IDIgMTIgNC42NSAxMiA3LjY3IDguOTgiLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMiAxMiA1LjAyIDE1LjAyIDcuNjcgMTUuMDIgNC42NSAxMiAyIDEyIi8+PHBvbHlnb24gY2xhc3M9ImNscy0zIiBwb2ludHM9IjguOTggNS4wMiA4Ljk4IDcuNjcgMTIgNC42NSAxMiAyIDguOTggNS4wMiIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxMiAyIDEyIDQuNjUgMTUuMDIgNy42NyAxNS4wMiA1LjAyIDEyIDIiLz48cG9seWdvbiBjbGFzcz0iY2xzLTMiIHBvaW50cz0iOC45OCAxNi4zMyA4Ljk4IDE4Ljk4IDEyIDIyIDEyIDE5LjM1IDguOTggMTYuMzMiLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMTIgMTkuMzUgMTIgMjIgMTUuMDIgMTguOTggMTUuMDIgMTYuMzMgMTIgMTkuMzUiLz48L2c+PC9zdmc+{scale="+$scale+"}>"
+!endfunction
+
+
+!procedure CloudApis(e_alias, e_label)
+    GCEntity(e_alias, e_label, CloudApis, CloudApis)
+!endprocedure
+
+!procedure CloudApis(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, CloudApis, CloudApis)
+!endprocedure
+
+$GCDefineEntityStyle(CloudApis)
+
+
+!procedure CloudApisParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, CloudApis, CloudApis)
+!endprocedure
+
+!procedure CloudApisParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, CloudApis, CloudApis)
+!endprocedure
+
+
+!procedure CloudApisGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudApis, CloudApisGroup)
+!endprocedure
+
+!procedure CloudApisGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudApis, CloudApisGroup)
+!endprocedure
+
+$GCDefineGroupStyle(CloudApisGroup)

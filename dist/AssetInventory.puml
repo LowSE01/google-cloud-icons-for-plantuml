@@ -1,0 +1,34 @@
+!function $AssetInventoryIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyBpZD0iQXJ0d29yayIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxyZWN0IHg9IjEwLjc1IiB5PSIxMC42MSIgd2lkdGg9IjIuNTciIGhlaWdodD0iMi41NyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQuODkgMTIpIHJvdGF0ZSgtNDUuMDEpIiBzdHlsZT0iZmlsbDojNDI4NWY0Ii8+PHBvbHlnb24gcG9pbnRzPSIxNy44NyAxMS44OSAxNy44IDExLjk1IDE0LjAzIDE1LjczIDEyLjk3IDE0LjY4IDE1Ljc3IDExLjg5IDEwLjA2IDYuMTggMTAuMDYgNC4wOCAxMC4xMyA0LjE1IDE3Ljg3IDExLjg5IiBzdHlsZT0iZmlsbDojNjY5ZGY2O2ZpbGwtcnVsZTpldmVub2RkIi8+PHBvbHlnb24gcG9pbnRzPSIxMC4wNiA2LjE4IDQuMzYgMTEuODkgMTEuMTEgMTguNjUgMTAuMDYgMTkuNyAxMCAxOS42MyAyLjI1IDExLjg5IDEwLjA2IDQuMDggMTAuMDYgNi4xOCIgc3R5bGU9ImZpbGw6I2FlY2JmYTtmaWxsLXJ1bGU6ZXZlbm9kZCIvPjxwb2x5Z29uIHBvaW50cz0iMTMuOTQgMTcuNiAxMy45NCAxOS43IDEzLjg4IDE5LjYzIDYuMTMgMTEuOSA5Ljk3IDguMDUgMTEuMDMgOS4xMSA4LjIzIDExLjkgMTMuOTQgMTcuNiIgc3R5bGU9ImZpbGw6IzY2OWRmNjtmaWxsLXJ1bGU6ZXZlbm9kZCIvPjxwb2x5Z29uIHBvaW50cz0iMTMuOTQgMTcuNiAxOS42NCAxMS45IDEyLjg5IDUuMTQgMTMuOTQgNC4wOCAxNCA0LjE1IDIxLjc1IDExLjkgMjEuNjggMTEuOTYgMTMuOTQgMTkuNyAxMy45NCAxNy42IiBzdHlsZT0iZmlsbDojNDI4NWY0Ii8+PC9zdmc+{scale="+$scale+"}>"
+!endfunction
+
+
+!procedure AssetInventory(e_alias, e_label)
+    GCEntity(e_alias, e_label, AssetInventory, AssetInventory)
+!endprocedure
+
+!procedure AssetInventory(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, AssetInventory, AssetInventory)
+!endprocedure
+
+$GCDefineEntityStyle(AssetInventory)
+
+
+!procedure AssetInventoryParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, AssetInventory, AssetInventory)
+!endprocedure
+
+!procedure AssetInventoryParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, AssetInventory, AssetInventory)
+!endprocedure
+
+
+!procedure AssetInventoryGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, AssetInventory, AssetInventoryGroup)
+!endprocedure
+
+!procedure AssetInventoryGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, AssetInventory, AssetInventoryGroup)
+!endprocedure
+
+$GCDefineGroupStyle(AssetInventoryGroup)

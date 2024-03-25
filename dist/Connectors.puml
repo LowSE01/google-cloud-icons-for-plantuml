@@ -1,0 +1,34 @@
+!function $ConnectorsIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyBpZD0iYTdkOTdmZTEtNmM5Ni00NmNiLTliNjMtNWY1NjE3MmNkM2Q4IiBkYXRhLW5hbWU9IkFydHdvcmsiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cmVjdCB4PSI4Ljk5OSIgeT0iNy4wMTMiIHdpZHRoPSIyIiBoZWlnaHQ9IjQiIGZpbGw9IiNhZWNiZmEiLz48cmVjdCB4PSIxMi45OTkiIHk9IjcuMDEzIiB3aWR0aD0iMiIgaGVpZ2h0PSI0IiBmaWxsPSIjYWVjYmZhIi8+PHBhdGggZD0iTTgsMTguOTNBNy45OTMsNy45OTMsMCwwLDEsMTIsNC4wMTN2LTJBMTAsMTAsMCwwLDAsOCwyMS4xNzJaIiBmaWxsPSIjYWVjYmZhIi8+PHJlY3QgeD0iMTAuOTk5IiB5PSIxNy4wMTIiIHdpZHRoPSIyIiBoZWlnaHQ9IjUiIGZpbGw9IiM0Mjg1ZjQiLz48cGF0aCBkPSJNMTYuOTksMTAuMDEzSDdWMTIuOTVhNSw1LDAsMSwwLDEwLjAwOCwwWiIgZmlsbD0iIzQyODVmNCIvPjxwYXRoIGQ9Ik0xMiwxOC4wMTJBNS4wMzksNS4wMzksMCwwLDEsNywxMi45NVYxMC4wMTNoNSIgZmlsbD0iIzY2OWRmNiIvPjxwYXRoIGQ9Ik0xMiwyLjAxMmExMCwxMCwwLDAsMSw0LDE5LjE2M1YxOC45MzFBNy45OTQsNy45OTQsMCwwLDAsMTIsNC4wMTJaIiBmaWxsPSIjNDI4NWY0Ii8+PC9zdmc+{scale="+$scale+"}>"
+!endfunction
+
+
+!procedure Connectors(e_alias, e_label)
+    GCEntity(e_alias, e_label, Connectors, Connectors)
+!endprocedure
+
+!procedure Connectors(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, Connectors, Connectors)
+!endprocedure
+
+$GCDefineEntityStyle(Connectors)
+
+
+!procedure ConnectorsParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, Connectors, Connectors)
+!endprocedure
+
+!procedure ConnectorsParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, Connectors, Connectors)
+!endprocedure
+
+
+!procedure ConnectorsGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, Connectors, ConnectorsGroup)
+!endprocedure
+
+!procedure ConnectorsGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, Connectors, ConnectorsGroup)
+!endprocedure
+
+$GCDefineGroupStyle(ConnectorsGroup)

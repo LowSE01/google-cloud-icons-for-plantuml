@@ -1,0 +1,34 @@
+!function $PersistentDiskIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM0Mjg1ZjQ7fS5jbHMtMntmaWxsOiNhZWNiZmE7fS5jbHMtM3tmaWxsOiM2NjlkZjY7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5JY29uXzI0cHhfUGVyc2lzdGVudERpc2tfQ29sb3I8L3RpdGxlPjxnIGRhdGEtbmFtZT0iUHJvZHVjdCBJY29ucyI+PHBvbHlnb24gY2xhc3M9ImNscy0xIiBwb2ludHM9IjE2LjE3IDEzLjY3IDE2LjE3IDE4LjI1IDQuMDggMTguMjUgNC4wOCAyMiAxOS45MiAyMiAxOS45MiAxMy42NyAxNi4xNyAxMy42NyIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSI3LjgzIDEwLjMzIDcuODMgNS43NSAxOS45MiA1Ljc1IDE5LjkyIDIgNC4wOCAyIDQuMDggMTAuMzMgNy44MyAxMC4zMyIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMyIgcG9pbnRzPSI5LjkyIDcuODMgOS45MiAxMi40MiA0LjA4IDEyLjQyIDQuMDggMTYuMTcgMTQuMDggMTYuMTcgMTQuMDggMTEuNTggMTkuOTIgMTEuNTggMTkuOTIgNy44MyA5LjkyIDcuODMiLz48L2c+PC9zdmc+{scale="+$scale+"}>"
+!endfunction
+
+
+!procedure PersistentDisk(e_alias, e_label)
+    GCEntity(e_alias, e_label, PersistentDisk, PersistentDisk)
+!endprocedure
+
+!procedure PersistentDisk(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, PersistentDisk, PersistentDisk)
+!endprocedure
+
+$GCDefineEntityStyle(PersistentDisk)
+
+
+!procedure PersistentDiskParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, PersistentDisk, PersistentDisk)
+!endprocedure
+
+!procedure PersistentDiskParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, PersistentDisk, PersistentDisk)
+!endprocedure
+
+
+!procedure PersistentDiskGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, PersistentDisk, PersistentDiskGroup)
+!endprocedure
+
+!procedure PersistentDiskGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, PersistentDisk, PersistentDiskGroup)
+!endprocedure
+
+$GCDefineGroupStyle(PersistentDiskGroup)

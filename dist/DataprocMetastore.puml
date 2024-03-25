@@ -1,0 +1,34 @@
+!function $DataprocMetastoreIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMTIuMjMyMTQyOSAxMi4xMDkzNzUgNy4xMzM5Mjg1IDQuMjUtNy4xMzM5Mjg1IDQuMjUtNy4xMzM5Mjg2MS00LjI1em02LjU0ODQ2OTMtMi4xNzI2MTIwMyAzLjQ2OTM4NzggMi4xNjI5NDY0My0uMDE4NS4wMDk2NjU2LjAxODUuMDA5NjY1Ni0zLjQ2OTM4NzggMi4xNjI5NDY0LTEuMDg0MTgzNi0uNTY5MTk2NCAyLjU3MTA3MTQtMS42MDQ0MTU2LTIuNTcxMDcxNC0xLjYwMjQxNTZ6bS0xMy4yNDg3MjQ0NCAwIDEuMDg0MTgzNjcuNTY5MTk2NDMtMi41NzI1NzE0MyAxLjYwMzQxNTYgMi41NzI1NzE0MyAxLjYwMzQxNTYtMS4wODQxODM2Ny41NjkxOTY0LTMuNDY5Mzg3NzYtMi4xNjI5NDY0LjAxOC0uMDA5NjY1Ni0uMDE4LS4wMDk2NjU2em02LjcwMDI1NTE0LTYuMzI3Mzg3OTcgNy4xMzM5Mjg1IDQuMjUtNy4xMzM5Mjg1IDQuMjUtNy4xMzM5Mjg2MS00LjI1eiIgZmlsbD0iIzQyODVmNCIvPjwvc3ZnPg=={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure DataprocMetastore(e_alias, e_label)
+    GCEntity(e_alias, e_label, DataprocMetastore, DataprocMetastore)
+!endprocedure
+
+!procedure DataprocMetastore(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, DataprocMetastore, DataprocMetastore)
+!endprocedure
+
+$GCDefineEntityStyle(DataprocMetastore)
+
+
+!procedure DataprocMetastoreParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, DataprocMetastore, DataprocMetastore)
+!endprocedure
+
+!procedure DataprocMetastoreParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, DataprocMetastore, DataprocMetastore)
+!endprocedure
+
+
+!procedure DataprocMetastoreGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, DataprocMetastore, DataprocMetastoreGroup)
+!endprocedure
+
+!procedure DataprocMetastoreGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, DataprocMetastore, DataprocMetastoreGroup)
+!endprocedure
+
+$GCDefineGroupStyle(DataprocMetastoreGroup)

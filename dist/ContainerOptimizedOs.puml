@@ -1,0 +1,34 @@
+!function $ContainerOptimizedOsIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM0Mjg1ZjQ7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5JY29uXzI0cHhfQ29udGFpbmVyT3B0aW1pemVkT1NfQ29sb3I8L3RpdGxlPjxnIGRhdGEtbmFtZT0iUHJvZHVjdCBJY29ucyI+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTIsMkExMCwxMCwwLDEsMCwyMiwxMmgwQTEwLDEwLDAsMCwwLDEyLDJabTAsMThhOCw4LDAsMCwxLTQuMTgtMS4xOGwzLjU4LTIuMDdoMHYtNC41TDcuNTEsMTB2NC41MmwyLjc1LDEuNTktMy40NiwyQTgsOCwwLDAsMSw4LjA4LDVWOWgwTDEyLDExLjI4LDE1LjksOSwxMiw2Ljc3LDkuMjQsOC4zNlY0LjQ3YTgsOCwwLDAsMSwxMC4zMSw0LjdBOC4xLDguMSwwLDAsMSwyMC4wNiwxMnYuMDdMMTYuNDYsMTBoMGwtMy45LDIuMjZ2NC41MWwzLjktMi4yNVYxMS4zNGwzLjQ1LDJBOCw4LDAsMCwxLDEyLDIwWiIvPjwvZz48L3N2Zz4={scale="+$scale+"}>"
+!endfunction
+
+
+!procedure ContainerOptimizedOs(e_alias, e_label)
+    GCEntity(e_alias, e_label, ContainerOptimizedOs, ContainerOptimizedOs)
+!endprocedure
+
+!procedure ContainerOptimizedOs(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, ContainerOptimizedOs, ContainerOptimizedOs)
+!endprocedure
+
+$GCDefineEntityStyle(ContainerOptimizedOs)
+
+
+!procedure ContainerOptimizedOsParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, ContainerOptimizedOs, ContainerOptimizedOs)
+!endprocedure
+
+!procedure ContainerOptimizedOsParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, ContainerOptimizedOs, ContainerOptimizedOs)
+!endprocedure
+
+
+!procedure ContainerOptimizedOsGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, ContainerOptimizedOs, ContainerOptimizedOsGroup)
+!endprocedure
+
+!procedure ContainerOptimizedOsGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, ContainerOptimizedOs, ContainerOptimizedOsGroup)
+!endprocedure
+
+$GCDefineGroupStyle(ContainerOptimizedOsGroup)

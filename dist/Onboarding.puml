@@ -1,0 +1,34 @@
+!function $OnboardingIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGJhc2VQcm9maWxlPSJ0aW55IiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIKCSB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiBvdmVyZmxvdz0idmlzaWJsZSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnID4KCTxyZWN0IHk9IjAiIGZpbGw9Im5vbmUiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIvPgoJPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsIDIuMDAwMDAwKSI+CgkJPHBvbHlnb24gZmlsbD0iIzVDODVERSIgcG9pbnRzPSIyMS4yLDcuNiAyMS4yLDE0LjggMjMuMywxNC44IDIzLjMsNi40IAkJIi8+CgkJPHBvbHlnb24gaWQ9IlNoYXBlXzAwMDAwMDU5MjkyNzg5NDQ0MzM1Njc4MDEwMDAwMDE4MTA0NDQ2MzAwNzU2MzA5OTQ3XyIgZmlsbD0iIzMzNjdENiIgcG9pbnRzPSIyMy4zLDYuNCAyMS4yLDcuNiAyMS4yLDguNiAJCQoJCQkiLz4KCQk8cG9seWdvbiBmaWxsPSIjNUM4NURFIiBwb2ludHM9IjAuNCw2LjQgMTEuOSwxMi43IDIxLjIsNy42IDIzLjMsNi40IDExLjksMC4yIAkJIi8+CgkJPHBvbHlnb24gaWQ9IlBhdGhfMDAwMDAwNjM2MDQwOTEzMjMxNjc4MTA5MjAwMDAwMTc2NDc2NjU0MzM1Njk5MTE5NTdfIiBmaWxsPSIjODVBNEU2IiBwb2ludHM9IjAuNCw2LjQgMTEuOSwxMi43IDExLjksMC4yIAkJIi8+CgkJPHBvbHlnb24gaWQ9IlBhdGhfMDAwMDAwMTMxNjg3NjY0NTM0NDAzMDc4NjAwMDAwMDk5NDQ5NzM0Mzc3ODIwNjk2ODVfIiBmaWxsPSIjNUM4NURFIiBwb2ludHM9IjQuNiwxMC44IDQuNiwxNC45IDExLjksMTguOSAKCQkJMTkuMSwxNC45IDE5LjEsMTAuOCAxMS45LDE0LjggCQkiLz4KCQk8cG9seWdvbiBpZD0iUGF0aF8wMDAwMDE3MjQzMjA4OTM4NTE0OTAyNDU0MDAwMDAwNjcxMTQxNDE5MDg1MDI3NTk5OV8iIGZpbGw9IiM4NUE0RTYiIHBvaW50cz0iNC42LDE0LjkgMTEuOSwxOC45IDExLjksMTQuOCAKCQkJNC42LDEwLjggCQkiLz4KCTwvZz4KPC9nPgo8L3N2Zz4K{scale="+$scale+"}>"
+!endfunction
+
+
+!procedure Onboarding(e_alias, e_label)
+    GCEntity(e_alias, e_label, Onboarding, Onboarding)
+!endprocedure
+
+!procedure Onboarding(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, Onboarding, Onboarding)
+!endprocedure
+
+$GCDefineEntityStyle(Onboarding)
+
+
+!procedure OnboardingParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, Onboarding, Onboarding)
+!endprocedure
+
+!procedure OnboardingParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, Onboarding, Onboarding)
+!endprocedure
+
+
+!procedure OnboardingGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, Onboarding, OnboardingGroup)
+!endprocedure
+
+!procedure OnboardingGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, Onboarding, OnboardingGroup)
+!endprocedure
+
+$GCDefineGroupStyle(OnboardingGroup)

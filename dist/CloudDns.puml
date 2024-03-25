@@ -1,0 +1,34 @@
+!function $CloudDnsIMG($scale)
+    !return "<img data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM0Mjg1ZjQ7fS5jbHMtMntmaWxsOiM2NjlkZjY7fS5jbHMtM3tmaWxsOiNhZWNiZmE7fS5jbHMtNHtmaWxsOiNmZmY7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5JY29uXzI0cHhfRE5TX0NvbG9yPC90aXRsZT48ZyBkYXRhLW5hbWU9IlByb2R1Y3QgSWNvbnMiPjxnIGRhdGEtbmFtZT0iY29sb3JlZC0zMi9kbnMiPjxnID48cG9seWdvbiBpZD0iRmlsbC0xIiBjbGFzcz0iY2xzLTEiIHBvaW50cz0iMTMgMTggMTEgMTggMTEgOCAxMyA4IDEzIDE4Ii8+PHBvbHlnb24gaWQ9IkZpbGwtMiIgY2xhc3M9ImNscy0yIiBwb2ludHM9IjIgMjEgMjIgMjEgMjIgMTkgMiAxOSAyIDIxIi8+PHBvbHlnb24gaWQ9IkZpbGwtMyIgY2xhc3M9ImNscy0zIiBwb2ludHM9IjEwIDIyIDE0IDIyIDE0IDE4IDEwIDE4IDEwIDIyIi8+PC9nPjwvZz48cmVjdCBjbGFzcz0iY2xzLTMiIHg9IjIiIHk9IjIiIHdpZHRoPSIyMCIgaGVpZ2h0PSI2Ii8+PHJlY3QgY2xhc3M9ImNscy0yIiB4PSIxMiIgeT0iMiIgd2lkdGg9IjEwIiBoZWlnaHQ9IjYiLz48cmVjdCBjbGFzcz0iY2xzLTQiIHg9IjQiIHk9IjQiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiLz48cmVjdCBjbGFzcz0iY2xzLTMiIHg9IjIiIHk9IjEwIiB3aWR0aD0iMjAiIGhlaWdodD0iNiIvPjxyZWN0IGNsYXNzPSJjbHMtMiIgeD0iMTIiIHk9IjEwIiB3aWR0aD0iMTAiIGhlaWdodD0iNiIvPjxyZWN0IGNsYXNzPSJjbHMtNCIgeD0iNCIgeT0iMTIiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiLz48L2c+PC9zdmc+{scale="+$scale+"}>"
+!endfunction
+
+
+!procedure CloudDns(e_alias, e_label)
+    GCEntity(e_alias, e_label, CloudDns, CloudDns)
+!endprocedure
+
+!procedure CloudDns(e_alias, e_label, e_descr)
+    GCEntity(e_alias, e_label, e_descr, CloudDns, CloudDns)
+!endprocedure
+
+$GCDefineEntityStyle(CloudDns)
+
+
+!procedure CloudDnsParticipant(p_alias, p_label)
+    GCParticipant(p_alias, p_label, CloudDns, CloudDns)
+!endprocedure
+
+!procedure CloudDnsParticipant(p_alias, p_label, p_descr)
+    GCParticipant(p_alias, p_label, p_descr, CloudDns, CloudDns)
+!endprocedure
+
+
+!procedure CloudDnsGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudDns, CloudDnsGroup)
+!endprocedure
+
+!procedure CloudDnsGroup(g_alias, g_label="")
+    $GCDefineGroup(g_alias, g_label, CloudDns, CloudDnsGroup)
+!endprocedure
+
+$GCDefineGroupStyle(CloudDnsGroup)
