@@ -4,7 +4,7 @@
 
 ```plantuml
 
-!define GCPuml https://raw.githubusercontent.com/LowSE01/google-cloud-icons-for-plantuml/development/dist
+!define GCPuml ../dist
 
 !include GCPuml/GCCommon.puml
 
@@ -37,8 +37,8 @@ CloudStorage -r-> BigQuery
 !include GCPuml/CloudStorage.puml
 !include GCPuml/SecretManager.puml
 
-CloudRunParticipant(CloudRun, aaa)
-SecretManagerParticipant(SecretManager, aaa)
+CloudRunParticipant(CloudRun, job)
+SecretManagerParticipant(SecretManager, secrets)
 CloudStorageParticipant(CloudStorage, gcs)
 BigqueryParticipant(BigQuery, bq)
 
