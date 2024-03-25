@@ -18,6 +18,32 @@ AWSCloudGroup(cloud) {
 # Google Cloud Icons for Plantuml
 
 ```plantuml
+
+!define GCPuml ../dist
+!include GCPuml/GCCommon.puml
+!include GCPuml/SecretManager.puml
+
+SecretManager(SecretManagerWithDesc, aaa, aaa)
+SecretManager(SecretManagerWithoutDesc, aaa)
+
+SecretManagerWithDesc -> SecretManagerWithoutDesc
+
+```
+
+```plantuml
+
+!define GCPuml ../dist
+!include GCPuml/GCCommon.puml
+!include GCPuml/SecretManager.puml
+
+SecretManagerParticipant(SecretManagerWithDesc, aaa, aaa)
+SecretManagerParticipant(SecretManagerWithoutDesc, aaa)
+
+SecretManagerWithDesc -> SecretManagerWithoutDesc
+
+```
+
+```plantuml
 !define GCPuml ../dist
 !include GCPuml/GCCommon.puml
 !include GCPuml/VirtualPrivateCloud.puml
@@ -26,9 +52,9 @@ AWSCloudGroup(cloud) {
 
 left to right direction
 
-VirtualPrivateCloudGroup(vpc, aaaaa) {
-    Bigquery(BigQuery, aaa, aaa, aaa)
-    SecretManager(SecretManager, aaa, aaa, aaa)
+VirtualPrivateCloudGroup(vpc, Google Cloud) {
+    Bigquery(BigQuery, aaa)
+    SecretManager(SecretManager, aaa)
     SecretManager --> BigQuery
 }
 ```
