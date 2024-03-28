@@ -1,17 +1,20 @@
+!$CG_COLOR_GRAY = "#7D8998"
+!$GC_FG_COLOR = "#000000"
+
 skinparam defaultTextAlignment Center
 skinparam PackageTitleAlignment Left
 
 
 !function $GCImg($service)
-    !return %call_user_func("$" + $service + "IMG", "2.4")
+    !return %call_user_func("$" + $service + "IMG", "0.16")
 !endfunction
 
 !function $GCGroupImg($service)
-  !return %call_user_func("$" + $service + "IMG", "0.7")
+    !return %call_user_func("$" + $service + "IMG", "0.08")
 !endfunction
 
 !function $GCPerticipantImg($service)
-  !return %call_user_func("$" + $service + "IMG", "1.5")
+    !return %call_user_func("$" + $service + "IMG", "0.16")
 !endfunction
 
 
@@ -25,12 +28,13 @@ skinparam PackageTitleAlignment Left
 
 
 !procedure $GCDefineEntityStyle($stereo)
-  skinparam rectangle<<$stereo>> {
-    StereoTypeFontSize 10
-    Shadowing false
-    BorderThickness 1
-    BackgroundColor Transparent
-  }
+    skinparam rectangle<<$stereo>> {
+        StereoTypeFontSize 12
+        Shadowing false
+        BorderThickness 2
+        BorderColor $CG_COLOR_GRAY
+        BackgroundColor Transparent
+    }
 !endprocedure
 
 
@@ -40,6 +44,16 @@ skinparam PackageTitleAlignment Left
 
 !procedure GCParticipant(p_alias, p_label, p_descr, p_sprite, p_stereo)
     participant "p_label\n$GCPerticipantImg(p_sprite)\np_descr" as p_alias <<p_stereo>>
+!endprocedure
+
+!procedure $GCDefineParticipantStyle($stereo)
+    skinparam participant<<$stereo>> {
+        StereoTypeFontSize 12
+        Shadowing false
+        BorderColor $CG_COLOR_GRAY
+        BorderThickness 1.25
+        BackgroundColor Transparent
+    }
 !endprocedure
 
 
@@ -54,9 +68,11 @@ skinparam PackageTitleAlignment Left
 !endfunction
 
 !procedure $GCDefineGroupStyle($stereo)
-  skinparam rectangle<<$stereo>> {
-    StereoTypeFontSize 0
-    Shadowing false
-    BorderThickness 1
-  }
+    skinparam rectangle<<$stereo>> {
+        StereoTypeFontSize 0
+        Shadowing false
+        BorderColor $GC_FG_COLOR
+        BorderThickness 2
+        BackgroundColor Transparent
+    }
 !endprocedure

@@ -1,8 +1,10 @@
+' IMG
 !function ${{ pascal }}IMG($scale)
-    !return "<img data:image/svg+xml;base64,{{ base64 }}{scale="+$scale+"}>"
+    !return "<img data:image/png;base64,{{ base64 }}{scale="+$scale+"}>"
 !endfunction
 
 
+' Entity
 !procedure {{ pascal }}(e_alias, e_label)
     GCEntity(e_alias, e_label, {{ pascal }}, {{ pascal }})
 !endprocedure
@@ -14,6 +16,7 @@
 $GCDefineEntityStyle({{ pascal }})
 
 
+' Participant
 !procedure {{ pascal }}Participant(p_alias, p_label)
     GCParticipant(p_alias, p_label, {{ pascal }}, {{ pascal }})
 !endprocedure
@@ -22,7 +25,10 @@ $GCDefineEntityStyle({{ pascal }})
     GCParticipant(p_alias, p_label, p_descr, {{ pascal }}, {{ pascal }})
 !endprocedure
 
+$GCDefineParticipantStyle({{ pascal }})
 
+
+' Group
 !procedure {{ pascal }}Group(g_alias, g_label="{{ g_label }}")
     $GCDefineGroup(g_alias, g_label, {{ pascal }}, {{ pascal }}Group)
 !endprocedure

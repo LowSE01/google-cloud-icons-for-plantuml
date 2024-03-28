@@ -1,7 +1,9 @@
-import os
 import base64
+import os
 
+from io import BytesIO
 from jinja2 import Template, Environment, FileSystemLoader
+from PIL import Image
 
 SOURCE_DIR = "./source"
 DIST_DIR = "./dist"
@@ -27,7 +29,7 @@ def render(icon_name):
     template = env.get_template("Entity.j2")
     parameters = {
         "pascal": snake_to_pascal(icon_name),
-        "base64": svg_to_base64(icon_name),
+        "base64": png_to_base64(icon_name),
     }
     return template.render(parameters)
 
@@ -39,19 +41,20 @@ def main():
         process(icon_name)
 
 
-def img_to_base64(icon_name, ext):
-    filepath = f"{SOURCE_DIR}/icon/google-cloud-icons/{icon_name}/{icon_name}.{ext}"
-    content = open(filepath, "rb").read()
-    data = base64.b64encode(content)
+def png_to_base64(icon_name):
+    filepath = f"{SOURCE_DIR}/icon/google-cloud-icons/{icon_name}/{icon_name}.png"
+    image = Image.open(filepath).convert('RGBA')
+    buffer = BytesIO()
+    image.save(buffer, "png")
+    data = base64.b64encode(buffer.getvalue())
     return data.decode('utf-8')
 
 
-def png_to_base64(icon_name):
-    return img_to_base64(icon_name, "png")
-
-
 def svg_to_base64(icon_name):
-    return img_to_base64(icon_name, "svg")
+    filepath = f"{SOURCE_DIR}/icon/google-cloud-icons/{icon_name}/{icon_name}.svg"
+    content = open(filepath, "rb").read()
+    data = base64.b64encode(content)
+    return data.decode('utf-8')
 
 
 def page_gen_service_icons():
